@@ -1,28 +1,22 @@
+# Imports
+from torch import nn
+
+# Model
 class Vanilla_NN(nn.Module):
 
     def __init__(self,  input_size, 
                         n_nodes_layer1 = None,
                         n_nodes_layer2 = None,
                         n_nodes_layer3 = None):
-        '''
-        Vanila Neural Network Object
+        """
+        Simple 3 hidden layer neural network.
 
-        Parameters
-        ----------
-        input_size : Int
-            length of input vector to network
-        n_nodes_layer1 : Int, optional
-            DESCRIPTION. The default is None.
-        n_nodes_layer2 : TYPE, optional
-            DESCRIPTION. The default is None.
-        n_nodes_layer3 : TYPE, optional
-            DESCRIPTION. The default is None.
-
-        Returns
-        -------
-        None.
-
-        '''
+        Args:
+            input_size (int): Length of input vector
+            n_nodes_layer1 (int, optional): Number of nodes in first hidden layer. Defaults to None.
+            n_nodes_layer2 (int, optional): Number of nodes in second hidden layer. Defaults to None.
+            n_nodes_layer3 (int, optional): Number  of nodes in third hidden layer. Defaults to None.
+        """
 
         super(Vanilla_NN,self).__init__()
         
@@ -39,18 +33,15 @@ class Vanilla_NN(nn.Module):
         self.fc4 = nn.Linear(n_nodes_layer3, 1)
 
     def forward(self, input):
-        '''
-        Parameters
-        ----------
-        input : Tensor(N, 1)
-            N number of features that will be the input to the NN
+        """
+        Feedforward pass through the network
 
-        Returns
-        -------
-        output : Tensor(1)
-            NN's regression output
+        Args:
+            input (Tensor[input_size, 1]): Input vector to the network
 
-        '''
+        Returns:
+            float: Regression output
+        """
         # Feed Forward
         x = self.fc1(input)
         x = self.fc2(x)
