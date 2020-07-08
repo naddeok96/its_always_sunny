@@ -17,9 +17,9 @@ class Academy:
         Trains and test models on datasets
 
         Args:
-            net (Pytorch model class): Network to train and test
-            data (Tensor Object): Data to train and test with
-            gpu (bool, optional): If True then GPU's will be used. Defaults to False.
+            net (Pytorch model class):  Network to train and test
+            data (Tensor Object):       Data to train and test with
+            gpu (bool, optional):       If True then GPU's will be used. Defaults to False.
         """
         super(Academy,self).__init__()
 
@@ -37,33 +37,31 @@ class Academy:
                     learning_rate = 0.001, 
                     momentum = 0.9, 
                     weight_decay = 0.0001):
-        """
-        Trains network on data 
+        """Fits model to data
 
         Args:
-            batch_size (int, optional): Number of samples in each batch. Defaults to 124.
-            n_epochs (int, optional): Number of cycles through the data. Defaults to 1.
-            learning_rate (float, optional): Learning rate coeffiecent in the optimizer. Defaults to 0.001.
-            momentum (float, optional): Momentum coeffiecent in the optimizer. Defaults to 0.9.
-            weight_decay (float, optional): Weight decay in the optimizer. Defaults to 0.0001.
+            batch_size (int, optional):         Number of samples in each batch. Defaults to 124.
+            n_epochs (int, optional):           Number of cycles through the data. Defaults to 1.
+            learning_rate (float, optional):    Learning rate coeffiecent in the optimizer. Defaults to 0.001.
+            momentum (float, optional):         Momentum coeffiecent in the optimizer. Defaults to 0.9.
+            weight_decay (float, optional):     Weight decay in the optimizer. Defaults to 0.0001.
         """
         #Get training data
         train_loader = self.data.get_train_loader(batch_size)
-        n_batches = len(train_loader)
 
         #Create optimizer and loss functions
         optimizer = torch.optim.SGD(self.net.parameters(), 
                                     lr = learning_rate, 
                                     momentum = momentum,
                                     weight_decay = weight_decay)
-        criterion = torch.nn.CrossEntropyLoss()
+        criterion = torch.nn.MSELoss()
 
-        #Loop for n_epochs
+        # Loop for n_epochs
         for epoch in range(n_epochs):            
             for i, data in enumerate(train_loader, 0):
                 
-                # Get inputs and labels from train_loader
-                inputs, labels = data
+                # Get labels and inputs from train_loader
+                labels, inputs = data[:, 0].float(), data[:, 1:].float()
 
                 # Push to gpu
                 if self.gpu == True:
@@ -73,40 +71,49 @@ class Academy:
                 optimizer.zero_grad()   
 
                 #Forward pass
-                outputs = self.net(inputs)        # Forward pass
-                loss = criterion (outputs, labels) # Calculate loss
-
-                # Freeze layers
-                if frozen_layers != None:
-                    self.freeze(frozen_layers) 
+                outputs = self.net(inputs).squeeze(1)      # Forward pass
+                loss = criterion (outputs, labels) # Calculate loss 
 
                 # Backward pass and optimize
                 loss.backward()                   # Find the gradient for each parameter
                 optimizer.step()                  # Parameter update
+
+                # Check if gradients have exploded
+                if torch.isnan(self.net.fc2.weight.grad).any().item():
+                    print("Gradients have exploded!")
+                    exit()
                 
     def test(self):
-        '''
-        Test the model on the unseen data in the test set
-        '''
+        """Test the model on the unseen data in the test set
+
+        Returns:
+            float: Mean loss on test dataset
+        """
+        #Create loss functions
+        criterion = torch.nn.MSELoss()
+
         # Initialize
         total_tested = 0
-        correct = 0
+        total_loss = 0
+        
+        # Test data in test loader
+        for i, data in enumerate(self.data.test_loader, 0):
+            # Get labels and inputs from test_loader
+            labels, inputs = data[:, 0].float(), data[:, 1:].float()
 
-        # Test images in test loader
-        for inputs, labels in self.data.test_loader:
             # Push to gpu
             if self.gpu == True:
                 inputs, labels = inputs.cuda(), labels.cuda()
 
             #Forward pass
-            outputs = self.net(inputs)
-            _, predicted = torch.max(outputs.data, 1)
+            outputs = self.net(inputs).squeeze(1)
+            loss = criterion(outputs, labels) # Calculate loss 
 
             # Update runnin sum
             total_tested += labels.size(0)
-            correct += (predicted == labels).sum().item()
+            total_loss   += loss.item()
         
-        # Calculate accuracy
-        accuracy = (correct/total_tested)
-        return accuracy
+        # Test Loss
+        test_loss = (total_loss/total_tested)\
+        return test_loss
 

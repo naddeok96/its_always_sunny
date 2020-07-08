@@ -1,5 +1,8 @@
 # Imports
-from torch import nn
+import torch
+import torch.nn as nn
+from math import ceil
+import torch.nn.functional as F
 
 # Model
 class Vanilla_NN(nn.Module):
@@ -8,8 +11,7 @@ class Vanilla_NN(nn.Module):
                         n_nodes_layer1 = None,
                         n_nodes_layer2 = None,
                         n_nodes_layer3 = None):
-        """
-        Simple 3 hidden layer neural network.
+        """Simple 3 hidden layer deep neural network.
 
         Args:
             input_size (int): Length of input vector
@@ -27,14 +29,13 @@ class Vanilla_NN(nn.Module):
         self.n_nodes_layer3 = n_nodes_layer3 if n_nodes_layer3 is not None else ceil(2 * self.input_size)
 
         # Layer Declarations
-        self.fc1 = nn.Linear(input_size, n_nodes_layer1)
-        self.fc2 = nn.Linear(n_nodes_layer1, n_nodes_layer2)
-        self.fc3 = nn.Linear(n_nodes_layer2, n_nodes_layer3)
-        self.fc4 = nn.Linear(n_nodes_layer3, 1)
+        self.fc1 = nn.Linear(self.input_size,     self.n_nodes_layer1)
+        self.fc2 = nn.Linear(self.n_nodes_layer1, self.n_nodes_layer2)
+        self.fc3 = nn.Linear(self.n_nodes_layer2, self.n_nodes_layer3)
+        self.fc4 = nn.Linear(self.n_nodes_layer3, 1)
 
     def forward(self, input):
-        """
-        Feedforward pass through the network
+        """Feedforward pass through the network
 
         Args:
             input (Tensor[input_size, 1]): Input vector to the network
@@ -43,10 +44,10 @@ class Vanilla_NN(nn.Module):
             float: Regression output
         """
         # Feed Forward
-        x = self.fc1(input)
-        x = self.fc2(x)
-        x = self.fc3(x)
-        output = fc4(x)
+        x = F.relu(self.fc1(input))
+        x = F.relu(self.fc2(x))
+        x = F.relu(self.fc3(x))
+        output = self.fc4(x)
 
         return output
 
