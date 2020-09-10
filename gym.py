@@ -1,5 +1,5 @@
 """
-This script will take a put a model and dataset in an academy to train
+This script will take a model and dataset and put them in an academy to train
 """
 # Imports
 import os
@@ -9,8 +9,8 @@ from academy import Academy
 import torch
 
 # Hyperparameters
-csv_file = "data/weatherdata_merged_truncated_50.csv"
-n_epochs = 0
+csv_file = "../data/Weather/weatherdata_merged2_training.csv"
+n_epochs = 2
 gpu = False
 save_model = True
 
