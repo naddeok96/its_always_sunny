@@ -1,12 +1,6 @@
 # Imports
 import torch
-from torch import nn
-import torchvision
-import numpy as np
-import torch.nn.functional as F
-import torchvision.transforms as transforms
-import math
-import operator
+
 
 class Academy:
     def __init__(self,
@@ -82,6 +76,7 @@ class Academy:
                 if torch.isnan(self.net.fc2.weight.grad).any().item():
                     print("Gradients have exploded!")
                     exit()
+            print("Epoch: " + epoch + "\t Loss: " + loss)
                 
     def test(self):
         """Test the model on the unseen data in the test set
@@ -114,6 +109,6 @@ class Academy:
             total_loss   += loss.item()
         
         # Test Loss
-        test_loss = (total_loss/total_tested)\
+        test_loss = (total_loss/total_tested)
         return test_loss
 
