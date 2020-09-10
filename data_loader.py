@@ -1,10 +1,9 @@
 # Imports
-from torch.utils.data import Dataset
 import pandas as pd
 import torch
 
 # Class
-class WeatherDataset(Dataset):
+class WeatherDataset(torch.utils.data.Dataset):
     """Pytorch Dataloader for weather data."""
 
     def __init__(self,  csv_file):
