@@ -1,6 +1,6 @@
 # Imports
 import torch
-
+import math
 
 class Academy:
     def __init__(self,
@@ -28,8 +28,8 @@ class Academy:
 
     def train(self, batch_size = 124, 
                     n_epochs = 1, 
-                    learning_rate = 0.001, 
-                    momentum = 0.9, 
+                    learning_rate = 1e-12, 
+                    momentum = 0.1, 
                     weight_decay = 0.0001):
         """Fits model to data
 
@@ -67,6 +67,9 @@ class Academy:
                 #Forward pass
                 outputs = self.net(inputs).squeeze(1)      # Forward pass
                 loss = criterion (outputs, labels) # Calculate loss 
+                # print(i, (10 ** (math.floor(math.log(len(train_loader), 10)) - 2)))
+                if i % (10 ** (math.floor(math.log(len(train_loader), 10)) - 2)) == 0:
+                    print("Epoch: ", epoch + 1, "\tBatch: ", i, " of ", len(train_loader), "\t Loss: ", loss.item())
 
                 # Backward pass and optimize
                 loss.backward()                   # Find the gradient for each parameter
@@ -76,7 +79,7 @@ class Academy:
                 if torch.isnan(self.net.fc2.weight.grad).any().item():
                     print("Gradients have exploded!")
                     exit()
-            print("Epoch: " + epoch + "\t Loss: " + loss)
+           
                 
     def test(self):
         """Test the model on the unseen data in the test set

@@ -6,14 +6,19 @@ import pandas as pd
 
 # Hyperparameters
 truncation_size = 50
-save_truncd = True
-file_name = "weatherdata_merged2_training"
+save_truncd = False
+file_name = "weatherdata_merged2"
 
 # Load data
 data = pd.read_csv("../data/Weather/" + file_name + ".csv")
 
 # Preview
-print(data.head())
+# print(data.head())
+
+print("Target Max: ", data["mean_swrad"].max())
+print("Target Min: ", data["mean_swrad"].min())
+print("Target Mean: ", data["mean_swrad"].mean())
+print("Target Std: ", data["mean_swrad"].std())
 
 # print("Datatypes")
 # print(data.dtypes)

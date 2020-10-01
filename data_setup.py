@@ -7,14 +7,12 @@ class Data:
     """Opens, splits and puts data in a dataloader"""
     def __init__(self,  csv_file,
                         gpu = False,
-                        categorical = True,
-                        test_batch_size = 2,
+                        test_batch_size  = 100,
                         train_percentage = 0.8):
         """
         Args:
             csv_file (string): Relative path to the csv file
             gpu (bool, optional): If True use GPU's. Defaults to False.
-            categorical (bool, optional): If True then use: year, month, day, geoid
             test_batch_size (int, optional): Size of batches in the test set. Defaults to 100.
             train_percentage (float, optional): Percentage of dataset to be allocated for training. Defaults to 0.8.
         """
@@ -27,10 +25,6 @@ class Data:
 
         # Pull in data
         self.weather_dataset = WeatherDataset(csv_file = csv_file)
-
-        if categorical == False:
-            self.weather_dataset.drop(['year', 'month', 'day', 'geoid'], axis=1)
-
         self.n_features = len(self.weather_dataset[0]) - 1
 
         # Split Data

@@ -9,11 +9,13 @@ from academy import Academy
 import torch
 
 # Hyperparameters
-csv_file = "../data/Weather/weatherdata_merged2_training.csv"
+csv_file = "../data/Weather/weatherdata_merged2.csv"
 n_epochs = 2
 gpu = False
+categorical = False
 save_model = True
 
+#   add run time!!!!
 
 # Push to GPU if necessary
 if gpu:
@@ -23,25 +25,29 @@ if gpu:
 # Load data
 data = Data(csv_file = csv_file, 
             gpu = gpu)
+print("Data Loaded...")
 
 # Initalize network
 net = Vanilla_NN(input_size = data.n_features)
+print("Network Loaded...")
 
 # Enter student network and curriculum data into an academy
 academy  = Academy(net, data, gpu)
+print("Entered into Academy...")
+
 
 # Fit Model
-academy.train(n_epochs = n_epochs,
-              batch_size = 5)
+print("Start Training...")
+academy.train(n_epochs = n_epochs)
 
 # Calculate accuracy on test set
 test_loss = academy.test()
-print(test_loss)
+print("Final Loss: ", test_loss)
 
 # Save Model
 if save_model:
     # Define File Names
-    filename  = "net_w_loss_" + str(int(round(test_loss * 100, 3))) + ".pt"
+    filename  = "net_w_loss_" + str(int(round(test_loss, 3))) + ".pt"
     
     # Save Models
     torch.save(academy.net.state_dict(), filename)
