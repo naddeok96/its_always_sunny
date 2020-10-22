@@ -1,12 +1,14 @@
 # Imports
 import torch
 import math
+import copy
 
 class Academy:
     def __init__(self,
                  net, 
                  data,
-                 gpu = False):
+                 gpu = False,
+                 autoencoder_trainer = False):
         """
         Trains and test models on datasets
 
@@ -14,6 +16,7 @@ class Academy:
             net (Pytorch model class):  Network to train and test
             data (Tensor Object):       Data to train and test with
             gpu (bool, optional):       If True then GPU's will be used. Defaults to False.
+            autoencoder_trainer (bool, optional): If True labels will equal inputs. Defaults to False.
         """
         super(Academy,self).__init__()
 
@@ -26,11 +29,15 @@ class Academy:
         # Declare data
         self.data = data
 
+        # Declare if training is for an autoencoder
+        self.autoencoder_trainer = autoencoder_trainer
+
     def train(self, batch_size = 124, 
                     n_epochs = 1, 
                     learning_rate = 1e-12, 
                     momentum = 0.1, 
-                    weight_decay = 0.0001):
+                    weight_decay = 0.0001,
+                    autoencoder_trainer = False):
         """Fits model to data
 
         Args:
@@ -55,7 +62,11 @@ class Academy:
             for i, data in enumerate(train_loader, 0):
                 
                 # Get labels and inputs from train_loader
-                labels, inputs = data[:, 0].float(), data[:, 1:].float()
+                if self.autoencoder_trainer == True:
+                    labels, inputs = data, data
+                else:
+                    labels, inputs = data[:, 0].float(), data[:, 1:].float()
+
 
                 # Push to gpu
                 if self.gpu == True:
@@ -76,9 +87,9 @@ class Academy:
                 optimizer.step()                  # Parameter update
 
                 # Check if gradients have exploded
-                if torch.isnan(self.net.fc2.weight.grad).any().item():
-                    print("Gradients have exploded!")
-                    exit()
+                # if torch.isnan(self.net.fc2.weight.grad).any().item():
+                #     print("Gradients have exploded!")
+                #     exit()
            
                 
     def test(self):
@@ -96,8 +107,11 @@ class Academy:
         
         # Test data in test loader
         for i, data in enumerate(self.data.test_loader, 0):
-            # Get labels and inputs from test_loader
-            labels, inputs = data[:, 0].float(), data[:, 1:].float()
+            # Get labels and inputs from train_loader
+            if self.autoencoder_trainer == True:
+                labels, inputs = data, data
+            else:
+                labels, inputs = data[:, 0].float(), data[:, 1:].float()
 
             # Push to gpu
             if self.gpu == True:
