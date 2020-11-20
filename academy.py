@@ -2,6 +2,9 @@
 import torch
 import math
 import copy
+from sleeper import Sleeper
+sleeper = Sleeper()
+
 
 class Academy:
     def __init__(self,
@@ -58,9 +61,11 @@ class Academy:
         criterion = torch.nn.MSELoss()
 
         # Loop for n_epochs
-        for epoch in range(n_epochs):            
-            for i, data in enumerate(train_loader, 0):
-                
+        for epoch in range(n_epochs):    
+            for i, data in enumerate(train_loader, 0): 
+                # Check to sleep
+                sleeper.check()    
+
                 # Get labels and inputs from train_loader
                 if self.autoencoder_trainer == True:
                     labels, inputs = data, data
@@ -78,18 +83,15 @@ class Academy:
                 #Forward pass
                 outputs = self.net(inputs).squeeze(1)      # Forward pass
                 loss = criterion (outputs, labels) # Calculate loss 
-                # print(i, (10 ** (math.floor(math.log(len(train_loader), 10)) - 2)))
-                if i % (10 ** (math.floor(math.log(len(train_loader), 10)) - 2)) == 0:
-                    print("Epoch: ", epoch + 1, "\tBatch: ", i, " of ", len(train_loader), "\t Loss: ", loss.item())
-
+                
                 # Backward pass and optimize
                 loss.backward()                   # Find the gradient for each parameter
                 optimizer.step()                  # Parameter update
 
-                # Check if gradients have exploded
-                # if torch.isnan(self.net.fc2.weight.grad).any().item():
-                #     print("Gradients have exploded!")
-                #     exit()
+            # Display 
+            if epoch % (n_epochs/100) == 0:
+                print("Epoch: ", epoch + 1, "\t Loss: ", loss.item())
+
            
                 
     def test(self):
@@ -107,6 +109,9 @@ class Academy:
         
         # Test data in test loader
         for i, data in enumerate(self.data.test_loader, 0):
+            # Check sleep
+            sleeper.check()
+
             # Get labels and inputs from train_loader
             if self.autoencoder_trainer == True:
                 labels, inputs = data, data

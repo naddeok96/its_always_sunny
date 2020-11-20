@@ -9,9 +9,14 @@ from academy import Academy
 import torch
 import os
 
+# Sleep function
+from sleeper import Sleeper
+sleeper = Sleeper()
+sleeper.check()
+
 # Hyperparameters
-csv_file = "weatherdata_merged2_training_truncated_50.csv"
-n_epochs = 1
+csv_file = "../data/Weather/weatherdata_merged2.csv"
+n_epochs = 1000
 gpu = False
 save_model = True
 
@@ -21,12 +26,15 @@ if gpu:
     os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 # Load data
+number_of_unique_categories = 100 # For years
+
 data_set = Data(csv_file = csv_file, 
                 gpu = gpu,
-                category = 1) 
+                category = 1,
+                one_hot_embedding_size = number_of_unique_categories) 
 
 # Initalize network
-net = Autoencoder()
+net = Autoencoder(input_size  = number_of_unique_categories)
 
 # Enter student network and curriculum data into an academy
 academy  = Academy(net, data_set, gpu,
@@ -39,10 +47,11 @@ academy.train(n_epochs = n_epochs)
 test_loss = academy.test()
 print("Final Loss: " + "{:.2e}".format(test_loss))
 
+# Check one sample
 for data in data_set.test_loader:
     print(data[0])
     print(net(data[0]))
-    continue
+    break
 
 # Save Model
 if save_model:
