@@ -12,7 +12,7 @@ class Data:
                         test_batch_size  = 100,
                         train_percentage = 0.8,
                         category = None,
-                        one_hot_embedding_size = 32):
+                        one_hot_embedding_size = -1):
         """
         Args:
             csv_file (string): Relative path to the csv file
@@ -20,7 +20,7 @@ class Data:
             test_batch_size (int, optional): Size of batches in the test set. Defaults to 100.
             train_percentage (float, optional): Percentage of dataset to be allocated for training. Defaults to 0.8.
             category(int, optional): Column to have an autoencoder dataset. 
-                                        # 1 is year
+                                        # 1 is year   (100 Types)
                                         # 2 is month
                                         # 3 is day
                                         # 4 is geoid
