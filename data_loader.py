@@ -1,6 +1,7 @@
 # Imports
 import pandas as pd
 import torch
+import os
 
 # Class
 class WeatherDataset(torch.utils.data.Dataset):

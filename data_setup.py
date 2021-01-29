@@ -61,17 +61,16 @@ class Data:
 
 
         #Test and validation loaders have constant batch sizes, so we can define them 
-        if self.gpu == False:
-            self.test_loader = DataLoader(self.test_set, 
-                                            batch_size = test_batch_size,
-                                            shuffle = False)
-
-        else:
+        if self.gpu:
             self.test_loader = DataLoader(self.test_set, 
                                             batch_size = test_batch_size,
                                             shuffle = False,
                                             num_workers = 8,
                                             pin_memory = True)
+        else:
+            self.test_loader = DataLoader(self.test_set, 
+                                            batch_size = test_batch_size,
+                                            shuffle = False)
 
     # Fucntion to break training set into batches
     def get_train_loader(self, batch_size):
@@ -83,17 +82,17 @@ class Data:
         Returns:
             Pytorch Dataloader object: Training data in a dataloader
         """
-        if self.gpu == False:
-            self.train_loader = DataLoader(self.train_set, 
-                                            batch_size = batch_size,
-                                            shuffle = True)
-
-        else:
+        if self.gpu:
             self.train_loader = DataLoader(self.train_set,
                                             batch_size = batch_size,
                                             shuffle = True,
                                             num_workers = 8,
                                             pin_memory=True)
+        else:
+            self.train_loader = DataLoader(self.train_set, 
+                                            batch_size = batch_size,
+                                            shuffle = True)
+            
 
         return self.train_loader
 
