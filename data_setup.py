@@ -12,7 +12,7 @@ class Data:
                         test_batch_size  = 100,
                         train_percentage = 0.8,
                         category = None,
-                        one_hot_embedding_size = -1):
+                        one_hot_embedding_size = None):
         """
         Args:
             csv_file (string): Relative path to the csv file
@@ -38,17 +38,26 @@ class Data:
         # Convert dataset for autoencoder
         if category is not None:
             # Initalize tensor to hold categorys data
-            categorical_data = torch.zeros(len(self.weather_dataset), dtype=torch.int32)
-
-            # Cycle through all data and store category data
-            for i, data in enumerate(self.weather_dataset):
-                categorical_data[i] = data[category].item() 
+            categorical_data = self.weather_dataset[category]
 
             # Convert to right format for one hot function and reduce the size
-            categorical_data = categorical_data.type(torch.LongTensor) - min(categorical_data).item()
-
+            categorical_data = categorical_data - min(categorical_data).item()
+            _, num_unique = torch.unique(categorical_data, dim = 0, return_counts = True)
+            # print("Unique Category Size")
+            # print(num_unique)
+            if one_hot_embedding_size is None:
+                one_hot_embedding_size = len(num_unique)
             # One hot encode
-            self.weather_dataset = torch.nn.functional.one_hot(categorical_data, one_hot_embedding_size).type(torch.FloatTensor)
+
+            self.weather_dataset = torch.nn.functional.one_hot(categorical_data.type(torch.LongTensor), one_hot_embedding_size).type(torch.FloatTensor)
+            
+            _, num_unique = torch.unique(self.weather_dataset, dim = 0, return_counts = True)
+            # print("Category Unique Size")
+            # print(num_unique)
+            # print(len(num_unique))
+            # exit()
+            self.num_unique_embeddings = len(num_unique)
+            
 
         # Find size of feature space
         self.n_features = len(self.weather_dataset[0]) - 1

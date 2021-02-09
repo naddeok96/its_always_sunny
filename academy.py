@@ -12,9 +12,7 @@ class Academy:
                  net, 
                  data,
                  gpu = False,
-                 autoencoder_trainer = False,
-                 wandb_on = False,
-                 wandb_sweep = False):
+                 autoencoder_trainer = False):
         """
         Trains and test models on datasets
 
@@ -37,51 +35,6 @@ class Academy:
 
         # Declare if training is for an autoencoder
         self.autoencoder_trainer = autoencoder_trainer
-
-        # Declare if Weights and Biases are used
-        self.wandb_on = wandb_on
-        self.wandb_sweep = wandb_sweep
-
-        # Hyperparameter Sweep
-        if self.wandb_on and self.wandb_sweep: 
-            sweep_config = {
-                        'method': 'random', #grid, random
-                        'metric': {
-                        'name': 'loss',
-                        'goal': 'minimize'   
-                        },
-                        'parameters': {
-                            'epochs': {
-                                'values': [100, 500, 1000]
-                            },
-                            'batch_size': {
-                                'values': [256, 128, 64, 32]
-                            },
-                            'n_nodes_fc1' : {
-                                'values': [64, 128, 256]
-                            },
-                            'n_nodes_fc2' : {
-                                'values'  : [32, 64, 128]
-                            },
-                            'embedding_size': {
-                                'values': [8, 16, 32]
-                            },
-                            'momentum': {
-                                'values': [0, 0.85, 0.9, 0.95]
-                            },
-                            'weight_decay': {
-                                'values': [0, 0.0005, 0.005, 0.05]
-                            },
-                            'learning_rate': {
-                                'values': [1e-2, 1e-3, 1e-4, 3e-4, 3e-5, 1e-5]
-                            },
-                            'optimizer': {
-                                'values': ['adam', 'sgd', 'rmsprop']
-                            }
-                        }
-                    }
-            sweep_id = wandb.sweep(sweep_config, entity="sweep", project="AutoEnc")
-            wandb.agent(sweep_id, train)
 
     def train(self, batch_size = 124, 
                     n_epochs = 1, 
@@ -107,35 +60,6 @@ class Academy:
                                     momentum = momentum,
                                     weight_decay = weight_decay)
         criterion = torch.nn.MSELoss()
-
-        # Weights and Biases Setup
-        if self.wandb_on:
-            config_defaults = {
-                    'epochs': n_epochs,
-                    'batch_size': batch_size,
-                    'n_nodes_fc1': 128,
-                    'n_nodes_fc2': 64,
-                    'embedding_size' : 8,
-                    'momentum'   : momentum,
-                    'weight_decay' : weight_decay,
-                    'learning_rate': learning_rate,
-                    'optimizer': 'sgd'
-                }
-            wandb.init(config = config_defaults)
-            config = wandb.config
-
-            self.net.n_nodes_fc1 = config.n_nodes_fc1
-            self.net.n_nodes_fc2 = config.n_nodes_fc2
-            self.net.embedding_size = config.embedding_size
-
-            if config.optimizer=='sgd':
-                optimizer = torch.optim.SGD(self.net.parameters(),lr=config.learning_rate, momentum=config.momentum)
-            elif config.optimizer=='adam':
-                optimizer = torch.optim.Adam(self.net.parameters(),lr=config.learning_rate)
-            elif config.optimizer=='rmsprop':
-                optimizer = torch.optim.RMSprop(self.net.parameters(),lr=config.learning_rate, weight_decay = config.weight_decay, momentum = config.momentum)
-
-            n_epochs = config.n_epochs
 
         # Loop for n_epochs
         total_instances = 0
@@ -165,15 +89,10 @@ class Academy:
                 loss.backward()                   # Find the gradient for each parameter
                 optimizer.step()                  # Parameter update
                 
-                if self.wandb_on:
-                    total_instances += len(outputs)
-                    wandb.log({"epoch": epoch, "batch_loss": loss.item()}, step=total_instances)
             # Display 
             if epoch % (n_epochs/100) == 0:
                 
                 print("Epoch: ", epoch + 1, "\t Loss: ", loss.item())
-
-        wandb.log({"loss": loss.item()})
         
 
     def test(self):

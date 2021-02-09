@@ -27,7 +27,7 @@ class Autoencoder(nn.Module):
         self.embedding_size = embedding_size
         
         # Encoder
-        self.encoder_fc1 = nn.Linear(self.input_size,     self.n_nodes_fc1)
+        self.encoder_fc1 = nn.Linear(self.input_size,  self.n_nodes_fc1)
         self.encoder_fc2 = nn.Linear(self.n_nodes_fc1, self.n_nodes_fc2)
         self.encoder_fc3 = nn.Linear(self.n_nodes_fc2, self.embedding_size)
 

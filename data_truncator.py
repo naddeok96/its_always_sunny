@@ -5,7 +5,7 @@ Opens up data
 import pandas as pd
 
 # Hyperparameters
-truncation_size = 500
+truncation_size = 10000
 save_truncd = True
 file_name = "weatherdata_merged2"
 
