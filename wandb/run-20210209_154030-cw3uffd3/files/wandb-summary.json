@@ -1,1 +1,1 @@
-{"epoch": 75, "batch_loss": 0.0276902187615633, "_step": 607936, "_runtime": 58, "_timestamp": 1612903288}
+{"epoch": 99, "batch_loss": 0.02795359306037426, "_step": 800000, "_runtime": 76, "_timestamp": 1612903306, "loss": 0.02795359306037426}

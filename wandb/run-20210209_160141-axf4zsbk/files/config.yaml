@@ -12,11 +12,6 @@ _wandb:
       1:
       - 1
       - 5
-      2:
-      - 1
-      - 5
-      3:
-      - 2
       4: 3.8.2
       5: 0.10.15
 batch_size:
@@ -36,13 +31,13 @@ momentum:
   value: 0
 n_nodes_fc1:
   desc: null
-  value: 128
+  value: 256
 n_nodes_fc2:
   desc: null
-  value: 64
+  value: 32
 optimizer:
   desc: null
-  value: rmsprop
+  value: adam
 weight_decay:
   desc: null
   value: 0

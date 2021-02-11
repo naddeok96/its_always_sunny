@@ -8405,3 +8405,2421 @@ Epoch:  72 	 Loss:  0.0272221602499485
 Epoch:  73 	 Loss:  0.027655545622110367
 Epoch:  74 	 Loss:  0.028079679235816002
 Epoch:  75 	 Loss:  0.027504896745085716
+Epoch:  76 	 Loss:  0.027811037376523018
+Epoch:  77 	 Loss:  0.027906017377972603
+Epoch:  78 	 Loss:  0.02793845348060131
+Epoch:  79 	 Loss:  0.02776029333472252
+Epoch:  80 	 Loss:  0.028132690116763115
+Epoch:  81 	 Loss:  0.027751024812459946
+Epoch:  82 	 Loss:  0.027618013322353363
+Epoch:  83 	 Loss:  0.027474958449602127
+Epoch:  84 	 Loss:  0.028279153630137444
+Epoch:  85 	 Loss:  0.027354924008250237
+Epoch:  86 	 Loss:  0.027772903442382812
+Epoch:  87 	 Loss:  0.027717245742678642
+Epoch:  88 	 Loss:  0.028374116867780685
+Epoch:  89 	 Loss:  0.027406984940171242
+Epoch:  90 	 Loss:  0.02777213230729103
+Epoch:  91 	 Loss:  0.02798699401319027
+Epoch:  92 	 Loss:  0.027263067662715912
+Epoch:  93 	 Loss:  0.0275773536413908
+Epoch:  94 	 Loss:  0.027460236102342606
+Epoch:  95 	 Loss:  0.028004325926303864
+Epoch:  96 	 Loss:  0.0276811346411705
+Epoch:  97 	 Loss:  0.028012312948703766
+Epoch:  98 	 Loss:  0.02731725387275219
+Epoch:  99 	 Loss:  0.027786359190940857
+Epoch:  100 	 Loss:  0.02795359306037426
+wandb: Waiting for W&B process to finish, PID 1826036
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154030-cw3uffd3/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154030-cw3uffd3/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02795
+wandb:        _step 800000
+wandb:     _runtime 76
+wandb:   _timestamp 1612903306
+wandb:         loss 0.02795
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▄▇▅▄▇▅▁▄▆█▆▃▅▆▇▅▄▄▇▆█▁▄▆▆▂▄▄▁▇▆▅▄█▄▂▁▃▆▆
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced zany-sweep-57: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/cw3uffd3
+wandb: Agent Starting Run: 2hwstur4 with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 64
+wandb: 	optimizer: rmsprop
+wandb: 	weight_decay: 0.0005
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:41:52.234766: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:41:52.240517: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run apricot-sweep-58
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/2hwstur4
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_154150-2hwstur4
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.026764819398522377
+Epoch:  2 	 Loss:  0.026508638635277748
+Epoch:  3 	 Loss:  0.02679169736802578
+Epoch:  4 	 Loss:  0.026530761271715164
+Epoch:  5 	 Loss:  0.02661648578941822
+Epoch:  6 	 Loss:  0.026624243706464767
+Epoch:  7 	 Loss:  0.02613174170255661
+Epoch:  8 	 Loss:  0.02663678489625454
+Epoch:  9 	 Loss:  0.026440074667334557
+Epoch:  10 	 Loss:  0.026636682450771332
+Epoch:  11 	 Loss:  0.02652297541499138
+Epoch:  12 	 Loss:  0.026882516220211983
+Epoch:  13 	 Loss:  0.02660706825554371
+Epoch:  14 	 Loss:  0.026361552998423576
+Epoch:  15 	 Loss:  0.02644040808081627
+Epoch:  16 	 Loss:  0.026381555944681168
+Epoch:  17 	 Loss:  0.026716314256191254
+Epoch:  18 	 Loss:  0.0266884695738554
+Epoch:  19 	 Loss:  0.026427680626511574
+Epoch:  20 	 Loss:  0.02624051831662655
+Epoch:  21 	 Loss:  0.026526369154453278
+Epoch:  22 	 Loss:  0.02674964629113674
+Epoch:  23 	 Loss:  0.026474695652723312
+Epoch:  24 	 Loss:  0.026324953883886337
+Epoch:  25 	 Loss:  0.026633000001311302
+Epoch:  26 	 Loss:  0.026637347415089607
+Epoch:  27 	 Loss:  0.026414083316922188
+Epoch:  28 	 Loss:  0.02597179263830185
+Epoch:  29 	 Loss:  0.026596063748002052
+Epoch:  30 	 Loss:  0.026692472398281097
+Epoch:  31 	 Loss:  0.026694612577557564
+Epoch:  32 	 Loss:  0.02647397480905056
+Epoch:  33 	 Loss:  0.026659350842237473
+Epoch:  34 	 Loss:  0.02677094377577305
+Epoch:  35 	 Loss:  0.026654940098524094
+Epoch:  36 	 Loss:  0.026672376319766045
+Epoch:  37 	 Loss:  0.026571815833449364
+Epoch:  38 	 Loss:  0.026758037507534027
+Epoch:  39 	 Loss:  0.02661290019750595
+Epoch:  40 	 Loss:  0.0264871995896101
+Epoch:  41 	 Loss:  0.0267624631524086
+Epoch:  42 	 Loss:  0.02662494033575058
+Epoch:  43 	 Loss:  0.026399750262498856
+Epoch:  44 	 Loss:  0.026219142600893974
+Epoch:  45 	 Loss:  0.026494698598980904
+Epoch:  46 	 Loss:  0.026704465970396996
+Epoch:  47 	 Loss:  0.026477409526705742
+Epoch:  48 	 Loss:  0.02654246985912323
+Epoch:  49 	 Loss:  0.026435337960720062
+Epoch:  50 	 Loss:  0.02675122395157814
+Epoch:  51 	 Loss:  0.026338577270507812
+Epoch:  52 	 Loss:  0.026568220928311348
+Epoch:  53 	 Loss:  0.02695097215473652
+Epoch:  54 	 Loss:  0.026518238708376884
+Epoch:  55 	 Loss:  0.02666824497282505
+Epoch:  56 	 Loss:  0.02670956216752529
+Epoch:  57 	 Loss:  0.02625630423426628
+Epoch:  58 	 Loss:  0.02643858827650547
+Epoch:  59 	 Loss:  0.026187224313616753
+Epoch:  60 	 Loss:  0.02638232335448265
+Epoch:  61 	 Loss:  0.026486318558454514
+Epoch:  62 	 Loss:  0.026563601568341255
+Epoch:  63 	 Loss:  0.026539739221334457
+Epoch:  64 	 Loss:  0.026345638558268547
+Epoch:  65 	 Loss:  0.026719894260168076
+Epoch:  66 	 Loss:  0.026257824152708054
+Epoch:  67 	 Loss:  0.026687508448958397
+Epoch:  68 	 Loss:  0.026509899646043777
+Epoch:  69 	 Loss:  0.026473045349121094
+Epoch:  70 	 Loss:  0.02655927836894989
+Epoch:  71 	 Loss:  0.02675929293036461
+Epoch:  72 	 Loss:  0.026322832331061363
+Epoch:  73 	 Loss:  0.02650112472474575
+Epoch:  74 	 Loss:  0.026691317558288574
+Epoch:  75 	 Loss:  0.026646796613931656
+Epoch:  76 	 Loss:  0.02629818767309189
+Epoch:  77 	 Loss:  0.02701021544635296
+Epoch:  78 	 Loss:  0.026634877547621727
+Epoch:  79 	 Loss:  0.026617003604769707
+Epoch:  80 	 Loss:  0.02651931159198284
+Epoch:  81 	 Loss:  0.02638206072151661
+Epoch:  82 	 Loss:  0.026500949636101723
+Epoch:  83 	 Loss:  0.026705151423811913
+Epoch:  84 	 Loss:  0.026619503274559975
+Epoch:  85 	 Loss:  0.02654542215168476
+Epoch:  86 	 Loss:  0.026593433693051338
+Epoch:  87 	 Loss:  0.026677552610635757
+Epoch:  88 	 Loss:  0.026503747329115868
+Epoch:  89 	 Loss:  0.026753155514597893
+Epoch:  90 	 Loss:  0.026617195457220078
+Epoch:  91 	 Loss:  0.026788102462887764
+Epoch:  92 	 Loss:  0.02628597430884838
+Epoch:  93 	 Loss:  0.026523690670728683
+Epoch:  94 	 Loss:  0.0265581663697958
+Epoch:  95 	 Loss:  0.026762114837765694
+Epoch:  96 	 Loss:  0.02654385007917881
+Epoch:  97 	 Loss:  0.026185529306530952
+Epoch:  98 	 Loss:  0.026716411113739014
+Epoch:  99 	 Loss:  0.026497235521674156
+Epoch:  100 	 Loss:  0.02628992684185505
+wandb: Waiting for W&B process to finish, PID 1829733
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154150-2hwstur4/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154150-2hwstur4/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02629
+wandb:        _step 800000
+wandb:     _runtime 75
+wandb:   _timestamp 1612903385
+wandb:         loss 0.02629
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▆▇▅▅▅▅▄▆▅▄▅▁▆▆▆▅▆▃▆▄▃▅▆▂▄▄▆▄▃▆█▅▅▅▆▆▃▅▂▃
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced apricot-sweep-58: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/2hwstur4
+wandb: Agent Starting Run: akw4cj56 with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 64
+wandb: 	optimizer: rmsprop
+wandb: 	weight_decay: 0.005
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:43:11.034303: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:43:11.039505: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run stellar-sweep-59
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/akw4cj56
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_154309-akw4cj56
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.02647114358842373
+Epoch:  2 	 Loss:  0.026729458943009377
+Epoch:  3 	 Loss:  0.02679935283958912
+Epoch:  4 	 Loss:  0.026317326352000237
+Epoch:  5 	 Loss:  0.027385050430893898
+Epoch:  6 	 Loss:  0.0266669150441885
+Epoch:  7 	 Loss:  0.026555588468909264
+Epoch:  8 	 Loss:  0.026479197666049004
+Epoch:  9 	 Loss:  0.027005907148122787
+Epoch:  10 	 Loss:  0.02681160531938076
+Epoch:  11 	 Loss:  0.02678014151751995
+Epoch:  12 	 Loss:  0.026973064988851547
+Epoch:  13 	 Loss:  0.02657383680343628
+Epoch:  14 	 Loss:  0.026947373524308205
+Epoch:  15 	 Loss:  0.027268853038549423
+Epoch:  16 	 Loss:  0.02658315747976303
+Epoch:  17 	 Loss:  0.026831144466996193
+Epoch:  18 	 Loss:  0.026868104934692383
+Epoch:  19 	 Loss:  0.026469068601727486
+Epoch:  20 	 Loss:  0.026813840493559837
+Epoch:  21 	 Loss:  0.027080614119768143
+Epoch:  22 	 Loss:  0.02678998000919819
+Epoch:  23 	 Loss:  0.026989702135324478
+Epoch:  24 	 Loss:  0.027145041152834892
+Epoch:  25 	 Loss:  0.026858197525143623
+Epoch:  26 	 Loss:  0.026440294459462166
+Epoch:  27 	 Loss:  0.02691039629280567
+Epoch:  28 	 Loss:  0.026718202978372574
+Epoch:  29 	 Loss:  0.0269569531083107
+Epoch:  30 	 Loss:  0.026861561462283134
+Epoch:  31 	 Loss:  0.026862163096666336
+Epoch:  32 	 Loss:  0.026767399162054062
+Epoch:  33 	 Loss:  0.02680296078324318
+Epoch:  34 	 Loss:  0.026884298771619797
+Epoch:  35 	 Loss:  0.026743067428469658
+Epoch:  36 	 Loss:  0.026320215314626694
+Epoch:  37 	 Loss:  0.026713917031884193
+Epoch:  38 	 Loss:  0.026193687692284584
+Epoch:  39 	 Loss:  0.02662585861980915
+Epoch:  40 	 Loss:  0.026638025417923927
+Epoch:  41 	 Loss:  0.026880135759711266
+Epoch:  42 	 Loss:  0.026510044932365417
+Epoch:  43 	 Loss:  0.026869256049394608
+Epoch:  44 	 Loss:  0.027059655636548996
+Epoch:  45 	 Loss:  0.026723118498921394
+Epoch:  46 	 Loss:  0.026911873370409012
+Epoch:  47 	 Loss:  0.026874536648392677
+Epoch:  48 	 Loss:  0.02701753005385399
+Epoch:  49 	 Loss:  0.026818202808499336
+Epoch:  50 	 Loss:  0.02663273550570011
+Epoch:  51 	 Loss:  0.027033723890781403
+Epoch:  52 	 Loss:  0.02701694704592228
+Epoch:  53 	 Loss:  0.025974906980991364
+Epoch:  54 	 Loss:  0.027077926322817802
+Epoch:  55 	 Loss:  0.026762595400214195
+Epoch:  56 	 Loss:  0.027012856677174568
+Epoch:  57 	 Loss:  0.026669640094041824
+Epoch:  58 	 Loss:  0.026823263615369797
+Epoch:  59 	 Loss:  0.02689221315085888
+Epoch:  60 	 Loss:  0.02667025849223137
+Epoch:  61 	 Loss:  0.027066024020314217
+Epoch:  62 	 Loss:  0.027115238830447197
+Epoch:  63 	 Loss:  0.027082117274403572
+Epoch:  64 	 Loss:  0.026493048295378685
+Epoch:  65 	 Loss:  0.026747634634375572
+Epoch:  66 	 Loss:  0.026607871055603027
+Epoch:  67 	 Loss:  0.026858191937208176
+Epoch:  68 	 Loss:  0.02652350254356861
+Epoch:  69 	 Loss:  0.026780536398291588
+Epoch:  70 	 Loss:  0.02700946293771267
+Epoch:  71 	 Loss:  0.026360131800174713
+Epoch:  72 	 Loss:  0.026853345334529877
+Epoch:  73 	 Loss:  0.026792626827955246
+Epoch:  74 	 Loss:  0.027001477777957916
+Epoch:  75 	 Loss:  0.02674511820077896
+Epoch:  76 	 Loss:  0.026847466826438904
+Epoch:  77 	 Loss:  0.027141213417053223
+Epoch:  78 	 Loss:  0.0270290058106184
+Epoch:  79 	 Loss:  0.026417072862386703
+Epoch:  80 	 Loss:  0.026650140061974525
+Epoch:  81 	 Loss:  0.026926295831799507
+Epoch:  82 	 Loss:  0.026400553062558174
+Epoch:  83 	 Loss:  0.026505226269364357
+Epoch:  84 	 Loss:  0.026550007984042168
+Epoch:  85 	 Loss:  0.026818018406629562
+Epoch:  86 	 Loss:  0.02658642642199993
+Epoch:  87 	 Loss:  0.026907896623015404
+Epoch:  88 	 Loss:  0.026545261964201927
+Epoch:  89 	 Loss:  0.02671990543603897
+Epoch:  90 	 Loss:  0.026823759078979492
+Epoch:  91 	 Loss:  0.026693353429436684
+Epoch:  92 	 Loss:  0.026667343452572823
+Epoch:  93 	 Loss:  0.026776574552059174
+Epoch:  94 	 Loss:  0.02729463018476963
+Epoch:  95 	 Loss:  0.026980863884091377
+Epoch:  96 	 Loss:  0.02649812400341034
+Epoch:  97 	 Loss:  0.02661634422838688
+Epoch:  98 	 Loss:  0.026864638552069664
+Epoch:  99 	 Loss:  0.026847701519727707
+Epoch:  100 	 Loss:  0.02664804458618164
+wandb: Waiting for W&B process to finish, PID 1833498
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154309-akw4cj56/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154309-akw4cj56/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02665
+wandb:        _step 800000
+wandb:     _runtime 75
+wandb:   _timestamp 1612903464
+wandb:         loss 0.02665
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▂▄▃▂▄▃▃▅▆▆▂▄▅▅▁▃▅▆▅▅▆▆▆▅▆▂▅▄▅▆▇▂▂▃▅▄▃█▃▃
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced stellar-sweep-59: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/akw4cj56
+wandb: Agent Starting Run: 65xb99h1 with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 64
+wandb: 	optimizer: rmsprop
+wandb: 	weight_decay: 0.05
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:44:30.384052: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:44:30.389930: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run peach-sweep-60
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/65xb99h1
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_154428-65xb99h1
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.02687746286392212
+Epoch:  2 	 Loss:  0.02680085599422455
+Epoch:  3 	 Loss:  0.026613749563694
+Epoch:  4 	 Loss:  0.026704220101237297
+Epoch:  5 	 Loss:  0.02686910517513752
+Epoch:  6 	 Loss:  0.026755832135677338
+Epoch:  7 	 Loss:  0.0269771758466959
+Epoch:  8 	 Loss:  0.026743587106466293
+Epoch:  9 	 Loss:  0.026922909542918205
+Epoch:  10 	 Loss:  0.026605825871229172
+Epoch:  11 	 Loss:  0.026660367846488953
+Epoch:  12 	 Loss:  0.026516523212194443
+Epoch:  13 	 Loss:  0.026745038107037544
+Epoch:  14 	 Loss:  0.02672990970313549
+Epoch:  15 	 Loss:  0.02659224160015583
+Epoch:  16 	 Loss:  0.026513224467635155
+Epoch:  17 	 Loss:  0.02613680623471737
+Epoch:  18 	 Loss:  0.027056541293859482
+Epoch:  19 	 Loss:  0.02668151445686817
+Epoch:  20 	 Loss:  0.026871437206864357
+Epoch:  21 	 Loss:  0.02659180946648121
+Epoch:  22 	 Loss:  0.02695557102560997
+Epoch:  23 	 Loss:  0.026826871559023857
+Epoch:  24 	 Loss:  0.026678452268242836
+Epoch:  25 	 Loss:  0.026716526597738266
+Epoch:  26 	 Loss:  0.026852507144212723
+Epoch:  27 	 Loss:  0.026835190132260323
+Epoch:  28 	 Loss:  0.02681601420044899
+Epoch:  29 	 Loss:  0.026920510455965996
+Epoch:  30 	 Loss:  0.026961620897054672
+Epoch:  31 	 Loss:  0.026774033904075623
+Epoch:  32 	 Loss:  0.026889314875006676
+Epoch:  33 	 Loss:  0.026265153661370277
+Epoch:  34 	 Loss:  0.0263498704880476
+Epoch:  35 	 Loss:  0.026624178513884544
+Epoch:  36 	 Loss:  0.02656714804470539
+Epoch:  37 	 Loss:  0.02670089155435562
+Epoch:  38 	 Loss:  0.02640089951455593
+Epoch:  39 	 Loss:  0.026728784665465355
+Epoch:  40 	 Loss:  0.026679104194045067
+Epoch:  41 	 Loss:  0.026817278936505318
+Epoch:  42 	 Loss:  0.026539413258433342
+Epoch:  43 	 Loss:  0.026561420410871506
+Epoch:  44 	 Loss:  0.026597892865538597
+Epoch:  45 	 Loss:  0.02682875283062458
+Epoch:  46 	 Loss:  0.026864077895879745
+Epoch:  47 	 Loss:  0.026987044140696526
+Epoch:  48 	 Loss:  0.026483433321118355
+Epoch:  49 	 Loss:  0.02651062235236168
+Epoch:  50 	 Loss:  0.026795074343681335
+Epoch:  51 	 Loss:  0.02657579444348812
+Epoch:  52 	 Loss:  0.026780473068356514
+Epoch:  53 	 Loss:  0.02676435559988022
+Epoch:  54 	 Loss:  0.026276985183358192
+Epoch:  55 	 Loss:  0.026632245630025864
+Epoch:  56 	 Loss:  0.026970671489834785
+Epoch:  57 	 Loss:  0.02637827955186367
+Epoch:  58 	 Loss:  0.026703791692852974
+Epoch:  59 	 Loss:  0.027111655101180077
+Epoch:  60 	 Loss:  0.02642822265625
+Epoch:  61 	 Loss:  0.02658098377287388
+Epoch:  62 	 Loss:  0.02659551054239273
+Epoch:  63 	 Loss:  0.02693488821387291
+Epoch:  64 	 Loss:  0.026694485917687416
+Epoch:  65 	 Loss:  0.026573793962597847
+Epoch:  66 	 Loss:  0.026665911078453064
+Epoch:  67 	 Loss:  0.02651626244187355
+Epoch:  68 	 Loss:  0.026745952665805817
+Epoch:  69 	 Loss:  0.02639743499457836
+Epoch:  70 	 Loss:  0.02698480524122715
+Epoch:  71 	 Loss:  0.026874862611293793
+Epoch:  72 	 Loss:  0.026378493756055832
+Epoch:  73 	 Loss:  0.026418209075927734
+Epoch:  74 	 Loss:  0.026757385581731796
+Epoch:  75 	 Loss:  0.026633739471435547
+Epoch:  76 	 Loss:  0.026459528133273125
+Epoch:  77 	 Loss:  0.026244565844535828
+Epoch:  78 	 Loss:  0.026595192030072212
+Epoch:  79 	 Loss:  0.02652481012046337
+Epoch:  80 	 Loss:  0.02674928866326809
+Epoch:  81 	 Loss:  0.02680441550910473
+Epoch:  82 	 Loss:  0.026645774021744728
+Epoch:  83 	 Loss:  0.026631245389580727
+Epoch:  84 	 Loss:  0.026757245883345604
+Epoch:  85 	 Loss:  0.02630237303674221
+Epoch:  86 	 Loss:  0.02662373147904873
+Epoch:  87 	 Loss:  0.026556147262454033
+Epoch:  88 	 Loss:  0.026470724493265152
+Epoch:  89 	 Loss:  0.026346787810325623
+Epoch:  90 	 Loss:  0.026537923142313957
+Epoch:  91 	 Loss:  0.026845110580325127
+Epoch:  92 	 Loss:  0.02672632783651352
+Epoch:  93 	 Loss:  0.026517754420638084
+Epoch:  94 	 Loss:  0.026832645758986473
+Epoch:  95 	 Loss:  0.026195265352725983
+Epoch:  96 	 Loss:  0.02673005498945713
+Epoch:  97 	 Loss:  0.026774415746331215
+Epoch:  98 	 Loss:  0.026577875018119812
+Epoch:  99 	 Loss:  0.02668391726911068
+Epoch:  100 	 Loss:  0.0267010685056448
+wandb: Waiting for W&B process to finish, PID 1837191
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154428-65xb99h1/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154428-65xb99h1/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.0267
+wandb:        _step 800000
+wandb:     _runtime 76
+wandb:   _timestamp 1612903544
+wandb:         loss 0.0267
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▆▄▅▅▄▅▃█▄▆▆▆▅▂▄▅▆▄▆▃▄▁▇█▄▅▃▂▂▅▁▃▄▅▄▂▅▆▅▅
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced peach-sweep-60: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/65xb99h1
+wandb: Agent Starting Run: 3j4vxqja with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: adam
+wandb: 	weight_decay: 0
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:45:50.446178: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:45:50.451459: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run frosty-sweep-61
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/3j4vxqja
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_154548-3j4vxqja
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.02675487846136093
+Epoch:  2 	 Loss:  0.026729043573141098
+Epoch:  3 	 Loss:  0.02661377191543579
+Epoch:  4 	 Loss:  0.026508262380957603
+Epoch:  5 	 Loss:  0.026671892032027245
+Epoch:  6 	 Loss:  0.026688506826758385
+Epoch:  7 	 Loss:  0.02700134739279747
+Epoch:  8 	 Loss:  0.026762830093503
+Epoch:  9 	 Loss:  0.026681197807192802
+Epoch:  10 	 Loss:  0.027003463357686996
+Epoch:  11 	 Loss:  0.02652222290635109
+Epoch:  12 	 Loss:  0.02642585150897503
+Epoch:  13 	 Loss:  0.026734456419944763
+Epoch:  14 	 Loss:  0.02681887149810791
+Epoch:  15 	 Loss:  0.026704417541623116
+Epoch:  16 	 Loss:  0.026799581944942474
+Epoch:  17 	 Loss:  0.02657315693795681
+Epoch:  18 	 Loss:  0.026634423062205315
+Epoch:  19 	 Loss:  0.026271458715200424
+Epoch:  20 	 Loss:  0.0261013712733984
+Epoch:  21 	 Loss:  0.0267809946089983
+Epoch:  22 	 Loss:  0.026630891487002373
+Epoch:  23 	 Loss:  0.026824386790394783
+Epoch:  24 	 Loss:  0.02687542326748371
+Epoch:  25 	 Loss:  0.02670644223690033
+Epoch:  26 	 Loss:  0.02629506215453148
+Epoch:  27 	 Loss:  0.02641650289297104
+Epoch:  28 	 Loss:  0.02703080140054226
+Epoch:  29 	 Loss:  0.026578545570373535
+Epoch:  30 	 Loss:  0.02670395001769066
+Epoch:  31 	 Loss:  0.02664431743323803
+Epoch:  32 	 Loss:  0.026482468470931053
+Epoch:  33 	 Loss:  0.026636013761162758
+Epoch:  34 	 Loss:  0.026636755093932152
+Epoch:  35 	 Loss:  0.02670036442577839
+Epoch:  36 	 Loss:  0.02643461711704731
+Epoch:  37 	 Loss:  0.026272227987647057
+Epoch:  38 	 Loss:  0.026684409007430077
+Epoch:  39 	 Loss:  0.02657967433333397
+Epoch:  40 	 Loss:  0.02644316479563713
+Epoch:  41 	 Loss:  0.02645951136946678
+Epoch:  42 	 Loss:  0.02635014057159424
+Epoch:  43 	 Loss:  0.026292750611901283
+Epoch:  44 	 Loss:  0.026852186769247055
+Epoch:  45 	 Loss:  0.026504354551434517
+Epoch:  46 	 Loss:  0.026625454425811768
+Epoch:  47 	 Loss:  0.0265047587454319
+Epoch:  48 	 Loss:  0.027011990547180176
+Epoch:  49 	 Loss:  0.026643913239240646
+Epoch:  50 	 Loss:  0.02710079774260521
+Epoch:  51 	 Loss:  0.026976799592375755
+Epoch:  52 	 Loss:  0.026577338576316833
+Epoch:  53 	 Loss:  0.026907814666628838
+Epoch:  54 	 Loss:  0.026668479666113853
+Epoch:  55 	 Loss:  0.02640029601752758
+Epoch:  56 	 Loss:  0.026690592989325523
+Epoch:  57 	 Loss:  0.02640063501894474
+Epoch:  58 	 Loss:  0.026680968701839447
+Epoch:  59 	 Loss:  0.026635315269231796
+Epoch:  60 	 Loss:  0.026607908308506012
+Epoch:  61 	 Loss:  0.026672687381505966
+Epoch:  62 	 Loss:  0.026698753237724304
+Epoch:  63 	 Loss:  0.026372071355581284
+Epoch:  64 	 Loss:  0.026689065620303154
+Epoch:  65 	 Loss:  0.02641497179865837
+Epoch:  66 	 Loss:  0.02681925520300865
+Epoch:  67 	 Loss:  0.026354720816016197
+Epoch:  68 	 Loss:  0.026457199826836586
+Epoch:  69 	 Loss:  0.026792705059051514
+Epoch:  70 	 Loss:  0.026126328855752945
+Epoch:  71 	 Loss:  0.026775235310196877
+Epoch:  72 	 Loss:  0.02679389715194702
+Epoch:  73 	 Loss:  0.026372041553258896
+Epoch:  74 	 Loss:  0.026300277560949326
+Epoch:  75 	 Loss:  0.026568738743662834
+Epoch:  76 	 Loss:  0.02640489488840103
+Epoch:  77 	 Loss:  0.02607046440243721
+Epoch:  78 	 Loss:  0.026814529672265053
+Epoch:  79 	 Loss:  0.026646343991160393
+Epoch:  80 	 Loss:  0.026627635583281517
+Epoch:  81 	 Loss:  0.026916461065411568
+Epoch:  82 	 Loss:  0.0267759058624506
+Epoch:  83 	 Loss:  0.0268730279058218
+Epoch:  84 	 Loss:  0.02706798166036606
+Epoch:  85 	 Loss:  0.02694547548890114
+Epoch:  86 	 Loss:  0.026739146560430527
+Epoch:  87 	 Loss:  0.026687797158956528
+Epoch:  88 	 Loss:  0.02633737586438656
+Epoch:  89 	 Loss:  0.026265770196914673
+Epoch:  90 	 Loss:  0.026717528700828552
+Epoch:  91 	 Loss:  0.026465868577361107
+Epoch:  92 	 Loss:  0.0265871100127697
+Epoch:  93 	 Loss:  0.026740776374936104
+Epoch:  94 	 Loss:  0.02632441744208336
+Epoch:  95 	 Loss:  0.026246732100844383
+Epoch:  96 	 Loss:  0.027029037475585938
+Epoch:  97 	 Loss:  0.02654300630092621
+Epoch:  98 	 Loss:  0.02651122957468033
+Epoch:  99 	 Loss:  0.026650648564100266
+Epoch:  100 	 Loss:  0.026892956346273422
+wandb: Waiting for W&B process to finish, PID 1840867
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154548-3j4vxqja/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154548-3j4vxqja/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02689
+wandb:        _step 800000
+wandb:     _runtime 77
+wandb:   _timestamp 1612903625
+wandb:         loss 0.02689
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▆▅▅▆▄▆▆▅▆▆▃█▅▅▄▅▄▆▅▅▇▅▅▅▅▅▃▆▆▃▁▅▆█▅▂▅▃▄▇
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced frosty-sweep-61: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/3j4vxqja
+wandb: Agent Starting Run: 40dkojsk with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: adam
+wandb: 	weight_decay: 0.0005
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:47:11.709691: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:47:11.717000: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run youthful-sweep-62
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/40dkojsk
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_154709-40dkojsk
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.02685745805501938
+Epoch:  2 	 Loss:  0.02695830538868904
+Epoch:  3 	 Loss:  0.02670903690159321
+Epoch:  4 	 Loss:  0.02649916149675846
+Epoch:  5 	 Loss:  0.026848847046494484
+Epoch:  6 	 Loss:  0.026662327349185944
+Epoch:  7 	 Loss:  0.027433771640062332
+Epoch:  8 	 Loss:  0.026697250083088875
+Epoch:  9 	 Loss:  0.02698938548564911
+Epoch:  10 	 Loss:  0.026868067681789398
+Epoch:  11 	 Loss:  0.0269157737493515
+Epoch:  12 	 Loss:  0.026956329122185707
+Epoch:  13 	 Loss:  0.027329470962285995
+Epoch:  14 	 Loss:  0.027032488957047462
+Epoch:  15 	 Loss:  0.026789313182234764
+Epoch:  16 	 Loss:  0.0271142590790987
+Epoch:  17 	 Loss:  0.027468612417578697
+Epoch:  18 	 Loss:  0.02724372036755085
+Epoch:  19 	 Loss:  0.027158154174685478
+Epoch:  20 	 Loss:  0.026994379237294197
+Epoch:  21 	 Loss:  0.02698374167084694
+Epoch:  22 	 Loss:  0.027091430500149727
+Epoch:  23 	 Loss:  0.026984214782714844
+Epoch:  24 	 Loss:  0.02667851559817791
+Epoch:  25 	 Loss:  0.02713356539607048
+Epoch:  26 	 Loss:  0.027165142819285393
+Epoch:  27 	 Loss:  0.02676202729344368
+Epoch:  28 	 Loss:  0.027163079008460045
+Epoch:  29 	 Loss:  0.026462115347385406
+Epoch:  30 	 Loss:  0.027236705645918846
+Epoch:  31 	 Loss:  0.026914609596133232
+Epoch:  32 	 Loss:  0.027000289410352707
+Epoch:  33 	 Loss:  0.027100032195448875
+Epoch:  34 	 Loss:  0.027124587446451187
+Epoch:  35 	 Loss:  0.027277996763586998
+Epoch:  36 	 Loss:  0.026875711977481842
+Epoch:  37 	 Loss:  0.02706979401409626
+Epoch:  38 	 Loss:  0.027163034304976463
+Epoch:  39 	 Loss:  0.02764740213751793
+Epoch:  40 	 Loss:  0.02640419639647007
+Epoch:  41 	 Loss:  0.02663985639810562
+Epoch:  42 	 Loss:  0.026787664741277695
+Epoch:  43 	 Loss:  0.027181224897503853
+Epoch:  44 	 Loss:  0.02684660628437996
+Epoch:  45 	 Loss:  0.02727871760725975
+Epoch:  46 	 Loss:  0.027704261243343353
+Epoch:  47 	 Loss:  0.027243664488196373
+Epoch:  48 	 Loss:  0.026954736560583115
+Epoch:  49 	 Loss:  0.0274359080940485
+Epoch:  50 	 Loss:  0.027218813076615334
+Epoch:  51 	 Loss:  0.026751097291707993
+Epoch:  52 	 Loss:  0.026559654623270035
+Epoch:  53 	 Loss:  0.027034327387809753
+Epoch:  54 	 Loss:  0.026570644229650497
+Epoch:  55 	 Loss:  0.027279822155833244
+Epoch:  56 	 Loss:  0.026806185021996498
+Epoch:  57 	 Loss:  0.02716381661593914
+Epoch:  58 	 Loss:  0.02706828899681568
+Epoch:  59 	 Loss:  0.027233559638261795
+Epoch:  60 	 Loss:  0.02699105441570282
+Epoch:  61 	 Loss:  0.027534937486052513
+Epoch:  62 	 Loss:  0.026992760598659515
+Epoch:  63 	 Loss:  0.0270960982888937
+Epoch:  64 	 Loss:  0.027079422026872635
+Epoch:  65 	 Loss:  0.026597995311021805
+Epoch:  66 	 Loss:  0.02698967047035694
+Epoch:  67 	 Loss:  0.02712968736886978
+Epoch:  68 	 Loss:  0.02729094587266445
+Epoch:  69 	 Loss:  0.02657235972583294
+Epoch:  70 	 Loss:  0.02712702751159668
+Epoch:  71 	 Loss:  0.026995288208127022
+Epoch:  72 	 Loss:  0.02691558189690113
+Epoch:  73 	 Loss:  0.02670893259346485
+Epoch:  74 	 Loss:  0.026500049978494644
+Epoch:  75 	 Loss:  0.02752714976668358
+Epoch:  76 	 Loss:  0.026919126510620117
+Epoch:  77 	 Loss:  0.027393441647291183
+Epoch:  78 	 Loss:  0.027185169979929924
+Epoch:  79 	 Loss:  0.027406981214880943
+Epoch:  80 	 Loss:  0.027091264724731445
+Epoch:  81 	 Loss:  0.026832466945052147
+Epoch:  82 	 Loss:  0.027315249666571617
+Epoch:  83 	 Loss:  0.02715638466179371
+Epoch:  84 	 Loss:  0.027033375576138496
+Epoch:  85 	 Loss:  0.026653610169887543
+Epoch:  86 	 Loss:  0.026970377191901207
+Epoch:  87 	 Loss:  0.02715975046157837
+Epoch:  88 	 Loss:  0.027058687061071396
+Epoch:  89 	 Loss:  0.027147669345140457
+Epoch:  90 	 Loss:  0.02664770931005478
+Epoch:  91 	 Loss:  0.027128802612423897
+Epoch:  92 	 Loss:  0.027008257806301117
+Epoch:  93 	 Loss:  0.027282586321234703
+Epoch:  94 	 Loss:  0.027442248538136482
+Epoch:  95 	 Loss:  0.027528977021574974
+Epoch:  96 	 Loss:  0.02698170579969883
+Epoch:  97 	 Loss:  0.02728240191936493
+Epoch:  98 	 Loss:  0.026368414983153343
+Epoch:  99 	 Loss:  0.027259068563580513
+Epoch:  100 	 Loss:  0.027064690366387367
+wandb: Waiting for W&B process to finish, PID 1844547
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154709-40dkojsk/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154709-40dkojsk/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02706
+wandb:        _step 800000
+wandb:     _runtime 77
+wandb:   _timestamp 1612903706
+wandb:         loss 0.02706
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▃▂▂▂▃▆▅▅▄▄▅▅▃▅▃█▂▃█▆▂▁▃▅▇▄▅▁▃▁▆▆▆▄▅▅▄▆▆▄
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced youthful-sweep-62: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/40dkojsk
+wandb: Agent Starting Run: rd0oe56n with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: adam
+wandb: 	weight_decay: 0.005
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:48:32.657176: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:48:32.663172: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run giddy-sweep-63
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/rd0oe56n
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_154830-rd0oe56n
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.02665543556213379
+Epoch:  2 	 Loss:  0.0268859826028347
+Epoch:  3 	 Loss:  0.027097877115011215
+Epoch:  4 	 Loss:  0.02676047571003437
+Epoch:  5 	 Loss:  0.026529820635914803
+Epoch:  6 	 Loss:  0.026939179748296738
+Epoch:  7 	 Loss:  0.02717314288020134
+Epoch:  8 	 Loss:  0.026838388293981552
+Epoch:  9 	 Loss:  0.026583796367049217
+Epoch:  10 	 Loss:  0.027112070471048355
+Epoch:  11 	 Loss:  0.026810897514224052
+Epoch:  12 	 Loss:  0.027227049693465233
+Epoch:  13 	 Loss:  0.02634979970753193
+Epoch:  14 	 Loss:  0.026747386902570724
+Epoch:  15 	 Loss:  0.026412412524223328
+Epoch:  16 	 Loss:  0.02724906988441944
+Epoch:  17 	 Loss:  0.026738038286566734
+Epoch:  18 	 Loss:  0.026833442971110344
+Epoch:  19 	 Loss:  0.026767542585730553
+Epoch:  20 	 Loss:  0.02707865461707115
+Epoch:  21 	 Loss:  0.026910817250609398
+Epoch:  22 	 Loss:  0.026776419952511787
+Epoch:  23 	 Loss:  0.02657819353044033
+Epoch:  24 	 Loss:  0.02673172950744629
+Epoch:  25 	 Loss:  0.027367549017071724
+Epoch:  26 	 Loss:  0.026882817968726158
+Epoch:  27 	 Loss:  0.02689841017127037
+Epoch:  28 	 Loss:  0.02699296735227108
+Epoch:  29 	 Loss:  0.027032598853111267
+Epoch:  30 	 Loss:  0.02690708078444004
+Epoch:  31 	 Loss:  0.026478616520762444
+Epoch:  32 	 Loss:  0.027043847367167473
+Epoch:  33 	 Loss:  0.026722637936472893
+Epoch:  34 	 Loss:  0.026896988973021507
+Epoch:  35 	 Loss:  0.026724621653556824
+Epoch:  36 	 Loss:  0.026822084560990334
+Epoch:  37 	 Loss:  0.027123084291815758
+Epoch:  38 	 Loss:  0.027062511071562767
+Epoch:  39 	 Loss:  0.027071787044405937
+Epoch:  40 	 Loss:  0.02717970311641693
+Epoch:  41 	 Loss:  0.027283819392323494
+Epoch:  42 	 Loss:  0.027140799909830093
+Epoch:  43 	 Loss:  0.026743251830339432
+Epoch:  44 	 Loss:  0.027387427166104317
+Epoch:  45 	 Loss:  0.026842741295695305
+Epoch:  46 	 Loss:  0.02698504365980625
+Epoch:  47 	 Loss:  0.026778675615787506
+Epoch:  48 	 Loss:  0.02703794650733471
+Epoch:  49 	 Loss:  0.026972560212016106
+Epoch:  50 	 Loss:  0.026889948174357414
+Epoch:  51 	 Loss:  0.02694389782845974
+Epoch:  52 	 Loss:  0.026798224076628685
+Epoch:  53 	 Loss:  0.026267103850841522
+Epoch:  54 	 Loss:  0.027062246575951576
+Epoch:  55 	 Loss:  0.02682539075613022
+Epoch:  56 	 Loss:  0.026757782325148582
+Epoch:  57 	 Loss:  0.026623763144016266
+Epoch:  58 	 Loss:  0.02710937149822712
+Epoch:  59 	 Loss:  0.027131956070661545
+Epoch:  60 	 Loss:  0.026950161904096603
+Epoch:  61 	 Loss:  0.026618536561727524
+Epoch:  62 	 Loss:  0.026938432827591896
+Epoch:  63 	 Loss:  0.026942212134599686
+Epoch:  64 	 Loss:  0.02678856812417507
+Epoch:  65 	 Loss:  0.026812728494405746
+Epoch:  66 	 Loss:  0.02697615884244442
+Epoch:  67 	 Loss:  0.02661389485001564
+Epoch:  68 	 Loss:  0.02681792341172695
+Epoch:  69 	 Loss:  0.026659762486815453
+Epoch:  70 	 Loss:  0.026420217007398605
+Epoch:  71 	 Loss:  0.02728363499045372
+Epoch:  72 	 Loss:  0.027277840301394463
+Epoch:  73 	 Loss:  0.027116524055600166
+Epoch:  74 	 Loss:  0.027069875970482826
+Epoch:  75 	 Loss:  0.026923606172204018
+Epoch:  76 	 Loss:  0.027060922235250473
+Epoch:  77 	 Loss:  0.027037501335144043
+Epoch:  78 	 Loss:  0.02718646638095379
+Epoch:  79 	 Loss:  0.02681298740208149
+Epoch:  80 	 Loss:  0.02695380710065365
+Epoch:  81 	 Loss:  0.026540981605648994
+Epoch:  82 	 Loss:  0.026518192142248154
+Epoch:  83 	 Loss:  0.02713262103497982
+Epoch:  84 	 Loss:  0.027037758380174637
+Epoch:  85 	 Loss:  0.02701231651008129
+Epoch:  86 	 Loss:  0.027025185525417328
+Epoch:  87 	 Loss:  0.026803668588399887
+Epoch:  88 	 Loss:  0.026411835104227066
+Epoch:  89 	 Loss:  0.027164453640580177
+Epoch:  90 	 Loss:  0.027105767279863358
+Epoch:  91 	 Loss:  0.026952508836984634
+Epoch:  92 	 Loss:  0.0271966140717268
+Epoch:  93 	 Loss:  0.027068501338362694
+Epoch:  94 	 Loss:  0.02711051143705845
+Epoch:  95 	 Loss:  0.02703619934618473
+Epoch:  96 	 Loss:  0.026861250400543213
+Epoch:  97 	 Loss:  0.02711404673755169
+Epoch:  98 	 Loss:  0.027045991271734238
+Epoch:  99 	 Loss:  0.02687801793217659
+Epoch:  100 	 Loss:  0.02678508125245571
+wandb: Waiting for W&B process to finish, PID 1848226
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154830-rd0oe56n/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154830-rd0oe56n/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02679
+wandb:        _step 800000
+wandb:     _runtime 77
+wandb:   _timestamp 1612903787
+wandb:         loss 0.02679
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▃▆▅▄▄▁▇▄▅▃▅▅▂▅▄▆▇█▅▅▅▆▄▆▃▄▃▃▇▆▆▄▂▆▄▆▇▆▆▄
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇████
+wandb:   _timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇████
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced giddy-sweep-63: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/rd0oe56n
+wandb: Agent Starting Run: xnykqztn with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: adam
+wandb: 	weight_decay: 0.05
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:49:54.011982: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:49:54.017728: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run fanciful-sweep-64
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/xnykqztn
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_154952-xnykqztn
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.02741047367453575
+Epoch:  2 	 Loss:  0.02785472571849823
+Epoch:  3 	 Loss:  0.027351006865501404
+Epoch:  4 	 Loss:  0.02693879045546055
+Epoch:  5 	 Loss:  0.027403295040130615
+Epoch:  6 	 Loss:  0.027214188128709793
+Epoch:  7 	 Loss:  0.02711336314678192
+Epoch:  8 	 Loss:  0.027309443801641464
+Epoch:  9 	 Loss:  0.027176493778824806
+Epoch:  10 	 Loss:  0.02712266705930233
+Epoch:  11 	 Loss:  0.02772418223321438
+Epoch:  12 	 Loss:  0.027585120871663094
+Epoch:  13 	 Loss:  0.027189597487449646
+Epoch:  14 	 Loss:  0.027029162272810936
+Epoch:  15 	 Loss:  0.02734086662530899
+Epoch:  16 	 Loss:  0.027465321123600006
+Epoch:  17 	 Loss:  0.02702176570892334
+Epoch:  18 	 Loss:  0.02754310518503189
+Epoch:  19 	 Loss:  0.027452334761619568
+Epoch:  20 	 Loss:  0.027486443519592285
+Epoch:  21 	 Loss:  0.02705668844282627
+Epoch:  22 	 Loss:  0.027591420337557793
+Epoch:  23 	 Loss:  0.027128329500555992
+Epoch:  24 	 Loss:  0.02699131704866886
+Epoch:  25 	 Loss:  0.02753090299665928
+Epoch:  26 	 Loss:  0.027865473181009293
+Epoch:  27 	 Loss:  0.02717687003314495
+Epoch:  28 	 Loss:  0.02787637710571289
+Epoch:  29 	 Loss:  0.027072874829173088
+Epoch:  30 	 Loss:  0.02709769643843174
+Epoch:  31 	 Loss:  0.02737005241215229
+Epoch:  32 	 Loss:  0.02743428573012352
+Epoch:  33 	 Loss:  0.027711039409041405
+Epoch:  34 	 Loss:  0.02732817456126213
+Epoch:  35 	 Loss:  0.027443723753094673
+Epoch:  36 	 Loss:  0.027631795033812523
+Epoch:  37 	 Loss:  0.027181725949048996
+Epoch:  38 	 Loss:  0.02722064219415188
+Epoch:  39 	 Loss:  0.02725095860660076
+Epoch:  40 	 Loss:  0.027290940284729004
+Epoch:  41 	 Loss:  0.027566658332943916
+Epoch:  42 	 Loss:  0.027548102661967278
+Epoch:  43 	 Loss:  0.027393698692321777
+Epoch:  44 	 Loss:  0.027421098202466965
+Epoch:  45 	 Loss:  0.02732902765274048
+Epoch:  46 	 Loss:  0.027466008439660072
+Epoch:  47 	 Loss:  0.027282949537038803
+Epoch:  48 	 Loss:  0.02739850804209709
+Epoch:  49 	 Loss:  0.02694074809551239
+Epoch:  50 	 Loss:  0.027640169486403465
+Epoch:  51 	 Loss:  0.02757221832871437
+Epoch:  52 	 Loss:  0.0274440236389637
+Epoch:  53 	 Loss:  0.027297433465719223
+Epoch:  54 	 Loss:  0.027526535093784332
+Epoch:  55 	 Loss:  0.027176737785339355
+Epoch:  56 	 Loss:  0.027186738327145576
+Epoch:  57 	 Loss:  0.02738158032298088
+Epoch:  58 	 Loss:  0.02735905908048153
+Epoch:  59 	 Loss:  0.027494248002767563
+Epoch:  60 	 Loss:  0.027672545984387398
+Epoch:  61 	 Loss:  0.02727751061320305
+Epoch:  62 	 Loss:  0.027448002249002457
+Epoch:  63 	 Loss:  0.027471812441945076
+Epoch:  64 	 Loss:  0.027446705847978592
+Epoch:  65 	 Loss:  0.02722316049039364
+Epoch:  66 	 Loss:  0.027077486738562584
+Epoch:  67 	 Loss:  0.027221189811825752
+Epoch:  68 	 Loss:  0.027313025668263435
+Epoch:  69 	 Loss:  0.027387553825974464
+Epoch:  70 	 Loss:  0.02701609395444393
+Epoch:  71 	 Loss:  0.027380365878343582
+Epoch:  72 	 Loss:  0.0280007291585207
+Epoch:  73 	 Loss:  0.027302002534270287
+Epoch:  74 	 Loss:  0.026921818032860756
+Epoch:  75 	 Loss:  0.02760160341858864
+Epoch:  76 	 Loss:  0.027362575754523277
+Epoch:  77 	 Loss:  0.027253948152065277
+Epoch:  78 	 Loss:  0.02684824727475643
+Epoch:  79 	 Loss:  0.027170203626155853
+Epoch:  80 	 Loss:  0.02735498733818531
+Epoch:  81 	 Loss:  0.027772847563028336
+Epoch:  82 	 Loss:  0.027142392471432686
+Epoch:  83 	 Loss:  0.027182510122656822
+Epoch:  84 	 Loss:  0.027314359322190285
+Epoch:  85 	 Loss:  0.027025992050766945
+Epoch:  86 	 Loss:  0.02749009244143963
+Epoch:  87 	 Loss:  0.027499990537762642
+Epoch:  88 	 Loss:  0.02748793736100197
+Epoch:  89 	 Loss:  0.027420856058597565
+Epoch:  90 	 Loss:  0.02768649347126484
+Epoch:  91 	 Loss:  0.027098678052425385
+Epoch:  92 	 Loss:  0.027791399508714676
+Epoch:  93 	 Loss:  0.027215801179409027
+Epoch:  94 	 Loss:  0.02719014324247837
+Epoch:  95 	 Loss:  0.027052108198404312
+Epoch:  96 	 Loss:  0.02735326811671257
+Epoch:  97 	 Loss:  0.027187058702111244
+Epoch:  98 	 Loss:  0.02729695662856102
+Epoch:  99 	 Loss:  0.027355941012501717
+Epoch:  100 	 Loss:  0.027522463351488113
+wandb: Waiting for W&B process to finish, PID 1851915
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154952-xnykqztn/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_154952-xnykqztn/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02752
+wandb:        _step 800000
+wandb:     _runtime 76
+wandb:   _timestamp 1612903868
+wandb:         loss 0.02752
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▄▄▃▄▆▃▅▅▂▂▇▇▄▄▆▃▅▄▅▁▅▅▃▅▃▄▃▄█▁▃▃▂▄▅▄▇▃▃▅
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced fanciful-sweep-64: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/xnykqztn
+wandb: Agent Starting Run: m601owya with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: sgd
+wandb: 	weight_decay: 0
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:51:14.409321: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:51:14.414835: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run summer-sweep-65
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/m601owya
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_155112-m601owya
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.026870884001255035
+Epoch:  2 	 Loss:  0.02727675810456276
+Epoch:  3 	 Loss:  0.02671189047396183
+Epoch:  4 	 Loss:  0.026723628863692284
+Epoch:  5 	 Loss:  0.026919296011328697
+Epoch:  6 	 Loss:  0.026595454663038254
+Epoch:  7 	 Loss:  0.02688482590019703
+Epoch:  8 	 Loss:  0.026588307693600655
+Epoch:  9 	 Loss:  0.026767322793602943
+Epoch:  10 	 Loss:  0.027019504457712173
+Epoch:  11 	 Loss:  0.026928607374429703
+Epoch:  12 	 Loss:  0.026791149750351906
+Epoch:  13 	 Loss:  0.026661919429898262
+Epoch:  14 	 Loss:  0.026814259588718414
+Epoch:  15 	 Loss:  0.025959908962249756
+Epoch:  16 	 Loss:  0.026572423055768013
+Epoch:  17 	 Loss:  0.02667362429201603
+Epoch:  18 	 Loss:  0.02678307704627514
+Epoch:  19 	 Loss:  0.026691794395446777
+Epoch:  20 	 Loss:  0.026608498767018318
+Epoch:  21 	 Loss:  0.026757752522826195
+Epoch:  22 	 Loss:  0.02674458920955658
+Epoch:  23 	 Loss:  0.026959296315908432
+Epoch:  24 	 Loss:  0.026751982048153877
+Epoch:  25 	 Loss:  0.026861323043704033
+Epoch:  26 	 Loss:  0.026633312925696373
+Epoch:  27 	 Loss:  0.02685181051492691
+Epoch:  28 	 Loss:  0.02682528644800186
+Epoch:  29 	 Loss:  0.026771968230605125
+Epoch:  30 	 Loss:  0.02692599780857563
+Epoch:  31 	 Loss:  0.02682764269411564
+Epoch:  32 	 Loss:  0.02660743147134781
+Epoch:  33 	 Loss:  0.02635437622666359
+Epoch:  34 	 Loss:  0.026576455682516098
+Epoch:  35 	 Loss:  0.02703850530087948
+Epoch:  36 	 Loss:  0.026986585929989815
+Epoch:  37 	 Loss:  0.026875881478190422
+Epoch:  38 	 Loss:  0.02665407769382
+Epoch:  39 	 Loss:  0.026321690529584885
+Epoch:  40 	 Loss:  0.02658694051206112
+Epoch:  41 	 Loss:  0.026295218616724014
+Epoch:  42 	 Loss:  0.02740437723696232
+Epoch:  43 	 Loss:  0.026704508811235428
+Epoch:  44 	 Loss:  0.026899613440036774
+Epoch:  45 	 Loss:  0.026843171566724777
+Epoch:  46 	 Loss:  0.02699911594390869
+Epoch:  47 	 Loss:  0.0271032452583313
+Epoch:  48 	 Loss:  0.027161207050085068
+Epoch:  49 	 Loss:  0.02710041031241417
+Epoch:  50 	 Loss:  0.026890691369771957
+Epoch:  51 	 Loss:  0.02675676718354225
+Epoch:  52 	 Loss:  0.02686849981546402
+Epoch:  53 	 Loss:  0.02682456001639366
+Epoch:  54 	 Loss:  0.026928769424557686
+Epoch:  55 	 Loss:  0.02708371728658676
+Epoch:  56 	 Loss:  0.02665320597589016
+Epoch:  57 	 Loss:  0.02655649743974209
+Epoch:  58 	 Loss:  0.026893334463238716
+Epoch:  59 	 Loss:  0.02702997624874115
+Epoch:  60 	 Loss:  0.027066286653280258
+Epoch:  61 	 Loss:  0.026958221569657326
+Epoch:  62 	 Loss:  0.02664950303733349
+Epoch:  63 	 Loss:  0.027383584529161453
+Epoch:  64 	 Loss:  0.026577509939670563
+Epoch:  65 	 Loss:  0.026843275874853134
+Epoch:  66 	 Loss:  0.026795318350195885
+Epoch:  67 	 Loss:  0.027162181213498116
+Epoch:  68 	 Loss:  0.02667567878961563
+Epoch:  69 	 Loss:  0.026737386360764503
+Epoch:  70 	 Loss:  0.02639050967991352
+Epoch:  71 	 Loss:  0.026867540553212166
+Epoch:  72 	 Loss:  0.02674008719623089
+Epoch:  73 	 Loss:  0.0272222887724638
+Epoch:  74 	 Loss:  0.026741595938801765
+Epoch:  75 	 Loss:  0.026954974979162216
+Epoch:  76 	 Loss:  0.026644665747880936
+Epoch:  77 	 Loss:  0.026667989790439606
+Epoch:  78 	 Loss:  0.026619328185915947
+Epoch:  79 	 Loss:  0.026782210916280746
+Epoch:  80 	 Loss:  0.02676953747868538
+Epoch:  81 	 Loss:  0.026991935446858406
+Epoch:  82 	 Loss:  0.02728123404085636
+Epoch:  83 	 Loss:  0.026837559416890144
+Epoch:  84 	 Loss:  0.026835152879357338
+Epoch:  85 	 Loss:  0.026845073327422142
+Epoch:  86 	 Loss:  0.026873139664530754
+Epoch:  87 	 Loss:  0.027059072628617287
+Epoch:  88 	 Loss:  0.027115684002637863
+Epoch:  89 	 Loss:  0.026468968018889427
+Epoch:  90 	 Loss:  0.02702799066901207
+Epoch:  91 	 Loss:  0.027266841381788254
+Epoch:  92 	 Loss:  0.026935316622257233
+Epoch:  93 	 Loss:  0.026837412267923355
+Epoch:  94 	 Loss:  0.02674773521721363
+Epoch:  95 	 Loss:  0.026415223255753517
+Epoch:  96 	 Loss:  0.026783412322402
+Epoch:  97 	 Loss:  0.026809748262166977
+Epoch:  98 	 Loss:  0.02655263990163803
+Epoch:  99 	 Loss:  0.026853322982788086
+Epoch:  100 	 Loss:  0.0268723051995039
+wandb: Waiting for W&B process to finish, PID 1855594
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155112-m601owya/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155112-m601owya/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02687
+wandb:        _step 800000
+wandb:     _runtime 72
+wandb:   _timestamp 1612903944
+wandb:         loss 0.02687
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▅▄▃▃▅▄▃▄▄▆▃▅▅▃▆▁▁▅▆▇▄▅▄▆▆▃▇▄▄▄▄▄█▅▆▂▆▄▅▅
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced summer-sweep-65: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/m601owya
+wandb: Agent Starting Run: uk1gf3ij with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: sgd
+wandb: 	weight_decay: 0.0005
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:52:30.338614: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:52:30.344426: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run lilac-sweep-66
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/uk1gf3ij
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_155228-uk1gf3ij
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.02716587670147419
+Epoch:  2 	 Loss:  0.026973329484462738
+Epoch:  3 	 Loss:  0.026942899450659752
+Epoch:  4 	 Loss:  0.026933785527944565
+Epoch:  5 	 Loss:  0.026935815811157227
+Epoch:  6 	 Loss:  0.026896513998508453
+Epoch:  7 	 Loss:  0.026821039617061615
+Epoch:  8 	 Loss:  0.02655826508998871
+Epoch:  9 	 Loss:  0.02678460255265236
+Epoch:  10 	 Loss:  0.02666049264371395
+Epoch:  11 	 Loss:  0.02694900520145893
+Epoch:  12 	 Loss:  0.026810433715581894
+Epoch:  13 	 Loss:  0.027050279080867767
+Epoch:  14 	 Loss:  0.02725638821721077
+Epoch:  15 	 Loss:  0.026834644377231598
+Epoch:  16 	 Loss:  0.02689085528254509
+Epoch:  17 	 Loss:  0.027269156649708748
+Epoch:  18 	 Loss:  0.027172472327947617
+Epoch:  19 	 Loss:  0.027181211858987808
+Epoch:  20 	 Loss:  0.026998134329915047
+Epoch:  21 	 Loss:  0.02685515768826008
+Epoch:  22 	 Loss:  0.02673327922821045
+Epoch:  23 	 Loss:  0.027458420023322105
+Epoch:  24 	 Loss:  0.027373740449547768
+Epoch:  25 	 Loss:  0.02697252668440342
+Epoch:  26 	 Loss:  0.02691100724041462
+Epoch:  27 	 Loss:  0.026858223602175713
+Epoch:  28 	 Loss:  0.02673017419874668
+Epoch:  29 	 Loss:  0.026979446411132812
+Epoch:  30 	 Loss:  0.027543773874640465
+Epoch:  31 	 Loss:  0.026795662939548492
+Epoch:  32 	 Loss:  0.026969928294420242
+Epoch:  33 	 Loss:  0.027295148000121117
+Epoch:  34 	 Loss:  0.02687222696840763
+Epoch:  35 	 Loss:  0.027361836284399033
+Epoch:  36 	 Loss:  0.027156498283147812
+Epoch:  37 	 Loss:  0.02715614065527916
+Epoch:  38 	 Loss:  0.02733202464878559
+Epoch:  39 	 Loss:  0.026803895831108093
+Epoch:  40 	 Loss:  0.02702208235859871
+Epoch:  41 	 Loss:  0.027223976328969002
+Epoch:  42 	 Loss:  0.02675769478082657
+Epoch:  43 	 Loss:  0.02715003862977028
+Epoch:  44 	 Loss:  0.027223652228713036
+Epoch:  45 	 Loss:  0.026567138731479645
+Epoch:  46 	 Loss:  0.026907600462436676
+Epoch:  47 	 Loss:  0.027235426008701324
+Epoch:  48 	 Loss:  0.027304556220769882
+Epoch:  49 	 Loss:  0.027017807587981224
+Epoch:  50 	 Loss:  0.02695336565375328
+Epoch:  51 	 Loss:  0.026806451380252838
+Epoch:  52 	 Loss:  0.027017423883080482
+Epoch:  53 	 Loss:  0.026923682540655136
+Epoch:  54 	 Loss:  0.027055615559220314
+Epoch:  55 	 Loss:  0.027067936956882477
+Epoch:  56 	 Loss:  0.02686820924282074
+Epoch:  57 	 Loss:  0.026775158941745758
+Epoch:  58 	 Loss:  0.027190353721380234
+Epoch:  59 	 Loss:  0.026771431788802147
+Epoch:  60 	 Loss:  0.02708817832171917
+Epoch:  61 	 Loss:  0.02696448564529419
+Epoch:  62 	 Loss:  0.02685590833425522
+Epoch:  63 	 Loss:  0.02706313505768776
+Epoch:  64 	 Loss:  0.027215296402573586
+Epoch:  65 	 Loss:  0.02703939564526081
+Epoch:  66 	 Loss:  0.02695716731250286
+Epoch:  67 	 Loss:  0.02698315493762493
+Epoch:  68 	 Loss:  0.027182849124073982
+Epoch:  69 	 Loss:  0.027088802307844162
+Epoch:  70 	 Loss:  0.02707570418715477
+Epoch:  71 	 Loss:  0.027003595605492592
+Epoch:  72 	 Loss:  0.026819154620170593
+Epoch:  73 	 Loss:  0.027002686634659767
+Epoch:  74 	 Loss:  0.026803886517882347
+Epoch:  75 	 Loss:  0.026938864961266518
+Epoch:  76 	 Loss:  0.027310026809573174
+Epoch:  77 	 Loss:  0.027262408286333084
+Epoch:  78 	 Loss:  0.026848582550883293
+Epoch:  79 	 Loss:  0.026872236281633377
+Epoch:  80 	 Loss:  0.02730659395456314
+Epoch:  81 	 Loss:  0.02679034322500229
+Epoch:  82 	 Loss:  0.02683556079864502
+Epoch:  83 	 Loss:  0.026958024129271507
+Epoch:  84 	 Loss:  0.02720499038696289
+Epoch:  85 	 Loss:  0.02657819725573063
+Epoch:  86 	 Loss:  0.02689356543123722
+Epoch:  87 	 Loss:  0.02699066512286663
+Epoch:  88 	 Loss:  0.027089376002550125
+Epoch:  89 	 Loss:  0.02679244428873062
+Epoch:  90 	 Loss:  0.026564570143818855
+Epoch:  91 	 Loss:  0.02701672725379467
+Epoch:  92 	 Loss:  0.027173930779099464
+Epoch:  93 	 Loss:  0.027538444846868515
+Epoch:  94 	 Loss:  0.0274343341588974
+Epoch:  95 	 Loss:  0.027101406827569008
+Epoch:  96 	 Loss:  0.026948625221848488
+Epoch:  97 	 Loss:  0.0273915845900774
+Epoch:  98 	 Loss:  0.02660898119211197
+Epoch:  99 	 Loss:  0.026712380349636078
+Epoch:  100 	 Loss:  0.02699594758450985
+wandb: Waiting for W&B process to finish, PID 1859264
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155228-uk1gf3ij/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155228-uk1gf3ij/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.027
+wandb:        _step 800000
+wandb:     _runtime 72
+wandb:   _timestamp 1612904020
+wandb:         loss 0.027
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▆▄▄▁▄▅▄▆▃█▄▂▃▃▆▃▆▆▄▅▃▅▃▃▄▆▄▅▃▃▆▃▃▆▄▃▆█▇▄
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced lilac-sweep-66: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/uk1gf3ij
+wandb: Agent Starting Run: yzsqt8bf with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: sgd
+wandb: 	weight_decay: 0.005
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:53:46.366589: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:53:46.372272: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run sage-sweep-67
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/yzsqt8bf
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_155344-yzsqt8bf
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.02697969786822796
+Epoch:  2 	 Loss:  0.026918914169073105
+Epoch:  3 	 Loss:  0.026517460122704506
+Epoch:  4 	 Loss:  0.027319766581058502
+Epoch:  5 	 Loss:  0.027260445058345795
+Epoch:  6 	 Loss:  0.027318807318806648
+Epoch:  7 	 Loss:  0.02702765166759491
+Epoch:  8 	 Loss:  0.02747095562517643
+Epoch:  9 	 Loss:  0.02708478458225727
+Epoch:  10 	 Loss:  0.026920463889837265
+Epoch:  11 	 Loss:  0.02765922248363495
+Epoch:  12 	 Loss:  0.027319233864545822
+Epoch:  13 	 Loss:  0.027282480150461197
+Epoch:  14 	 Loss:  0.02698609046638012
+Epoch:  15 	 Loss:  0.02722659334540367
+Epoch:  16 	 Loss:  0.027373872697353363
+Epoch:  17 	 Loss:  0.02713877335190773
+Epoch:  18 	 Loss:  0.02715258300304413
+Epoch:  19 	 Loss:  0.027437414973974228
+Epoch:  20 	 Loss:  0.027273839339613914
+Epoch:  21 	 Loss:  0.02678796462714672
+Epoch:  22 	 Loss:  0.027379201725125313
+Epoch:  23 	 Loss:  0.0271854717284441
+Epoch:  24 	 Loss:  0.027322806417942047
+Epoch:  25 	 Loss:  0.027658196166157722
+Epoch:  26 	 Loss:  0.02709854207932949
+Epoch:  27 	 Loss:  0.02711060829460621
+Epoch:  28 	 Loss:  0.02743416652083397
+Epoch:  29 	 Loss:  0.027100663632154465
+Epoch:  30 	 Loss:  0.02720615826547146
+Epoch:  31 	 Loss:  0.027079802006483078
+Epoch:  32 	 Loss:  0.027811294421553612
+Epoch:  33 	 Loss:  0.027580279856920242
+Epoch:  34 	 Loss:  0.027653926983475685
+Epoch:  35 	 Loss:  0.02735835872590542
+Epoch:  36 	 Loss:  0.02706412971019745
+Epoch:  37 	 Loss:  0.027244489639997482
+Epoch:  38 	 Loss:  0.027233688160777092
+Epoch:  39 	 Loss:  0.027628477662801743
+Epoch:  40 	 Loss:  0.027281127870082855
+Epoch:  41 	 Loss:  0.027111433446407318
+Epoch:  42 	 Loss:  0.027344144880771637
+Epoch:  43 	 Loss:  0.02701290138065815
+Epoch:  44 	 Loss:  0.027170974761247635
+Epoch:  45 	 Loss:  0.02713203988969326
+Epoch:  46 	 Loss:  0.02727341093122959
+Epoch:  47 	 Loss:  0.026404650881886482
+Epoch:  48 	 Loss:  0.026644064113497734
+Epoch:  49 	 Loss:  0.027296768501400948
+Epoch:  50 	 Loss:  0.027161763980984688
+Epoch:  51 	 Loss:  0.02666907012462616
+Epoch:  52 	 Loss:  0.027479492127895355
+Epoch:  53 	 Loss:  0.02757679484784603
+Epoch:  54 	 Loss:  0.02768162079155445
+Epoch:  55 	 Loss:  0.027291426435112953
+Epoch:  56 	 Loss:  0.027629582211375237
+Epoch:  57 	 Loss:  0.027527987957000732
+Epoch:  58 	 Loss:  0.02693270705640316
+Epoch:  59 	 Loss:  0.027069205418229103
+Epoch:  60 	 Loss:  0.027608884498476982
+Epoch:  61 	 Loss:  0.02710598334670067
+Epoch:  62 	 Loss:  0.027231009677052498
+Epoch:  63 	 Loss:  0.02724633738398552
+Epoch:  64 	 Loss:  0.02757466398179531
+Epoch:  65 	 Loss:  0.027082499116659164
+Epoch:  66 	 Loss:  0.026925303041934967
+Epoch:  67 	 Loss:  0.02718687616288662
+Epoch:  68 	 Loss:  0.027477428317070007
+Epoch:  69 	 Loss:  0.02769060805439949
+Epoch:  70 	 Loss:  0.02680126391351223
+Epoch:  71 	 Loss:  0.027480734512209892
+Epoch:  72 	 Loss:  0.02729063853621483
+Epoch:  73 	 Loss:  0.02752618119120598
+Epoch:  74 	 Loss:  0.027247153222560883
+Epoch:  75 	 Loss:  0.027352891862392426
+Epoch:  76 	 Loss:  0.026969807222485542
+Epoch:  77 	 Loss:  0.026926176622509956
+Epoch:  78 	 Loss:  0.027254149317741394
+Epoch:  79 	 Loss:  0.027128206565976143
+Epoch:  80 	 Loss:  0.027345754206180573
+Epoch:  81 	 Loss:  0.02722897008061409
+Epoch:  82 	 Loss:  0.02775571495294571
+Epoch:  83 	 Loss:  0.026819581165909767
+Epoch:  84 	 Loss:  0.026899006217718124
+Epoch:  85 	 Loss:  0.026980029419064522
+Epoch:  86 	 Loss:  0.0271268580108881
+Epoch:  87 	 Loss:  0.027334950864315033
+Epoch:  88 	 Loss:  0.027381282299757004
+Epoch:  89 	 Loss:  0.02732524834573269
+Epoch:  90 	 Loss:  0.02759929746389389
+Epoch:  91 	 Loss:  0.02736148051917553
+Epoch:  92 	 Loss:  0.02712979167699814
+Epoch:  93 	 Loss:  0.027358369901776314
+Epoch:  94 	 Loss:  0.027225984260439873
+Epoch:  95 	 Loss:  0.027036506682634354
+Epoch:  96 	 Loss:  0.027377674356102943
+Epoch:  97 	 Loss:  0.02684256248176098
+Epoch:  98 	 Loss:  0.02730928361415863
+Epoch:  99 	 Loss:  0.027403276413679123
+Epoch:  100 	 Loss:  0.0277449581772089
+wandb: Waiting for W&B process to finish, PID 1862939
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155344-yzsqt8bf/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155344-yzsqt8bf/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02774
+wandb:        _step 800000
+wandb:     _runtime 72
+wandb:   _timestamp 1612904096
+wandb:         loss 0.02774
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▄▁▆▆▇▅▆▅▃▅▄▆▄▇▄▇▄▅▅▅▂█▇▄▄▇▅█▅▅▃▄█▃▆▆▄▅▃█
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced sage-sweep-67: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/yzsqt8bf
+wandb: Agent Starting Run: drdxfy7o with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: sgd
+wandb: 	weight_decay: 0.05
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:55:02.248495: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:55:02.253652: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run likely-sweep-68
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/drdxfy7o
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_155500-drdxfy7o
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.026994027197360992
+Epoch:  2 	 Loss:  0.026956891641020775
+Epoch:  3 	 Loss:  0.026561593636870384
+Epoch:  4 	 Loss:  0.026595229282975197
+Epoch:  5 	 Loss:  0.0263704601675272
+Epoch:  6 	 Loss:  0.026440726593136787
+Epoch:  7 	 Loss:  0.026608046144247055
+Epoch:  8 	 Loss:  0.02660536766052246
+Epoch:  9 	 Loss:  0.02661980502307415
+Epoch:  10 	 Loss:  0.026888852939009666
+Epoch:  11 	 Loss:  0.026423849165439606
+Epoch:  12 	 Loss:  0.026720091700553894
+Epoch:  13 	 Loss:  0.026551567018032074
+Epoch:  14 	 Loss:  0.02624722197651863
+Epoch:  15 	 Loss:  0.02657048963010311
+Epoch:  16 	 Loss:  0.026728134602308273
+Epoch:  17 	 Loss:  0.027133803814649582
+Epoch:  18 	 Loss:  0.026870684698224068
+Epoch:  19 	 Loss:  0.027107715606689453
+Epoch:  20 	 Loss:  0.026584094390273094
+Epoch:  21 	 Loss:  0.026540379971265793
+Epoch:  22 	 Loss:  0.026762250810861588
+Epoch:  23 	 Loss:  0.02666502632200718
+Epoch:  24 	 Loss:  0.026730066165328026
+Epoch:  25 	 Loss:  0.026859857141971588
+Epoch:  26 	 Loss:  0.02666294574737549
+Epoch:  27 	 Loss:  0.02698015235364437
+Epoch:  28 	 Loss:  0.026640474796295166
+Epoch:  29 	 Loss:  0.026750601828098297
+Epoch:  30 	 Loss:  0.026867007836699486
+Epoch:  31 	 Loss:  0.02677215449512005
+Epoch:  32 	 Loss:  0.02637637034058571
+Epoch:  33 	 Loss:  0.026254788041114807
+Epoch:  34 	 Loss:  0.026588622480630875
+Epoch:  35 	 Loss:  0.026784611865878105
+Epoch:  36 	 Loss:  0.02660098858177662
+Epoch:  37 	 Loss:  0.02682618796825409
+Epoch:  38 	 Loss:  0.027152566239237785
+Epoch:  39 	 Loss:  0.026663808152079582
+Epoch:  40 	 Loss:  0.02687859535217285
+Epoch:  41 	 Loss:  0.026455411687493324
+Epoch:  42 	 Loss:  0.026885321363806725
+Epoch:  43 	 Loss:  0.02655293419957161
+Epoch:  44 	 Loss:  0.026733046397566795
+Epoch:  45 	 Loss:  0.026742810383439064
+Epoch:  46 	 Loss:  0.02673819288611412
+Epoch:  47 	 Loss:  0.02685842476785183
+Epoch:  48 	 Loss:  0.02717643603682518
+Epoch:  49 	 Loss:  0.026768093928694725
+Epoch:  50 	 Loss:  0.02682175114750862
+Epoch:  51 	 Loss:  0.026680588722229004
+Epoch:  52 	 Loss:  0.026773549616336823
+Epoch:  53 	 Loss:  0.027170157060027122
+Epoch:  54 	 Loss:  0.026640716940164566
+Epoch:  55 	 Loss:  0.026831526309251785
+Epoch:  56 	 Loss:  0.02659989707171917
+Epoch:  57 	 Loss:  0.02682465687394142
+Epoch:  58 	 Loss:  0.02673659287393093
+Epoch:  59 	 Loss:  0.026725919917225838
+Epoch:  60 	 Loss:  0.026831595227122307
+Epoch:  61 	 Loss:  0.02722136303782463
+Epoch:  62 	 Loss:  0.026690589264035225
+Epoch:  63 	 Loss:  0.026267101988196373
+Epoch:  64 	 Loss:  0.026752114295959473
+Epoch:  65 	 Loss:  0.026717936620116234
+Epoch:  66 	 Loss:  0.02640083245933056
+Epoch:  67 	 Loss:  0.026511218398809433
+Epoch:  68 	 Loss:  0.02680133283138275
+Epoch:  69 	 Loss:  0.026780875399708748
+Epoch:  70 	 Loss:  0.02680552564561367
+Epoch:  71 	 Loss:  0.026478830724954605
+Epoch:  72 	 Loss:  0.026773866266012192
+Epoch:  73 	 Loss:  0.026904746890068054
+Epoch:  74 	 Loss:  0.027057478204369545
+Epoch:  75 	 Loss:  0.02679399400949478
+Epoch:  76 	 Loss:  0.026622414588928223
+Epoch:  77 	 Loss:  0.026877528056502342
+Epoch:  78 	 Loss:  0.026682164520025253
+Epoch:  79 	 Loss:  0.027072662487626076
+Epoch:  80 	 Loss:  0.027074461802840233
+Epoch:  81 	 Loss:  0.026476098224520683
+Epoch:  82 	 Loss:  0.026730820536613464
+Epoch:  83 	 Loss:  0.026514405384659767
+Epoch:  84 	 Loss:  0.026390204206109047
+Epoch:  85 	 Loss:  0.0271683931350708
+Epoch:  86 	 Loss:  0.026787055656313896
+Epoch:  87 	 Loss:  0.027157828211784363
+Epoch:  88 	 Loss:  0.026854533702135086
+Epoch:  89 	 Loss:  0.026807637885212898
+Epoch:  90 	 Loss:  0.026795443147420883
+Epoch:  91 	 Loss:  0.026720350608229637
+Epoch:  92 	 Loss:  0.02678445540368557
+Epoch:  93 	 Loss:  0.026752660050988197
+Epoch:  94 	 Loss:  0.026723599061369896
+Epoch:  95 	 Loss:  0.026474837213754654
+Epoch:  96 	 Loss:  0.026882147416472435
+Epoch:  97 	 Loss:  0.026736905798316002
+Epoch:  98 	 Loss:  0.026755984872579575
+Epoch:  99 	 Loss:  0.026985827833414078
+Epoch:  100 	 Loss:  0.026554768905043602
+wandb: Waiting for W&B process to finish, PID 1866609
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155500-drdxfy7o/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155500-drdxfy7o/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02655
+wandb:        _step 800000
+wandb:     _runtime 71
+wandb:   _timestamp 1612904171
+wandb:         loss 0.02655
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▆▂▁▃▁▂▄▅▂▃▃▃▄▃▃▃▂▄▄▄▃▃▃▄█▄▂▄▄▇▅▇▄▁▇▅▄▄▄▂
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced likely-sweep-68: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/drdxfy7o
+wandb: Agent Starting Run: alsdstpl with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: rmsprop
+wandb: 	weight_decay: 0
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:56:17.770529: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:56:17.775962: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run usual-sweep-69
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/alsdstpl
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_155615-alsdstpl
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.02719510905444622
+Epoch:  2 	 Loss:  0.026840118691325188
+Epoch:  3 	 Loss:  0.0269098412245512
+Epoch:  4 	 Loss:  0.027170564979314804
+Epoch:  5 	 Loss:  0.02716241404414177
+Epoch:  6 	 Loss:  0.027162885293364525
+Epoch:  7 	 Loss:  0.027117040008306503
+Epoch:  8 	 Loss:  0.02703145332634449
+Epoch:  9 	 Loss:  0.026784267276525497
+Epoch:  10 	 Loss:  0.027208836749196053
+Epoch:  11 	 Loss:  0.027076946571469307
+Epoch:  12 	 Loss:  0.026753174141049385
+Epoch:  13 	 Loss:  0.026981404051184654
+Epoch:  14 	 Loss:  0.026754602789878845
+Epoch:  15 	 Loss:  0.027182623744010925
+Epoch:  16 	 Loss:  0.02724067121744156
+Epoch:  17 	 Loss:  0.026933519169688225
+Epoch:  18 	 Loss:  0.02702430635690689
+Epoch:  19 	 Loss:  0.02681182324886322
+Epoch:  20 	 Loss:  0.02693791128695011
+Epoch:  21 	 Loss:  0.02713065966963768
+Epoch:  22 	 Loss:  0.026916811242699623
+Epoch:  23 	 Loss:  0.026610879227519035
+Epoch:  24 	 Loss:  0.02652665786445141
+Epoch:  25 	 Loss:  0.026908228173851967
+Epoch:  26 	 Loss:  0.027259143069386482
+Epoch:  27 	 Loss:  0.02691866271197796
+Epoch:  28 	 Loss:  0.027059849351644516
+Epoch:  29 	 Loss:  0.027100618928670883
+Epoch:  30 	 Loss:  0.0269736610352993
+Epoch:  31 	 Loss:  0.027180882170796394
+Epoch:  32 	 Loss:  0.026926714926958084
+Epoch:  33 	 Loss:  0.026793960481882095
+Epoch:  34 	 Loss:  0.027237052097916603
+Epoch:  35 	 Loss:  0.027296176180243492
+Epoch:  36 	 Loss:  0.027308711782097816
+Epoch:  37 	 Loss:  0.026820100843906403
+Epoch:  38 	 Loss:  0.027081506326794624
+Epoch:  39 	 Loss:  0.02732529118657112
+Epoch:  40 	 Loss:  0.02648303098976612
+Epoch:  41 	 Loss:  0.02697327546775341
+Epoch:  42 	 Loss:  0.02660188265144825
+Epoch:  43 	 Loss:  0.027334759011864662
+Epoch:  44 	 Loss:  0.026658227667212486
+Epoch:  45 	 Loss:  0.027386317029595375
+Epoch:  46 	 Loss:  0.02702370099723339
+Epoch:  47 	 Loss:  0.026950497180223465
+Epoch:  48 	 Loss:  0.02702883444726467
+Epoch:  49 	 Loss:  0.027059737592935562
+Epoch:  50 	 Loss:  0.027206888422369957
+Epoch:  51 	 Loss:  0.027194278314709663
+Epoch:  52 	 Loss:  0.026660731062293053
+Epoch:  53 	 Loss:  0.027027731761336327
+Epoch:  54 	 Loss:  0.02691434510052204
+Epoch:  55 	 Loss:  0.026802727952599525
+Epoch:  56 	 Loss:  0.027075061574578285
+Epoch:  57 	 Loss:  0.027064461261034012
+Epoch:  58 	 Loss:  0.02719498611986637
+Epoch:  59 	 Loss:  0.02716541662812233
+Epoch:  60 	 Loss:  0.026747120544314384
+Epoch:  61 	 Loss:  0.027157219126820564
+Epoch:  62 	 Loss:  0.02720530517399311
+Epoch:  63 	 Loss:  0.027011828497052193
+Epoch:  64 	 Loss:  0.027225591242313385
+Epoch:  65 	 Loss:  0.02725672721862793
+Epoch:  66 	 Loss:  0.02722974866628647
+Epoch:  67 	 Loss:  0.02704765275120735
+Epoch:  68 	 Loss:  0.026530398055911064
+Epoch:  69 	 Loss:  0.026534469798207283
+Epoch:  70 	 Loss:  0.02679235115647316
+Epoch:  71 	 Loss:  0.02670861966907978
+Epoch:  72 	 Loss:  0.026923377066850662
+Epoch:  73 	 Loss:  0.02715918980538845
+Epoch:  74 	 Loss:  0.026781320571899414
+Epoch:  75 	 Loss:  0.026822781190276146
+Epoch:  76 	 Loss:  0.026974596083164215
+Epoch:  77 	 Loss:  0.02735525742173195
+Epoch:  78 	 Loss:  0.027088366448879242
+Epoch:  79 	 Loss:  0.026766981929540634
+Epoch:  80 	 Loss:  0.02686324343085289
+Epoch:  81 	 Loss:  0.026812678202986717
+Epoch:  82 	 Loss:  0.02666686661541462
+Epoch:  83 	 Loss:  0.02710968628525734
+Epoch:  84 	 Loss:  0.02716805227100849
+Epoch:  85 	 Loss:  0.02693665586411953
+Epoch:  86 	 Loss:  0.027005570009350777
+Epoch:  87 	 Loss:  0.02718537114560604
+Epoch:  88 	 Loss:  0.026922738179564476
+Epoch:  89 	 Loss:  0.0271440502256155
+Epoch:  90 	 Loss:  0.026893634349107742
+Epoch:  91 	 Loss:  0.02662927843630314
+Epoch:  92 	 Loss:  0.026482563465833664
+Epoch:  93 	 Loss:  0.026803698390722275
+Epoch:  94 	 Loss:  0.026907246559858322
+Epoch:  95 	 Loss:  0.026913022622466087
+Epoch:  96 	 Loss:  0.02690986357629299
+Epoch:  97 	 Loss:  0.02706981636583805
+Epoch:  98 	 Loss:  0.02697231061756611
+Epoch:  99 	 Loss:  0.027374468743801117
+Epoch:  100 	 Loss:  0.027426399290561676
+wandb: Waiting for W&B process to finish, PID 1870280
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155615-alsdstpl/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155615-alsdstpl/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02743
+wandb:        _step 800000
+wandb:     _runtime 74
+wandb:   _timestamp 1612904250
+wandb:         loss 0.02743
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▆▄▆▅▅▅▇▅▆▂▇▅▆▇▇▇▅▂▅▅▆▄▅▆▆▇▅▁▄▃▇▃▂▆▆▆▁▄▅█
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced usual-sweep-69: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/alsdstpl
+wandb: Agent Starting Run: cqanrqie with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: rmsprop
+wandb: 	weight_decay: 0.0005
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:57:36.812926: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:57:36.818521: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run fast-sweep-70
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/cqanrqie
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_155735-cqanrqie
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.02647658996284008
+Epoch:  2 	 Loss:  0.026286736130714417
+Epoch:  3 	 Loss:  0.026036664843559265
+Epoch:  4 	 Loss:  0.026121528819203377
+Epoch:  5 	 Loss:  0.026770705357193947
+Epoch:  6 	 Loss:  0.026415815576910973
+Epoch:  7 	 Loss:  0.02664848417043686
+Epoch:  8 	 Loss:  0.026344092562794685
+Epoch:  9 	 Loss:  0.026468414813280106
+Epoch:  10 	 Loss:  0.02629467099905014
+Epoch:  11 	 Loss:  0.02600759081542492
+Epoch:  12 	 Loss:  0.026624556630849838
+Epoch:  13 	 Loss:  0.026739459484815598
+Epoch:  14 	 Loss:  0.026390327140688896
+Epoch:  15 	 Loss:  0.026503926143050194
+Epoch:  16 	 Loss:  0.026297027245163918
+Epoch:  17 	 Loss:  0.026224752888083458
+Epoch:  18 	 Loss:  0.026268064975738525
+Epoch:  19 	 Loss:  0.026430394500494003
+Epoch:  20 	 Loss:  0.026401488110423088
+Epoch:  21 	 Loss:  0.026552392169833183
+Epoch:  22 	 Loss:  0.02592197246849537
+Epoch:  23 	 Loss:  0.026418955996632576
+Epoch:  24 	 Loss:  0.02618463523685932
+Epoch:  25 	 Loss:  0.026254868134856224
+Epoch:  26 	 Loss:  0.02639414742588997
+Epoch:  27 	 Loss:  0.026335863396525383
+Epoch:  28 	 Loss:  0.02645088918507099
+Epoch:  29 	 Loss:  0.02679489180445671
+Epoch:  30 	 Loss:  0.02634785696864128
+Epoch:  31 	 Loss:  0.026489948853850365
+Epoch:  32 	 Loss:  0.02651154436171055
+Epoch:  33 	 Loss:  0.026140818372368813
+Epoch:  34 	 Loss:  0.02621571160852909
+Epoch:  35 	 Loss:  0.026363395154476166
+Epoch:  36 	 Loss:  0.02670258656144142
+Epoch:  37 	 Loss:  0.02620875835418701
+Epoch:  38 	 Loss:  0.026298558339476585
+Epoch:  39 	 Loss:  0.026573369279503822
+Epoch:  40 	 Loss:  0.02610268071293831
+Epoch:  41 	 Loss:  0.026359256356954575
+Epoch:  42 	 Loss:  0.026819348335266113
+Epoch:  43 	 Loss:  0.02645215019583702
+Epoch:  44 	 Loss:  0.026297949254512787
+Epoch:  45 	 Loss:  0.02646913006901741
+Epoch:  46 	 Loss:  0.02623947151005268
+Epoch:  47 	 Loss:  0.026555733755230904
+Epoch:  48 	 Loss:  0.026500096544623375
+Epoch:  49 	 Loss:  0.02651980146765709
+Epoch:  50 	 Loss:  0.026583360508084297
+Epoch:  51 	 Loss:  0.02644108235836029
+Epoch:  52 	 Loss:  0.026206033304333687
+Epoch:  53 	 Loss:  0.02663540281355381
+Epoch:  54 	 Loss:  0.026218226179480553
+Epoch:  55 	 Loss:  0.026240268722176552
+Epoch:  56 	 Loss:  0.026459025219082832
+Epoch:  57 	 Loss:  0.026512347161769867
+Epoch:  58 	 Loss:  0.026242082938551903
+Epoch:  59 	 Loss:  0.026645775884389877
+Epoch:  60 	 Loss:  0.02636835165321827
+Epoch:  61 	 Loss:  0.026666443794965744
+Epoch:  62 	 Loss:  0.026345014572143555
+Epoch:  63 	 Loss:  0.02620426006615162
+Epoch:  64 	 Loss:  0.026093726977705956
+Epoch:  65 	 Loss:  0.0264926515519619
+Epoch:  66 	 Loss:  0.026570558547973633
+Epoch:  67 	 Loss:  0.026120562106370926
+Epoch:  68 	 Loss:  0.025986092165112495
+Epoch:  69 	 Loss:  0.02648223377764225
+Epoch:  70 	 Loss:  0.026637163013219833
+Epoch:  71 	 Loss:  0.02645784243941307
+Epoch:  72 	 Loss:  0.026448896154761314
+Epoch:  73 	 Loss:  0.026252640411257744
+Epoch:  74 	 Loss:  0.026654010638594627
+Epoch:  75 	 Loss:  0.026708172634243965
+Epoch:  76 	 Loss:  0.026665590703487396
+Epoch:  77 	 Loss:  0.026192205026745796
+Epoch:  78 	 Loss:  0.026233237236738205
+Epoch:  79 	 Loss:  0.02633453719317913
+Epoch:  80 	 Loss:  0.026464741677045822
+Epoch:  81 	 Loss:  0.026285888627171516
+Epoch:  82 	 Loss:  0.02643922157585621
+Epoch:  83 	 Loss:  0.026550889015197754
+Epoch:  84 	 Loss:  0.026483705267310143
+Epoch:  85 	 Loss:  0.026463979855179787
+Epoch:  86 	 Loss:  0.026187758892774582
+Epoch:  87 	 Loss:  0.026381351053714752
+Epoch:  88 	 Loss:  0.02638373337686062
+Epoch:  89 	 Loss:  0.026154858991503716
+Epoch:  90 	 Loss:  0.026630191132426262
+Epoch:  91 	 Loss:  0.025859855115413666
+Epoch:  92 	 Loss:  0.026647087186574936
+Epoch:  93 	 Loss:  0.026691308245062828
+Epoch:  94 	 Loss:  0.02626657299697399
+Epoch:  95 	 Loss:  0.02645028941333294
+Epoch:  96 	 Loss:  0.026583131402730942
+Epoch:  97 	 Loss:  0.026551686227321625
+Epoch:  98 	 Loss:  0.02628522552549839
+Epoch:  99 	 Loss:  0.026376646012067795
+Epoch:  100 	 Loss:  0.026399699971079826
+wandb: Waiting for W&B process to finish, PID 1873956
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155735-cqanrqie/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155735-cqanrqie/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.0264
+wandb:        _step 800000
+wandb:     _runtime 76
+wandb:   _timestamp 1612904331
+wandb:         loss 0.0264
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▅▁▅▄▁█▄▃▆▅▅▅▆▃█▆▄▄▃▆▅▃▅▇▇▂▂▆▅▇▃▄▅▆▅▂▇▃▆▅
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced fast-sweep-70: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/cqanrqie
+wandb: Agent Starting Run: 5pkasd9f with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: rmsprop
+wandb: 	weight_decay: 0.005
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 15:58:57.564780: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 15:58:57.570576: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run exalted-sweep-71
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/5pkasd9f
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_155855-5pkasd9f
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.026462191715836525
+Epoch:  2 	 Loss:  0.026811176910996437
+Epoch:  3 	 Loss:  0.026805078610777855
+Epoch:  4 	 Loss:  0.026632679626345634
+Epoch:  5 	 Loss:  0.02683120034635067
+Epoch:  6 	 Loss:  0.026695242151618004
+Epoch:  7 	 Loss:  0.026975538581609726
+Epoch:  8 	 Loss:  0.026818787679076195
+Epoch:  9 	 Loss:  0.02678241953253746
+Epoch:  10 	 Loss:  0.02741476148366928
+Epoch:  11 	 Loss:  0.027115758508443832
+Epoch:  12 	 Loss:  0.027071719989180565
+Epoch:  13 	 Loss:  0.02711513265967369
+Epoch:  14 	 Loss:  0.026840493083000183
+Epoch:  15 	 Loss:  0.02707214467227459
+Epoch:  16 	 Loss:  0.026816418394446373
+Epoch:  17 	 Loss:  0.027066545560956
+Epoch:  18 	 Loss:  0.026635155081748962
+Epoch:  19 	 Loss:  0.027028121054172516
+Epoch:  20 	 Loss:  0.02684430405497551
+Epoch:  21 	 Loss:  0.026721423491835594
+Epoch:  22 	 Loss:  0.026810582727193832
+Epoch:  23 	 Loss:  0.026847893372178078
+Epoch:  24 	 Loss:  0.02695569023489952
+Epoch:  25 	 Loss:  0.02679058536887169
+Epoch:  26 	 Loss:  0.026705196127295494
+Epoch:  27 	 Loss:  0.026732321828603745
+Epoch:  28 	 Loss:  0.02681611105799675
+Epoch:  29 	 Loss:  0.026595192030072212
+Epoch:  30 	 Loss:  0.02636120840907097
+Epoch:  31 	 Loss:  0.026664551347494125
+Epoch:  32 	 Loss:  0.0267177727073431
+Epoch:  33 	 Loss:  0.02714051678776741
+Epoch:  34 	 Loss:  0.0266397874802351
+Epoch:  35 	 Loss:  0.026859845966100693
+Epoch:  36 	 Loss:  0.02737313136458397
+Epoch:  37 	 Loss:  0.02682330831885338
+Epoch:  38 	 Loss:  0.027004612609744072
+Epoch:  39 	 Loss:  0.026891645044088364
+Epoch:  40 	 Loss:  0.027284465730190277
+Epoch:  41 	 Loss:  0.02676534652709961
+Epoch:  42 	 Loss:  0.026757510378956795
+Epoch:  43 	 Loss:  0.026605922728776932
+Epoch:  44 	 Loss:  0.02660706825554371
+Epoch:  45 	 Loss:  0.026631593704223633
+Epoch:  46 	 Loss:  0.026832900941371918
+Epoch:  47 	 Loss:  0.027040407061576843
+Epoch:  48 	 Loss:  0.02656358852982521
+Epoch:  49 	 Loss:  0.0271451473236084
+Epoch:  50 	 Loss:  0.026856211945414543
+Epoch:  51 	 Loss:  0.02698608860373497
+Epoch:  52 	 Loss:  0.02733021043241024
+Epoch:  53 	 Loss:  0.026922639459371567
+Epoch:  54 	 Loss:  0.026946093887090683
+Epoch:  55 	 Loss:  0.0268497746437788
+Epoch:  56 	 Loss:  0.02682846412062645
+Epoch:  57 	 Loss:  0.026857485994696617
+Epoch:  58 	 Loss:  0.026643352583050728
+Epoch:  59 	 Loss:  0.027205009013414383
+Epoch:  60 	 Loss:  0.027253465726971626
+Epoch:  61 	 Loss:  0.02671622298657894
+Epoch:  62 	 Loss:  0.026861868798732758
+Epoch:  63 	 Loss:  0.026989487931132317
+Epoch:  64 	 Loss:  0.026880042627453804
+Epoch:  65 	 Loss:  0.0275450199842453
+Epoch:  66 	 Loss:  0.02675689570605755
+Epoch:  67 	 Loss:  0.026987656950950623
+Epoch:  68 	 Loss:  0.026914728805422783
+Epoch:  69 	 Loss:  0.02663714624941349
+Epoch:  70 	 Loss:  0.026787588372826576
+Epoch:  71 	 Loss:  0.02706412971019745
+Epoch:  72 	 Loss:  0.02660459652543068
+Epoch:  73 	 Loss:  0.027129556983709335
+Epoch:  74 	 Loss:  0.027071485295891762
+Epoch:  75 	 Loss:  0.026877811178565025
+Epoch:  76 	 Loss:  0.02668960578739643
+Epoch:  77 	 Loss:  0.02698986791074276
+Epoch:  78 	 Loss:  0.026575760915875435
+Epoch:  79 	 Loss:  0.02717399038374424
+Epoch:  80 	 Loss:  0.027128690853714943
+Epoch:  81 	 Loss:  0.02727569453418255
+Epoch:  82 	 Loss:  0.026810921728610992
+Epoch:  83 	 Loss:  0.027014896273612976
+Epoch:  84 	 Loss:  0.026942318305373192
+Epoch:  85 	 Loss:  0.026988647878170013
+Epoch:  86 	 Loss:  0.026513520628213882
+Epoch:  87 	 Loss:  0.026948051527142525
+Epoch:  88 	 Loss:  0.026599232107400894
+Epoch:  89 	 Loss:  0.02704767882823944
+Epoch:  90 	 Loss:  0.026861341670155525
+Epoch:  91 	 Loss:  0.027454398572444916
+Epoch:  92 	 Loss:  0.02705475501716137
+Epoch:  93 	 Loss:  0.026991015300154686
+Epoch:  94 	 Loss:  0.026578715071082115
+Epoch:  95 	 Loss:  0.026846233755350113
+Epoch:  96 	 Loss:  0.026838527992367744
+Epoch:  97 	 Loss:  0.02687101997435093
+Epoch:  98 	 Loss:  0.027243787422776222
+Epoch:  99 	 Loss:  0.026723403483629227
+Epoch:  100 	 Loss:  0.02713451348245144
+wandb: Waiting for W&B process to finish, PID 1877655
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155855-5pkasd9f/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_155855-5pkasd9f/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02713
+wandb:        _step 800000
+wandb:     _runtime 82
+wandb:   _timestamp 1612904417
+wandb:         loss 0.02713
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▁▄▃▄▆▆▄▂▃▄▃▄▃▂█▄▃▂▄▆▅▅▄▇▃▄▅▂▂▆▅▆▄▅▅▅▆▂▄▆
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced exalted-sweep-71: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/5pkasd9f
+wandb: Agent Starting Run: baepe2qq with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 128
+wandb: 	n_nodes_fc2: 128
+wandb: 	optimizer: rmsprop
+wandb: 	weight_decay: 0.05
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 16:00:23.825292: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 16:00:23.830874: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run glad-sweep-72
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/baepe2qq
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_160022-baepe2qq
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.026657722890377045
+Epoch:  2 	 Loss:  0.026580654084682465
+Epoch:  3 	 Loss:  0.02627573534846306
+Epoch:  4 	 Loss:  0.02644968591630459
+Epoch:  5 	 Loss:  0.026697998866438866
+Epoch:  6 	 Loss:  0.02631021849811077
+Epoch:  7 	 Loss:  0.02633948065340519
+Epoch:  8 	 Loss:  0.026717161759734154
+Epoch:  9 	 Loss:  0.026223981752991676
+Epoch:  10 	 Loss:  0.026526616886258125
+Epoch:  11 	 Loss:  0.02671266533434391
+Epoch:  12 	 Loss:  0.026608159765601158
+Epoch:  13 	 Loss:  0.026518065482378006
+Epoch:  14 	 Loss:  0.026472732424736023
+Epoch:  15 	 Loss:  0.02658333256840706
+Epoch:  16 	 Loss:  0.0267147459089756
+Epoch:  17 	 Loss:  0.02640611305832863
+Epoch:  18 	 Loss:  0.026552533730864525
+Epoch:  19 	 Loss:  0.026689115911722183
+Epoch:  20 	 Loss:  0.026516033336520195
+Epoch:  21 	 Loss:  0.02661677449941635
+Epoch:  22 	 Loss:  0.026495810598134995
+Epoch:  23 	 Loss:  0.02660888433456421
+Epoch:  24 	 Loss:  0.026556843891739845
+Epoch:  25 	 Loss:  0.0260439682751894
+Epoch:  26 	 Loss:  0.026846541091799736
+Epoch:  27 	 Loss:  0.02613101527094841
+Epoch:  28 	 Loss:  0.02639720030128956
+Epoch:  29 	 Loss:  0.026765739545226097
+Epoch:  30 	 Loss:  0.026679785922169685
+Epoch:  31 	 Loss:  0.026211583986878395
+Epoch:  32 	 Loss:  0.026571616530418396
+Epoch:  33 	 Loss:  0.02597399801015854
+Epoch:  34 	 Loss:  0.026570841670036316
+Epoch:  35 	 Loss:  0.026567798107862473
+Epoch:  36 	 Loss:  0.026173211634159088
+Epoch:  37 	 Loss:  0.02649468556046486
+Epoch:  38 	 Loss:  0.02653956413269043
+Epoch:  39 	 Loss:  0.02629510685801506
+Epoch:  40 	 Loss:  0.026441363617777824
+Epoch:  41 	 Loss:  0.0265874732285738
+Epoch:  42 	 Loss:  0.02641914412379265
+Epoch:  43 	 Loss:  0.026824869215488434
+Epoch:  44 	 Loss:  0.026876317337155342
+Epoch:  45 	 Loss:  0.0265799630433321
+Epoch:  46 	 Loss:  0.026453165337443352
+Epoch:  47 	 Loss:  0.026747575029730797
+Epoch:  48 	 Loss:  0.026379616931080818
+Epoch:  49 	 Loss:  0.026755085214972496
+Epoch:  50 	 Loss:  0.026430146768689156
+Epoch:  51 	 Loss:  0.02653755620121956
+Epoch:  52 	 Loss:  0.02649257332086563
+Epoch:  53 	 Loss:  0.026485007256269455
+Epoch:  54 	 Loss:  0.026569988578557968
+Epoch:  55 	 Loss:  0.026018362492322922
+Epoch:  56 	 Loss:  0.0263555608689785
+Epoch:  57 	 Loss:  0.026387590914964676
+Epoch:  58 	 Loss:  0.026591269299387932
+Epoch:  59 	 Loss:  0.026400653645396233
+Epoch:  60 	 Loss:  0.026637939736247063
+Epoch:  61 	 Loss:  0.026575280353426933
+Epoch:  62 	 Loss:  0.026638347655534744
+Epoch:  63 	 Loss:  0.026384444907307625
+Epoch:  64 	 Loss:  0.02637660503387451
+Epoch:  65 	 Loss:  0.02614775486290455
+Epoch:  66 	 Loss:  0.02653156779706478
+Epoch:  67 	 Loss:  0.02640261873602867
+Epoch:  68 	 Loss:  0.026502516120672226
+Epoch:  69 	 Loss:  0.026456832885742188
+Epoch:  70 	 Loss:  0.02664012648165226
+Epoch:  71 	 Loss:  0.02658776193857193
+Epoch:  72 	 Loss:  0.0264180526137352
+Epoch:  73 	 Loss:  0.026947975158691406
+Epoch:  74 	 Loss:  0.02660495974123478
+Epoch:  75 	 Loss:  0.026287853717803955
+Epoch:  76 	 Loss:  0.026485459879040718
+Epoch:  77 	 Loss:  0.026528701186180115
+Epoch:  78 	 Loss:  0.026305295526981354
+Epoch:  79 	 Loss:  0.026554198935627937
+Epoch:  80 	 Loss:  0.02664664015173912
+Epoch:  81 	 Loss:  0.026203613728284836
+Epoch:  82 	 Loss:  0.026685554534196854
+Epoch:  83 	 Loss:  0.02650044485926628
+Epoch:  84 	 Loss:  0.026242461055517197
+Epoch:  85 	 Loss:  0.026655830442905426
+Epoch:  86 	 Loss:  0.026599865406751633
+Epoch:  87 	 Loss:  0.02656031958758831
+Epoch:  88 	 Loss:  0.026181111112236977
+Epoch:  89 	 Loss:  0.02631402015686035
+Epoch:  90 	 Loss:  0.026532502844929695
+Epoch:  91 	 Loss:  0.026512516662478447
+Epoch:  92 	 Loss:  0.026340026408433914
+Epoch:  93 	 Loss:  0.026241976767778397
+Epoch:  94 	 Loss:  0.026577549055218697
+Epoch:  95 	 Loss:  0.02657756768167019
+Epoch:  96 	 Loss:  0.02626916952431202
+Epoch:  97 	 Loss:  0.026543516665697098
+Epoch:  98 	 Loss:  0.026723163202404976
+Epoch:  99 	 Loss:  0.02637081779539585
+Epoch:  100 	 Loss:  0.026762444525957108
+wandb: Waiting for W&B process to finish, PID 1881351
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_160022-baepe2qq/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210209_160022-baepe2qq/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 99
+wandb:   batch_loss 0.02676
+wandb:        _step 800000
+wandb:     _runtime 75
+wandb:   _timestamp 1612904497
+wandb:         loss 0.02676
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   batch_loss ▆▂▂▆▆▄▆▅▅▅█▃▁▅▁▂▅█▄▇▅▅▃▃▅▃▃▄▃▅▅▅▆▂▅▂▃▅▅▇
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇████
+wandb:         loss ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced glad-sweep-72: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/baepe2qq
+wandb: Agent Starting Run: axf4zsbk with config:
+wandb: 	batch_size: 256
+wandb: 	embedding_size: 8
+wandb: 	epochs: 100
+wandb: 	learning_rate: 1e-10
+wandb: 	momentum: 0
+wandb: 	n_nodes_fc1: 256
+wandb: 	n_nodes_fc2: 32
+wandb: 	optimizer: adam
+wandb: 	weight_decay: 0
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.18 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-09 16:01:43.399246: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-02-09 16:01:43.404702: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+wandb: Tracking run with wandb version 0.10.15
+wandb: Syncing run good-sweep-73
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/sweeps/2w567fe2
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000/runs/axf4zsbk
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210209_160141-axf4zsbk
+wandb: Run `wandb offline` to turn off syncing.
+
+Epoch:  1 	 Loss:  0.027546491473913193
+Epoch:  2 	 Loss:  0.027640104293823242
+Epoch:  3 	 Loss:  0.027159150689840317
+Epoch:  4 	 Loss:  0.027445651590824127
+Epoch:  5 	 Loss:  0.02698243223130703
+Epoch:  6 	 Loss:  0.027337083593010902
+Epoch:  7 	 Loss:  0.027781665325164795
+Epoch:  8 	 Loss:  0.02704872377216816
+Epoch:  9 	 Loss:  0.02773425541818142
+Epoch:  10 	 Loss:  0.02754398062825203
+Epoch:  11 	 Loss:  0.027226712554693222
+Epoch:  12 	 Loss:  0.02709837444126606
+Epoch:  13 	 Loss:  0.027348211035132408
+Epoch:  14 	 Loss:  0.027723513543605804
+Epoch:  15 	 Loss:  0.027384625747799873
+Epoch:  16 	 Loss:  0.02769026719033718
+Epoch:  17 	 Loss:  0.0274520106613636
+Epoch:  18 	 Loss:  0.027433734387159348
+Epoch:  19 	 Loss:  0.027564970776438713
+Epoch:  20 	 Loss:  0.027552654966711998
+Epoch:  21 	 Loss:  0.027729978784918785
+Epoch:  22 	 Loss:  0.027208365499973297
+Epoch:  23 	 Loss:  0.02671215496957302
+Epoch:  24 	 Loss:  0.027663156390190125
+Epoch:  25 	 Loss:  0.02732049487531185
+Epoch:  26 	 Loss:  0.026902712881565094
+Epoch:  27 	 Loss:  0.02719191275537014
+Epoch:  28 	 Loss:  0.02714039757847786
+Epoch:  29 	 Loss:  0.027597134932875633
+Epoch:  30 	 Loss:  0.027035826817154884
+Epoch:  31 	 Loss:  0.02729254961013794
+Epoch:  32 	 Loss:  0.027751220390200615
+Epoch:  33 	 Loss:  0.02702455408871174
+Epoch:  34 	 Loss:  0.02721407823264599
+Epoch:  35 	 Loss:  0.027497442439198494
+Epoch:  36 	 Loss:  0.027646398171782494
+Epoch:  37 	 Loss:  0.027786418795585632
+Epoch:  38 	 Loss:  0.02734936587512493
+Epoch:  39 	 Loss:  0.02756870724260807
+Epoch:  40 	 Loss:  0.027737805619835854
+Epoch:  41 	 Loss:  0.027304094284772873
+Epoch:  42 	 Loss:  0.027338018640875816
+Epoch:  43 	 Loss:  0.027647262439131737
+Epoch:  44 	 Loss:  0.026903152465820312
+Epoch:  45 	 Loss:  0.027261128649115562
+Epoch:  46 	 Loss:  0.027445103973150253
+Epoch:  47 	 Loss:  0.02733246050775051
+Epoch:  48 	 Loss:  0.0278098676353693
+Epoch:  49 	 Loss:  0.027604982256889343
+Epoch:  50 	 Loss:  0.02751961164176464
+Epoch:  51 	 Loss:  0.026949342340230942
+Epoch:  52 	 Loss:  0.02717592567205429
+Epoch:  53 	 Loss:  0.026957295835018158
+Epoch:  54 	 Loss:  0.027561897411942482
+Epoch:  55 	 Loss:  0.02702561765909195
+Epoch:  56 	 Loss:  0.027408191934227943
+Epoch:  57 	 Loss:  0.027365541085600853
+Epoch:  58 	 Loss:  0.027501143515110016
+Epoch:  59 	 Loss:  0.027569040656089783
+Epoch:  60 	 Loss:  0.02782071940600872
+Epoch:  61 	 Loss:  0.027237510308623314
+Epoch:  62 	 Loss:  0.027423426508903503
+Epoch:  63 	 Loss:  0.027329470962285995
+Epoch:  64 	 Loss:  0.02727276086807251
+Epoch:  65 	 Loss:  0.027723466977477074
+Epoch:  66 	 Loss:  0.027060722932219505
+Epoch:  67 	 Loss:  0.026979245245456696
+Epoch:  68 	 Loss:  0.02717326208949089
+Epoch:  69 	 Loss:  0.02763611078262329
+Epoch:  70 	 Loss:  0.027003737166523933
+Epoch:  71 	 Loss:  0.02704242430627346
+Epoch:  72 	 Loss:  0.02746196836233139
+Epoch:  73 	 Loss:  0.02706332877278328
+Epoch:  74 	 Loss:  0.027301104739308357
+Epoch:  75 	 Loss:  0.02745373733341694
+Epoch:  76 	 Loss:  0.027640914544463158
+Epoch:  77 	 Loss:  0.027099546045064926
+Epoch:  78 	 Loss:  0.02734997496008873
+Epoch:  79 	 Loss:  0.027210235595703125
+Epoch:  80 	 Loss:  0.027073176577687263
+Epoch:  81 	 Loss:  0.02734023705124855
+Epoch:  82 	 Loss:  0.027165761217474937
+Epoch:  83 	 Loss:  0.02701377496123314
+Epoch:  84 	 Loss:  0.02741776965558529
+Epoch:  85 	 Loss:  0.0278102345764637
+Epoch:  86 	 Loss:  0.027264174073934555
+Epoch:  87 	 Loss:  0.027427617460489273
+Epoch:  88 	 Loss:  0.02744390442967415
+Epoch:  89 	 Loss:  0.027156375348567963
+Epoch:  90 	 Loss:  0.02658742107450962
+Epoch:  91 	 Loss:  0.027305006980895996
+Epoch:  92 	 Loss:  0.02718311920762062
+Epoch:  93 	 Loss:  0.02704673446714878
+Epoch:  94 	 Loss:  0.027473747730255127
+Epoch:  95 	 Loss:  0.027662493288517
+Epoch:  96 	 Loss:  0.02745421975851059
+Epoch:  97 	 Loss:  0.027103161439299583
+Epoch:  98 	 Loss:  0.02708224207162857
+Epoch:  99 	 Loss:  0.02718968130648136
+Epoch:  100 	 Loss:  0.027525024488568306
+Exception in thread Exception in threading.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 1202, in invoke_excepthook
+    hook(args)
+ValueError: I/O operation on closed file.
+Problem finishing run
+Traceback (most recent call last):
+  File "/home/naddeok5/.local/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1374, in _atexit_cleanup
+    self._on_finish()
+  File "/home/naddeok5/.local/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1513, in _on_finish
+    self._console_stop()  # TODO: there's a race here with jupyter console logging
+  File "/home/naddeok5/.local/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1410, in _console_stop
+    self._restore()
+  File "/home/naddeok5/.local/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1342, in _restore
+    self._out_redir.uninstall()
+  File "/home/naddeok5/.local/lib/python3.8/site-packages/wandb/sdk/lib/redirect.py", line 233, in uninstall
+    self._redirect(to_fd=self._old_fp.fileno(), close=True)
+  File "/home/naddeok5/.local/lib/python3.8/site-packages/wandb/sdk/lib/redirect.py", line 195, in _redirect
+    setattr(sys, self._stream, os.fdopen(self._old_fd, "w"))
+  File "/usr/lib/python3.8/os.py", line 1023, in fdopen
+    return io.open(fd, *args, **kwargs)
+OSError: [Errno 9] Bad file descriptor
+wandb: ERROR Problem finishing run
+/usr/lib/python3.8/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 438 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

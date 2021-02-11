@@ -5,6 +5,7 @@ import copy
 import wandb
 from autoencoder import Autoencoder
 from sleeper import Sleeper
+from dice_loss import DiceLoss
 # sleeper = Sleeper()
 
 
@@ -36,26 +37,26 @@ class WandB_Academy:
 
         # Declare if Weights and Biases are used
         wandb_sweep = sweep_config = {
-                        'method': 'grid', # bayes
+                        'method': 'bayes',
                         'metric': {
                         'name': 'loss',
                         'goal': 'minimize'   
                         },
                         'parameters': {
                             'epochs': {
-                                'values': [1000]
+                                'values': [500, 1000]
                             },
                             'batch_size': {
-                                'values': [256]
+                                'values': [8, 64]
                             },
                             'n_nodes_fc1' : {
-                                'values': [256]
+                                'values': [512, 1024]
                             },
                             'n_nodes_fc2' : {
-                                'values'  : [128]
+                                'values'  : [128, 256]
                             },
                             'embedding_size': {
-                                'values': [32]
+                                'values': [32, 64]
                             },
                             'momentum': {
                                 'values': [0, 0.1, 0.5, 0.9]
@@ -64,10 +65,13 @@ class WandB_Academy:
                                 'values': [0, 0.0005, 0.005, 0.05]
                             },
                             'learning_rate': {
-                                'values': [1e-10, 1e-12, 1e-14]
+                                'values': [1e-12, 1e-14]
                             },
                             'optimizer': {
                                 'values': ['adam', 'sgd', 'rmsprop']
+                            },
+                            'criterion': {
+                                'values': ["mse", "cossim", "dice"]
                             }
                         }
                     }
@@ -85,8 +89,6 @@ class WandB_Academy:
             weight_decay (float, optional):     Weight decay in the optimizer. Defaults to 0.0001.
         """
 
-        criterion = torch.nn.MSELoss()
-
         # Weights and Biases Setup
         config_defaults = {
                     'epochs': 100,
@@ -97,7 +99,8 @@ class WandB_Academy:
                     'momentum'   : 0.1,
                     'weight_decay' :  0.0005,
                     'learning_rate': 1e-12,
-                    'optimizer': 'sgd'
+                    'optimizer': 'sgd',
+                    'criterion': 'mse'
                 }
         wandb.init(config = config_defaults, entity="naddeok", project="Year_AutoEnc_Trunc10000")
         config = wandb.config
@@ -112,12 +115,22 @@ class WandB_Academy:
                             embedding_size = config.embedding_size)
         self.net = net if self.gpu == False else net.cuda()
 
+        # Setup Optimzier
         if config.optimizer=='sgd':
             optimizer = torch.optim.SGD(self.net.parameters(),lr=config.learning_rate, momentum=config.momentum)
         elif config.optimizer=='adam':
             optimizer = torch.optim.Adam(self.net.parameters(),lr=config.learning_rate)
         elif config.optimizer=='rmsprop':
             optimizer = torch.optim.RMSprop(self.net.parameters(),lr=config.learning_rate, weight_decay = config.weight_decay, momentum = config.momentum)
+
+        # Setup Criterion
+        if config.criterion=="mse":
+            criterion = torch.nn.MSELoss()
+        elif config.criterion=="cossim":
+            criterion = torch.nn.CosineEmbeddingLoss(reduction='none')
+        elif config.criterion=="dice":
+            criterion = DiceLoss(smooth=1)
+            
 
         # Loop for epochs
         total_instances = 0

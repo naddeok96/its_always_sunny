@@ -45,4 +45,4 @@ optimizer:
   value: rmsprop
 weight_decay:
   desc: null
-  value: 0
+  value: 0.005

@@ -39,10 +39,10 @@ n_nodes_fc1:
   value: 128
 n_nodes_fc2:
   desc: null
-  value: 64
+  value: 128
 optimizer:
   desc: null
   value: rmsprop
 weight_decay:
   desc: null
-  value: 0
+  value: 0.05
