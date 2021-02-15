@@ -41,6 +41,7 @@ class Data:
             categorical_data = self.weather_dataset[category]
 
             # Convert to right format for one hot function and reduce the size
+            self.categorical_data = torch.unique(categorical_data, dim = 0, return_counts = False)
             categorical_data = categorical_data - min(categorical_data).item()
             _, num_unique = torch.unique(categorical_data, dim = 0, return_counts = True)
             # print("Unique Category Size")

@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "autoencoder_trainer.py", line 9, in <module>
-    from wanb_academy import WandB_Academy
-ModuleNotFoundError: No module named 'wanb_academy'
