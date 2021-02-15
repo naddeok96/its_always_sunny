@@ -1,3 +1,4 @@
+import torch.nn as nn
 class DiceLoss(nn.Module):
     def __init__(self, smooth=1):
         super(DiceLoss, self).__init__()
@@ -5,7 +6,7 @@ class DiceLoss(nn.Module):
 
     def forward(self, inputs, targets):   
         
-        # Flatten label and prediction tensors
+        # Flatten label and prediction tensor
         inputs = inputs.view(-1)
         targets = targets.view(-1)
         

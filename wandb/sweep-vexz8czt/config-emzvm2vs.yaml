@@ -1,0 +1,22 @@
+wandb_version: 1
+
+batch_size:
+  value: 8
+criterion:
+  value: cossim
+embedding_size:
+  value: 64
+epochs:
+  value: 1000
+learning_rate:
+  value: 1.0e-12
+momentum:
+  value: 0
+n_nodes_fc1:
+  value: 512
+n_nodes_fc2:
+  value: 256
+optimizer:
+  value: sgd
+weight_decay:
+  value: 0

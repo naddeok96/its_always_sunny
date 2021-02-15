@@ -1,0 +1,189 @@
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: w59cwwv7 with config:
+wandb: 	activation_func: relu
+wandb: 	batch_size: 1
+wandb: 	criterion: mse
+wandb: 	embedding_size: 2
+wandb: 	epochs: 1000
+wandb: 	learning_rate: 0.001
+wandb: 	momentum: 0.9
+wandb: 	n_nodes_fc1: 512
+wandb: 	n_nodes_fc2: 256
+wandb: 	optimizer: sgd
+wandb: 	output_activation_func: softmax
+wandb: 	weight_decay: 0.005
+wandb: Currently logged in as: naddeok (use `wandb login --relogin` to force relogin)
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+Loading Data...
+...done
+
+Loading Academy...
+Create sweep with ID: sabykesc
+Sweep URL: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss/sweeps/sabykesc
+2021-02-13 11:41:41.376458: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-02-13 11:41:41.383624: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+wandb: Tracking run with wandb version 0.10.18
+wandb: Syncing run hardy-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss/sweeps/sabykesc
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss/runs/w59cwwv7
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210213_114140-w59cwwv7
+wandb: Run `wandb offline` to turn off syncing.
+/home/naddeok5/its_always_sunny/autoencoder.py:62: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  x = self.output_activation_func(self.decoder_fc3(x))
+Epoch:  1 	 Loss:  0.025755643844604492
+Epoch:  11 	 Loss:  0.025610800832509995
+Epoch:  21 	 Loss:  0.025704871863126755
+Epoch:  31 	 Loss:  0.025612598285079002
+Epoch:  41 	 Loss:  0.025558125227689743
+Epoch:  51 	 Loss:  0.025602098554372787
+Epoch:  61 	 Loss:  0.025643812492489815
+Epoch:  71 	 Loss:  0.02557990327477455
+Epoch:  81 	 Loss:  0.025624295696616173
+Epoch:  91 	 Loss:  0.025622641667723656
+Epoch:  101 	 Loss:  0.025621401146054268
+Epoch:  111 	 Loss:  0.025677375495433807
+Epoch:  121 	 Loss:  0.025644486770033836
+Epoch:  131 	 Loss:  0.025634033605456352
+Epoch:  141 	 Loss:  0.025943493470549583
+Epoch:  151 	 Loss:  0.02552826702594757
+Epoch:  161 	 Loss:  0.02563195489346981
+Epoch:  171 	 Loss:  0.025585215538740158
+Epoch:  181 	 Loss:  0.02561761997640133
+Epoch:  191 	 Loss:  0.025585021823644638
+Epoch:  201 	 Loss:  0.025571290403604507
+Epoch:  211 	 Loss:  0.025565575808286667
+Epoch:  221 	 Loss:  0.025598494336009026
+Epoch:  231 	 Loss:  0.025584673509001732
+Epoch:  241 	 Loss:  0.02608489617705345
+Epoch:  251 	 Loss:  0.025565538555383682
+Epoch:  261 	 Loss:  0.025598149746656418
+Epoch:  271 	 Loss:  0.026087185367941856
+Epoch:  281 	 Loss:  0.025624431669712067
+Epoch:  291 	 Loss:  0.025532109662890434
+Epoch:  301 	 Loss:  0.02553887851536274
+Epoch:  311 	 Loss:  0.025670496746897697
+Epoch:  321 	 Loss:  0.02558460459113121
+Epoch:  331 	 Loss:  0.02558475360274315
+Epoch:  341 	 Loss:  0.02563062682747841
+Epoch:  351 	 Loss:  0.02562418021261692
+Epoch:  361 	 Loss:  0.025617489591240883
+Epoch:  371 	 Loss:  0.02558453194797039
+Epoch:  381 	 Loss:  0.026090046390891075
+Epoch:  391 	 Loss:  0.025578031316399574
+Epoch:  401 	 Loss:  0.025604449212551117
+Epoch:  411 	 Loss:  0.025597961619496346
+Epoch:  421 	 Loss:  0.025604674592614174
+Epoch:  431 	 Loss:  0.025564873591065407
+Epoch:  441 	 Loss:  0.025657081976532936
+Epoch:  451 	 Loss:  0.025584738701581955
+Epoch:  461 	 Loss:  0.025617698207497597
+Epoch:  471 	 Loss:  0.02559162862598896
+Epoch:  481 	 Loss:  0.02559812180697918
+Epoch:  491 	 Loss:  0.025532351806759834
+Epoch:  501 	 Loss:  0.025617625564336777
+Epoch:  511 	 Loss:  0.025532197207212448
+Epoch:  521 	 Loss:  0.025532137602567673
+Epoch:  531 	 Loss:  0.025525430217385292
+Epoch:  541 	 Loss:  0.025584543123841286
+Epoch:  551 	 Loss:  0.025597892701625824
+Epoch:  561 	 Loss:  0.025525566190481186
+Epoch:  571 	 Loss:  0.025571761652827263
+Epoch:  581 	 Loss:  0.025584710761904716
+Epoch:  591 	 Loss:  0.025617636740207672
+Epoch:  601 	 Loss:  0.025538554415106773
+Epoch:  611 	 Loss:  0.025630827993154526
+Epoch:  621 	 Loss:  0.025597726926207542
+Epoch:  631 	 Loss:  0.025591636076569557
+Epoch:  641 	 Loss:  0.025630883872509003
+Epoch:  651 	 Loss:  0.02553897723555565
+Epoch:  661 	 Loss:  0.025591330602765083
+Epoch:  671 	 Loss:  0.025624390691518784
+Epoch:  681 	 Loss:  0.02552562579512596
+Epoch:  691 	 Loss:  0.025545410811901093
+Epoch:  701 	 Loss:  0.02561763860285282
+Epoch:  711 	 Loss:  0.025617752224206924
+Epoch:  721 	 Loss:  0.02567008137702942
+Epoch:  731 	 Loss:  0.02563060261309147
+Epoch:  741 	 Loss:  0.0256374292075634
+Epoch:  751 	 Loss:  0.025952832773327827
+Epoch:  761 	 Loss:  0.02561747469007969
+Epoch:  771 	 Loss:  0.025578264147043228
+Epoch:  781 	 Loss:  0.02559138461947441
+Epoch:  791 	 Loss:  0.02561112307012081
+Epoch:  801 	 Loss:  0.025584371760487556
+Epoch:  811 	 Loss:  0.02559797465801239
+Epoch:  821 	 Loss:  0.02561766840517521
+Epoch:  831 	 Loss:  0.025532808154821396
+Epoch:  841 	 Loss:  0.02568332478404045
+Epoch:  851 	 Loss:  0.025591230019927025
+Epoch:  861 	 Loss:  0.025525834411382675
+Epoch:  871 	 Loss:  0.025683237239718437
+Epoch:  881 	 Loss:  0.025571340695023537
+Epoch:  891 	 Loss:  0.025670357048511505
+Epoch:  901 	 Loss:  0.025952687487006187
+Epoch:  911 	 Loss:  0.025604482740163803
+Epoch:  921 	 Loss:  0.025611022487282753
+Epoch:  931 	 Loss:  0.02561802789568901
+Epoch:  941 	 Loss:  0.02564375288784504
+Epoch:  951 	 Loss:  0.025584569200873375
+Epoch:  961 	 Loss:  0.02568347007036209
+Epoch:  971 	 Loss:  0.02563071995973587
+Epoch:  981 	 Loss:  0.025525428354740143
+Epoch:  991 	 Loss:  0.025624094530940056
+wandb: Waiting for W&B process to finish, PID 49325
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210213_114140-w59cwwv7/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210213_114140-w59cwwv7/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 990
+wandb:          MSE 0.02558
+wandb:       CosSim 0.83327
+wandb:         Dice 0.64859
+wandb:     _runtime 39377
+wandb:   _timestamp 1613273877
+wandb:        _step 7928000
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:          MSE ▄▃▂▂▂▂▁▂▂▂▁█▁▂▂█▂▁▂▂▂▁▂▂▁▂▂▁▂▂▂▂▂▁▁▂▂▂▃▂
+wandb:       CosSim ▄▃▂▂▂▂▁▂▂▂▁█▁▂▂█▂▁▂▂▂▁▂▂▁▂▂▁▂▂▂▂▂▁▁▂▂▂▃▂
+wandb:         Dice ▄▃▂▂▂▂▁▂▂▂▁█▁▂▂█▂▁▂▂▂▁▂▂▁▂▂▁▂▂▂▂▂▁▁▂▂▂▃▂
+wandb:     _runtime ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced hardy-sweep-1: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss/runs/w59cwwv7
+wandb: Agent Starting Run: t24irv26 with config:
+wandb: 	activation_func: relu
+wandb: 	batch_size: 1
+wandb: 	criterion: mse
+wandb: 	embedding_size: 2
+wandb: 	epochs: 1000000
+wandb: 	learning_rate: 0.001
+wandb: 	momentum: 0.9
+wandb: 	n_nodes_fc1: 512
+wandb: 	n_nodes_fc2: 256
+wandb: 	optimizer: sgd
+wandb: 	output_activation_func: softmax
+wandb: 	weight_decay: 0.005
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+2021-02-13 22:38:02.507380: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-02-13 22:38:02.514097: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+wandb: Tracking run with wandb version 0.10.18
+wandb: Syncing run winter-sweep-2
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss/sweeps/sabykesc
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss/runs/t24irv26
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210213_223801-t24irv26
+wandb: Run `wandb offline` to turn off syncing.
+
+/home/naddeok5/its_always_sunny/autoencoder.py:62: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  x = self.output_activation_func(self.decoder_fc3(x))
+Epoch:  1 	 Loss:  0.025507675483822823

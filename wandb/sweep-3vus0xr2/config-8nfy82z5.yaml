@@ -1,0 +1,26 @@
+wandb_version: 1
+
+activation_func:
+  value: sigmoid
+batch_size:
+  value: 1
+criterion:
+  value: cossim
+embedding_size:
+  value: 8
+epochs:
+  value: 1000
+learning_rate:
+  value: 0.01
+momentum:
+  value: 0.1
+n_nodes_fc1:
+  value: 512
+n_nodes_fc2:
+  value: 256
+optimizer:
+  value: sgd
+output_activation_func:
+  value: softmax
+weight_decay:
+  value: 0

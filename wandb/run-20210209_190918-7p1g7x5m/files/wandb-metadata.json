@@ -1,0 +1,24 @@
+{
+    "os": "Linux-4.15.0-88-generic-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.9",
+    "heartbeatAt": "2021-02-10T00:09:21.022047",
+    "startedAt": "2021-02-10T00:09:18.662637",
+    "docker": null,
+    "gpu": "TITAN RTX",
+    "gpu_count": 8,
+    "cpu_count": 64,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "autoencoder_trainer.py",
+    "program": "autoencoder_trainer.py",
+    "git": {
+        "remote": "https://github.com/naddeok96/its_always_sunny.git",
+        "commit": "fb231d69f039ce0ddee0f7e1bc21a45e889e9753"
+    },
+    "email": "naddeok5@students.rowan.edu",
+    "root": "/home/naddeok5/its_always_sunny",
+    "host": "lambda02",
+    "username": "naddeok5",
+    "executable": "/usr/bin/python3"
+}

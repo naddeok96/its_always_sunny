@@ -1,0 +1,20 @@
+wandb_version: 1
+
+batch_size:
+  value: 128
+embedding_size:
+  value: 32
+epochs:
+  value: 100
+learning_rate:
+  value: 1.0e-12
+momentum:
+  value: 0
+n_nodes_fc1:
+  value: 512
+n_nodes_fc2:
+  value: 32
+optimizer:
+  value: sgd
+weight_decay:
+  value: 0

@@ -11,10 +11,10 @@ from dice_loss import DiceLoss
 
 class WandB_Academy:
     def __init__(self,
+                 sweep_config,
                  data,
                  gpu = False,
-                 autoencoder_trainer = False,
-                 wandb_sweep = False):
+                 autoencoder_trainer = False):
         """
         Trains and test models on datasets
 
@@ -35,47 +35,16 @@ class WandB_Academy:
         # Declare if training is for an autoencoder
         self.autoencoder_trainer = autoencoder_trainer
 
+        # Declare Losses
+        self.mse_criterion = torch.nn.MSELoss()
+        self.cos_criterion = torch.nn.CosineEmbeddingLoss(reduction='mean',
+                                                            margin=0.5)
+        self.dice_criterion = DiceLoss(smooth=1)
+
         # Declare if Weights and Biases are used
-        wandb_sweep = sweep_config = {
-                        'method': 'bayes',
-                        'metric': {
-                        'name': 'loss',
-                        'goal': 'minimize'   
-                        },
-                        'parameters': {
-                            'epochs': {
-                                'values': [500, 1000]
-                            },
-                            'batch_size': {
-                                'values': [8, 64]
-                            },
-                            'n_nodes_fc1' : {
-                                'values': [512, 1024]
-                            },
-                            'n_nodes_fc2' : {
-                                'values'  : [128, 256]
-                            },
-                            'embedding_size': {
-                                'values': [32, 64]
-                            },
-                            'momentum': {
-                                'values': [0, 0.1, 0.5, 0.9]
-                            },
-                            'weight_decay': {
-                                'values': [0, 0.0005, 0.005, 0.05]
-                            },
-                            'learning_rate': {
-                                'values': [1e-12, 1e-14]
-                            },
-                            'optimizer': {
-                                'values': ['adam', 'sgd', 'rmsprop']
-                            },
-                            'criterion': {
-                                'values': ["mse", "cossim", "dice"]
-                            }
-                        }
-                    }
-        sweep_id = wandb.sweep(sweep_config, project="Year_AutoEnc_Trunc10000")
+        
+        self.sweep_config = sweep_config["parameters"]
+        sweep_id = wandb.sweep(sweep_config, project="Year_AutoEnc_Trunc10000_Loss")
         wandb.agent(sweep_id, self.train)
 
     def train(self):
@@ -91,18 +60,20 @@ class WandB_Academy:
 
         # Weights and Biases Setup
         config_defaults = {
-                    'epochs': 100,
-                    'batch_size': 128,
-                    'n_nodes_fc1': 128,
-                    'n_nodes_fc2': 64,
-                    'embedding_size' : 8,
-                    'momentum'   : 0.1,
-                    'weight_decay' :  0.0005,
-                    'learning_rate': 1e-12,
-                    'optimizer': 'sgd',
-                    'criterion': 'mse'
+                    'epochs': self.sweep_config["epochs"]['values'][0],
+                    'batch_size': self.sweep_config["batch_size"]['values'][0],
+                    'n_nodes_fc1': self.sweep_config["n_nodes_fc1"]['values'][0],
+                    'n_nodes_fc2': self.sweep_config["n_nodes_fc2"]['values'][0],
+                    'embedding_size' : self.sweep_config["embedding_size"]['values'][0],
+                    'momentum'   : self.sweep_config["momentum"]['values'][0],
+                    'weight_decay' :  self.sweep_config["weight_decay"]['values'][0],
+                    'learning_rate': self.sweep_config["learning_rate"]['values'][0],
+                    'optimizer': self.sweep_config["optimizer"]['values'][0],
+                    'criterion': self.sweep_config["criterion"]['values'][0],
+                    'activation_func': self.sweep_config["activation_func"]['values'][0],
+                    'output_activation_func': self.sweep_config['output_activation_func']['values'][0]
                 }
-        wandb.init(config = config_defaults, entity="naddeok", project="Year_AutoEnc_Trunc10000")
+        wandb.init(config = config_defaults, entity="naddeok", project="Year_AutoEnc_Trunc10000_Loss")
         config = wandb.config
 
         #Get training data
@@ -112,7 +83,10 @@ class WandB_Academy:
         net = Autoencoder(input_size  = self.data.num_unique_embeddings,
                             n_nodes_fc1 = config.n_nodes_fc1,
                             n_nodes_fc2 = config.n_nodes_fc2,
-                            embedding_size = config.embedding_size)
+                            embedding_size = config.embedding_size,
+                            activation_func = config.activation_func,
+                            output_activation_func = config.output_activation_func)
+
         self.net = net if self.gpu == False else net.cuda()
 
         # Setup Optimzier
@@ -125,11 +99,11 @@ class WandB_Academy:
 
         # Setup Criterion
         if config.criterion=="mse":
-            criterion = torch.nn.MSELoss()
+            criterion = self.mse_criterion
         elif config.criterion=="cossim":
-            criterion = torch.nn.CosineEmbeddingLoss(reduction='none')
+            criterion = self.cos_criterion
         elif config.criterion=="dice":
-            criterion = DiceLoss(smooth=1)
+            criterion = self.dice_criterion
             
 
         # Loop for epochs
@@ -154,20 +128,36 @@ class WandB_Academy:
 
                 #Forward pass
                 outputs = self.net(inputs).squeeze(1)      # Forward pass
-                loss = criterion (outputs, labels) # Calculate loss 
+                if config.criterion=="cossim":
+                    loss = criterion(outputs.view(1, -1), labels.view(1, -1), torch.Tensor(labels.size(0)).cuda().fill_(1.0)) # Calculate loss 
+                else:
+                    loss = criterion (outputs, labels) # Calculate loss 
                 
                 # Backward pass and optimize
                 loss.backward()                   # Find the gradient for each parameter
                 optimizer.step()                  # Parameter update
                 
                 total_instances += len(outputs)
-                wandb.log({"epoch": epoch, "batch_loss": loss.item()}, step=total_instances)
+                
             # Display 
             if epoch % (config.epochs/100) == 0:
                 
                 print("Epoch: ", epoch + 1, "\t Loss: ", loss.item())
 
-        wandb.log({"loss": loss.item()})
+                wandb.log({"epoch"  : epoch, 
+                            "MSE"   : self.mse_criterion(outputs, labels).item(),
+                            "CosSim": self.cos_criterion(outputs.view(1, -1), labels.view(1, -1), torch.Tensor(labels.size(0)).cuda().fill_(1.0)).item(),
+                            "Dice"  : self.dice_criterion(outputs, labels).item()}, step=total_instances)
+
+
+        wandb.log({ "MSE"   : self.mse_criterion(outputs, labels).item(),
+                    "CosSim": self.cos_criterion(outputs.view(1, -1), labels.view(1, -1), torch.Tensor(labels.size(0)).cuda().fill_(1.0)).item(),
+                    "Dice"  : self.dice_criterion(outputs, labels).item()})
+
+        # Save Model
+        # Define File Names
+        filename  = "net_w_mse_loss_" + str(int(round(self.mse_criterion(outputs, labels).item(), 3))) + ".pt"
+        torch.save(self.net.state_dict(), filename)
         
 
     def test(self):

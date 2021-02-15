@@ -1,0 +1,22 @@
+wandb_version: 1
+
+batch_size:
+  value: 8
+criterion:
+  value: mse
+embedding_size:
+  value: 32
+epochs:
+  value: 500
+learning_rate:
+  value: 0.001
+momentum:
+  value: 0.5
+n_nodes_fc1:
+  value: 1024
+n_nodes_fc2:
+  value: 256
+optimizer:
+  value: rmsprop
+weight_decay:
+  value: 0

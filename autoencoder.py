@@ -8,7 +8,9 @@ class Autoencoder(nn.Module):
     def __init__(self, input_size  = 32,
                        n_nodes_fc1 = 128,
                        n_nodes_fc2 = 64,
-                       embedding_size = 10):
+                       embedding_size = 10,
+                       activation_func = "relu",
+                       output_activation_func = "relu"):
         """Autoencoder for categorical embedding
 
         Args:
@@ -25,6 +27,17 @@ class Autoencoder(nn.Module):
         self.n_nodes_fc1 = n_nodes_fc1
         self.n_nodes_fc2 = n_nodes_fc2
         self.embedding_size = embedding_size
+
+        # Activation function
+        if activation_func=="relu":
+            self.activation_func = F.relu
+        elif activation_func=="sigmoid":
+            self.activation_func = F.sigmoid
+
+        if output_activation_func=="relu":
+            self.output_activation_func = F.relu
+        elif output_activation_func=="softmax":
+            self.output_activation_func = F.softmax
         
         # Encoder
         self.encoder_fc1 = nn.Linear(self.input_size,  self.n_nodes_fc1)
@@ -37,16 +50,16 @@ class Autoencoder(nn.Module):
         self.decoder_fc3 = nn.Linear(self.n_nodes_fc1, self.input_size)
 
     def encode(self, x):
-        x = F.relu(self.encoder_fc1(x))
-        x = F.relu(self.encoder_fc2(x))
-        x = F.relu(self.encoder_fc3(x))
+        x = self.activation_func(self.encoder_fc1(x))
+        x = self.activation_func(self.encoder_fc2(x))
+        x = self.activation_func(self.encoder_fc3(x))
 
         return x
 
     def decode(self, x):
-        x = F.relu(self.decoder_fc1(x))
-        x = F.relu(self.decoder_fc2(x))
-        x = F.relu(self.decoder_fc3(x))
+        x = self.activation_func(self.decoder_fc1(x))
+        x = self.activation_func(self.decoder_fc2(x))
+        x = self.output_activation_func(self.decoder_fc3(x))
 
         return x
 

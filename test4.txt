@@ -1,0 +1,36 @@
+wandb: Agent Starting Run: an4vtiac with config:
+wandb: 	activation_func: relu
+wandb: 	batch_size: 1
+wandb: 	criterion: mse
+wandb: 	embedding_size: 2
+wandb: 	epochs: 100000
+wandb: 	learning_rate: 0.001
+wandb: 	momentum: 0.9
+wandb: 	n_nodes_fc1: 512
+wandb: 	n_nodes_fc2: 256
+wandb: 	optimizer: sgd
+wandb: 	output_activation_func: softmax
+wandb: 	weight_decay: 0.005
+wandb: Currently logged in as: naddeok (use `wandb login --relogin` to force relogin)
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+Loading Data...
+...done
+
+Loading Academy...
+Create sweep with ID: fy4l5iu6
+Sweep URL: https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss/sweeps/fy4l5iu6
+2021-02-13 11:35:19.890524: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-02-13 11:35:19.897267: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+wandb: Tracking run with wandb version 0.10.18
+wandb: Syncing run graceful-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss/sweeps/fy4l5iu6
+wandb: 🚀 View run at https://wandb.ai/naddeok/Year_AutoEnc_Trunc10000_Loss/runs/an4vtiac
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210213_113518-an4vtiac
+wandb: Run `wandb offline` to turn off syncing.
+/home/naddeok5/its_always_sunny/autoencoder.py:62: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  x = self.output_activation_func(self.decoder_fc3(x))
+Epoch:  1 	 Loss:  0.02567354217171669
+/usr/lib/python3.6/multiprocessing/semaphore_tracker.py:143: UserWarning: semaphore_tracker: There appear to be 6 leaked semaphores to clean up at shutdown
+  len(cache))

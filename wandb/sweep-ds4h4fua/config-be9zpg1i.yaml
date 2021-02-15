@@ -1,0 +1,22 @@
+wandb_version: 1
+
+batch_size:
+  value: 64
+criterion:
+  value: dice
+embedding_size:
+  value: 32
+epochs:
+  value: 500
+learning_rate:
+  value: 1.0e-12
+momentum:
+  value: 0.9
+n_nodes_fc1:
+  value: 512
+n_nodes_fc2:
+  value: 128
+optimizer:
+  value: adam
+weight_decay:
+  value: 0.05

@@ -1,0 +1,57 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.18
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.6.9
+    t:
+      1:
+      - 1
+      - 5
+      2:
+      - 1
+      - 5
+      3:
+      - 2
+      4: 3.6.9
+      5: 0.10.18
+activation_func:
+  desc: null
+  value: sigmoid
+batch_size:
+  desc: null
+  value: 8
+criterion:
+  desc: null
+  value: cossim
+embedding_size:
+  desc: null
+  value: 8
+epochs:
+  desc: null
+  value: 1000
+learning_rate:
+  desc: null
+  value: 0.01
+momentum:
+  desc: null
+  value: 0.1
+n_nodes_fc1:
+  desc: null
+  value: 512
+n_nodes_fc2:
+  desc: null
+  value: 256
+optimizer:
+  desc: null
+  value: sgd
+output_activation_func:
+  desc: null
+  value: softmax
+weight_decay:
+  desc: null
+  value: 0.005

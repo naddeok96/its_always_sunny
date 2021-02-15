@@ -5,6 +5,7 @@ import copy
 import wandb
 from sleeper import Sleeper
 # sleeper = Sleeper()
+from dice_loss import DiceLoss
 
 
 class Academy:
@@ -59,7 +60,8 @@ class Academy:
                                     lr = learning_rate, 
                                     momentum = momentum,
                                     weight_decay = weight_decay)
-        criterion = torch.nn.MSELoss()
+        criterion = torch.nn.CosineEmbeddingLoss(reduction='mean',
+                                                 margin=0.5) # DiceLoss(smooth=1) # torch.nn.MSELoss()
 
         # Loop for n_epochs
         total_instances = 0
@@ -83,11 +85,11 @@ class Academy:
 
                 #Forward pass
                 outputs = self.net(inputs).squeeze(1)      # Forward pass
-                loss = criterion (outputs, labels) # Calculate loss 
+                loss = criterion(outputs.view(1, -1), labels.view(1, -1), torch.Tensor(labels.size(0)).cuda().fill_(1.0)) # Calculate loss 
                 
                 # Backward pass and optimize
-                loss.backward()                   # Find the gradient for each parameter
-                optimizer.step()                  # Parameter update
+                # loss.backward()                   # Find the gradient for each parameter
+                # optimizer.step()                  # Parameter update
                 
             # Display 
             if epoch % (n_epochs/100) == 0:
