@@ -11,7 +11,7 @@ class Data:
                         gpu = False,
                         test_batch_size  = 100,
                         train_percentage = 0.8,
-                        category = None,
+                        autoencoder_data = False,
                         one_hot_embedding_size = None):
         """
         Args:
@@ -33,33 +33,20 @@ class Data:
         self.test_batch_size = test_batch_size
 
         # Pull in data
-        self.weather_dataset = WeatherDataset(csv_file = csv_file)
+        self.weather_dataset = WeatherDataset(csv_file = csv_file, 
+                                              autoencoder_data = autoencoder_data)
 
         # Convert dataset for autoencoder
-        if category is not None:
-            # Initalize tensor to hold categorys data
-            categorical_data = self.weather_dataset[category]
-
-            # Convert to right format for one hot function and reduce the size
-            self.categorical_data = torch.unique(categorical_data, dim = 0, return_counts = False)
-            categorical_data = categorical_data - min(categorical_data).item()
-            _, num_unique = torch.unique(categorical_data, dim = 0, return_counts = True)
-            # print("Unique Category Size")
-            # print(num_unique)
+        if autoencoder_data:
+            categorical_data = self.weather_dataset[:] - min(self.weather_dataset[:]).item()
+            
             if one_hot_embedding_size is None:
-                one_hot_embedding_size = len(num_unique)
+                one_hot_embedding_size = categorical_data.size(0)
+
             # One hot encode
-
             self.weather_dataset = torch.nn.functional.one_hot(categorical_data.type(torch.LongTensor), one_hot_embedding_size).type(torch.FloatTensor)
+            self.num_unique_embeddings = self.weather_dataset.size(0)
             
-            _, num_unique = torch.unique(self.weather_dataset, dim = 0, return_counts = True)
-            # print("Category Unique Size")
-            # print(num_unique)
-            # print(len(num_unique))
-            # exit()
-            self.num_unique_embeddings = len(num_unique)
-            
-
         # Find size of feature space
         self.n_features = len(self.weather_dataset[0]) - 1
 
@@ -68,7 +55,6 @@ class Data:
         test_proportion  = len(self.weather_dataset) - train_proportion
 
         self.train_set, self.test_set = random_split(self.weather_dataset.data, [train_proportion, test_proportion])
-
 
         #Test and validation loaders have constant batch sizes, so we can define them 
         if self.gpu:

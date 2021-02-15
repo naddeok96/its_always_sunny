@@ -49,6 +49,9 @@ for year, one_hot in zip(data.categorical_data, torch.unique(data.weather_datase
     print(year)
     x, y = net.encode(one_hot)
     
-    plt.plot(x.item(), y.item())
-    plt.show()
-    exit()
+    plt.scatter(x.item(), y.item())
+    plt.text(x.item(), y.item(), str(year.item()))
+
+
+plt.show()
+    

@@ -11,6 +11,7 @@ from dice_loss import DiceLoss
 
 class WandB_Academy:
     def __init__(self,
+                 project_name,
                  sweep_config,
                  data,
                  gpu = False,
@@ -42,9 +43,9 @@ class WandB_Academy:
         self.dice_criterion = DiceLoss(smooth=1)
 
         # Declare if Weights and Biases are used
-        
+        self.project_name = project_name
         self.sweep_config = sweep_config["parameters"]
-        sweep_id = wandb.sweep(sweep_config, project="Year_AutoEnc_Trunc10000_Loss")
+        sweep_id = wandb.sweep(sweep_config, project=self.project_name)
         wandb.agent(sweep_id, self.train)
 
     def train(self):
@@ -73,7 +74,7 @@ class WandB_Academy:
                     'activation_func': self.sweep_config["activation_func"]['values'][0],
                     'output_activation_func': self.sweep_config['output_activation_func']['values'][0]
                 }
-        wandb.init(config = config_defaults, entity="naddeok", project="Year_AutoEnc_Trunc10000_Loss")
+        wandb.init(config = config_defaults, entity="naddeok", project=self.project_name)
         config = wandb.config
 
         #Get training data

@@ -6,7 +6,7 @@ sweep_config = {
                 },
                 'parameters': {
                     'epochs': {
-                        'values': [1e3, 1e4]
+                        'values': [1e3, 2e3]
                     },
                     'batch_size': {
                         'values': [1]
@@ -18,7 +18,7 @@ sweep_config = {
                         'values'  : [256]
                     },
                     'embedding_size': {
-                        'values': [2, 4]
+                        'values': [2]
                     },
                     'momentum': {
                         'values': [0.9]

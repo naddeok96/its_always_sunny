@@ -17,28 +17,28 @@ import os
 # sleeper.check()
 
 # Hyperparameters
-csv_file = "data/weatherdata_merged2_truncated_10000.csv" # "../../../data/WeatherData/weatherdata_merged2.csv" # 
-gpu = True
-save_model = True
+csv_file = "data/unique_geoid.csv" # "../../../data/WeatherData/weatherdata_merged2.csv" # 
+gpu = False
+save_model = False
 
 # Push to GPU if necessary
 if gpu:
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-    os.environ["CUDA_VISIBLE_DEVICES"] = "2"
-
+    os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
 # Load data
 print("Loading Data...")
 data = Data(csv_file = csv_file, 
                 gpu = gpu,
-                category = 1) 
+                autoencoder_data = True) 
 print("...done")
 
 net = Autoencoder(input_size  = data.num_unique_embeddings)
 
 # Enter student network and curriculum data into an academy
 print("\nLoading Academy...")
-academy  = WandB_Academy(sweep_config, data, gpu,
+academy  = WandB_Academy("GeoID AutoEncoder"
+                        sweep_config, data, gpu,
                     autoencoder_trainer = True)
 # academy  = Academy(net, 
 #                  data,
