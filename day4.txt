@@ -1,0 +1,15 @@
+Loading Data...
+...done
+
+Loading Academy...
+Create sweep with ID: 3gtif819
+Sweep URL: https://wandb.ai/naddeok/Day%20AutoEncoder/sweeps/3gtif819
+Epoch:  1 	 Loss:  0.03145216405391693
+Epoch:  51 	 Loss:  0.03118731454014778
+Epoch:  101 	 Loss:  0.030936455354094505
+Epoch:  151 	 Loss:  0.0311502106487751
+Epoch:  201 	 Loss:  0.03130238130688667
+Epoch:  251 	 Loss:  0.03097650781273842
+Epoch:  301 	 Loss:  0.03118186630308628
+Epoch:  351 	 Loss:  0.031313516199588776
+Epoch:  401 	 Loss:  0.03123859502375126

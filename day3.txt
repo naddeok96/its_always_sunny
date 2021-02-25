@@ -1,0 +1,15 @@
+Loading Data...
+...done
+
+Loading Academy...
+Create sweep with ID: rs0hksfm
+Sweep URL: https://wandb.ai/naddeok/Day%20AutoEncoder/sweeps/rs0hksfm
+Epoch:  1 	 Loss:  0.031440794467926025
+Epoch:  51 	 Loss:  0.031178602948784828
+Epoch:  101 	 Loss:  0.03077000565826893
+Epoch:  151 	 Loss:  0.031146571040153503
+Epoch:  201 	 Loss:  0.03107481822371483
+Epoch:  251 	 Loss:  0.031141355633735657
+Epoch:  301 	 Loss:  0.03122216835618019
+Epoch:  351 	 Loss:  0.03112919069826603
+Epoch:  401 	 Loss:  0.031185459345579147

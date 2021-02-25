@@ -17,9 +17,8 @@ import os
 # sleeper.check()
 
 # Hyperparameters
-csv_file = "data/unique_geoid.csv" # "../../../data/WeatherData/weatherdata_merged2.csv" # 
-gpu = False
-save_model = False
+csv_file = "data/unique_day.csv"
+gpu = True
 
 # Push to GPU if necessary
 if gpu:
@@ -37,7 +36,7 @@ net = Autoencoder(input_size  = data.num_unique_embeddings)
 
 # Enter student network and curriculum data into an academy
 print("\nLoading Academy...")
-academy  = WandB_Academy("GeoID AutoEncoder"
+academy  = WandB_Academy("Day AutoEncoder",
                         sweep_config, data, gpu,
                     autoencoder_trainer = True)
 # academy  = Academy(net, 

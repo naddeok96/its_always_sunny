@@ -1,0 +1,319 @@
+wandb: Agent Starting Run: wpwl255g with config:
+wandb: 	activation_func: relu
+wandb: 	batch_size: 1
+wandb: 	criterion: mse
+wandb: 	embedding_size: 2
+wandb: 	epochs: 1000
+wandb: 	learning_rate: 0.001
+wandb: 	momentum: 0.9
+wandb: 	n_nodes_fc1: 512
+wandb: 	n_nodes_fc2: 256
+wandb: 	optimizer: sgd
+wandb: 	output_activation_func: softmax
+wandb: 	weight_decay: 0.005
+wandb: Currently logged in as: naddeok (use `wandb login --relogin` to force relogin)
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+Loading Data...
+...done
+
+Loading Academy...
+Create sweep with ID: nmf273zi
+Sweep URL: https://wandb.ai/naddeok/Month%20AutoEncoder/sweeps/nmf273zi
+wandb: wandb version 0.10.19 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-15 12:26:29.575421: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-02-15 12:26:29.581451: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+wandb: Tracking run with wandb version 0.10.18
+wandb: Syncing run robust-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Month%20AutoEncoder
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Month%20AutoEncoder/sweeps/nmf273zi
+wandb: 🚀 View run at https://wandb.ai/naddeok/Month%20AutoEncoder/runs/wpwl255g
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210215_122628-wpwl255g
+wandb: Run `wandb offline` to turn off syncing.
+/home/naddeok5/its_always_sunny/autoencoder.py:62: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  x = self.output_activation_func(self.decoder_fc3(x))
+Epoch:  1 	 Loss:  0.21975255012512207
+Epoch:  11 	 Loss:  0.22033843398094177
+Epoch:  21 	 Loss:  0.22106894850730896
+Epoch:  31 	 Loss:  0.22408169507980347
+Epoch:  41 	 Loss:  0.22117742896080017
+Epoch:  51 	 Loss:  0.22463840246200562
+Epoch:  61 	 Loss:  0.22455619275569916
+Epoch:  71 	 Loss:  0.22449690103530884
+Epoch:  81 	 Loss:  0.22165517508983612
+Epoch:  91 	 Loss:  0.19901953637599945
+Epoch:  101 	 Loss:  0.2209455668926239
+Epoch:  111 	 Loss:  0.22011153399944305
+Epoch:  121 	 Loss:  0.2196415513753891
+Epoch:  131 	 Loss:  0.21800421178340912
+Epoch:  141 	 Loss:  0.2158483862876892
+Epoch:  151 	 Loss:  0.12336986511945724
+Epoch:  161 	 Loss:  0.1015615314245224
+Epoch:  171 	 Loss:  0.20668867230415344
+Epoch:  181 	 Loss:  0.05998876318335533
+Epoch:  191 	 Loss:  0.19406628608703613
+Epoch:  201 	 Loss:  0.18684063851833344
+Epoch:  211 	 Loss:  0.17773990333080292
+Epoch:  221 	 Loss:  0.12616579234600067
+Epoch:  231 	 Loss:  0.015887483954429626
+Epoch:  241 	 Loss:  0.08285905420780182
+Epoch:  251 	 Loss:  0.1300731897354126
+Epoch:  261 	 Loss:  0.008660243824124336
+Epoch:  271 	 Loss:  0.03758661448955536
+Epoch:  281 	 Loss:  0.029846549034118652
+Epoch:  291 	 Loss:  0.0238272063434124
+Epoch:  301 	 Loss:  0.004366416018456221
+Epoch:  311 	 Loss:  0.014829335734248161
+Epoch:  321 	 Loss:  0.04277005419135094
+Epoch:  331 	 Loss:  0.009969066828489304
+Epoch:  341 	 Loss:  0.008413733914494514
+Epoch:  351 	 Loss:  0.007154615130275488
+Epoch:  361 	 Loss:  0.023715361952781677
+Epoch:  371 	 Loss:  0.001792238443158567
+Epoch:  381 	 Loss:  0.004626426380127668
+Epoch:  391 	 Loss:  0.0014721250627189875
+Epoch:  401 	 Loss:  0.0013484286610037088
+Epoch:  411 	 Loss:  0.0032527833245694637
+Epoch:  421 	 Loss:  0.0029438165947794914
+Epoch:  431 	 Loss:  0.0010651585180312395
+Epoch:  441 	 Loss:  0.0009921861346811056
+Epoch:  451 	 Loss:  0.002241211012005806
+Epoch:  461 	 Loss:  0.0008719250909052789
+Epoch:  471 	 Loss:  0.008460602723062038
+Epoch:  481 	 Loss:  0.001758354133926332
+Epoch:  491 	 Loss:  0.0007280299323610961
+Epoch:  501 	 Loss:  0.0015337062068283558
+Epoch:  511 	 Loss:  0.006571176461875439
+Epoch:  521 	 Loss:  0.0006230736034922302
+Epoch:  531 	 Loss:  0.0005948870675638318
+Epoch:  541 	 Loss:  0.0055929250083863735
+Epoch:  551 	 Loss:  0.0005432151374407113
+Epoch:  561 	 Loss:  0.005052442662417889
+Epoch:  571 	 Loss:  0.0004973773611709476
+Epoch:  581 	 Loss:  0.0004773770924657583
+Epoch:  591 	 Loss:  0.004413216840475798
+Epoch:  601 	 Loss:  0.0008934283396229148
+Epoch:  611 	 Loss:  0.0004262393922545016
+Epoch:  621 	 Loss:  0.0008116455283015966
+Epoch:  631 	 Loss:  0.0037489491514861584
+Epoch:  641 	 Loss:  0.0007512487354688346
+Epoch:  651 	 Loss:  0.0034833052195608616
+Epoch:  661 	 Loss:  0.0033590937964618206
+Epoch:  671 	 Loss:  0.000666992156766355
+Epoch:  681 	 Loss:  0.003140031360089779
+Epoch:  691 	 Loss:  0.0030374936759471893
+Epoch:  701 	 Loss:  0.002941336017102003
+Epoch:  711 	 Loss:  0.0003077331348322332
+Epoch:  721 	 Loss:  0.0005626501515507698
+Epoch:  731 	 Loss:  0.0005444068810902536
+Epoch:  741 	 Loss:  0.0026079711969941854
+Epoch:  751 	 Loss:  0.0025338600389659405
+Epoch:  761 	 Loss:  0.00026900944067165256
+Epoch:  771 	 Loss:  0.00026251195231452584
+Epoch:  781 	 Loss:  0.0023353062570095062
+Epoch:  791 	 Loss:  0.000249245495069772
+Epoch:  801 	 Loss:  0.0004455271118786186
+Epoch:  811 	 Loss:  0.0021657836623489857
+Epoch:  821 	 Loss:  0.00023300893371924758
+Epoch:  831 	 Loss:  0.00041199810220859945
+Epoch:  841 	 Loss:  0.00022236966469790787
+Epoch:  851 	 Loss:  0.0003917542635463178
+Epoch:  861 	 Loss:  0.00038141835830174387
+Epoch:  871 	 Loss:  0.00020843118545599282
+Epoch:  881 	 Loss:  0.001837918534874916
+Epoch:  891 	 Loss:  0.0017973919166252017
+Epoch:  901 	 Loss:  0.0017598889535292983
+Epoch:  911 	 Loss:  0.0003400418790988624
+Epoch:  921 	 Loss:  0.00018855289090424776
+Epoch:  931 	 Loss:  0.0016536827897652984
+Epoch:  941 	 Loss:  0.00018158199964091182
+Epoch:  951 	 Loss:  0.0001781828177627176
+Epoch:  961 	 Loss:  0.001559747732244432
+Epoch:  971 	 Loss:  0.00029925262788310647
+Epoch:  981 	 Loss:  0.0015023909509181976
+Epoch:  991 	 Loss:  0.00016614922787994146
+wandb: Waiting for W&B process to finish, PID 63775
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210215_122628-wpwl255g/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210215_122628-wpwl255g/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 990
+wandb:          MSE 0.00145
+wandb:       CosSim 0.00085
+wandb:         Dice 0.03552
+wandb:     _runtime 651
+wandb:   _timestamp 1613410639
+wandb:        _step 2973
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:          MSE ██████▅▇▇▅▅▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:       CosSim ██████▄▇▆▄▄▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:         Dice ██████▆█▇▆▆▄▂▂▂▂▁▁▁▁▁▁▁▁▁▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:     _runtime ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced robust-sweep-1: https://wandb.ai/naddeok/Month%20AutoEncoder/runs/wpwl255g
+wandb: Agent Starting Run: g134v35j with config:
+wandb: 	activation_func: relu
+wandb: 	batch_size: 1
+wandb: 	criterion: mse
+wandb: 	embedding_size: 2
+wandb: 	epochs: 2000
+wandb: 	learning_rate: 0.001
+wandb: 	momentum: 0.9
+wandb: 	n_nodes_fc1: 512
+wandb: 	n_nodes_fc2: 256
+wandb: 	optimizer: sgd
+wandb: 	output_activation_func: softmax
+wandb: 	weight_decay: 0.005
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+
+wandb: wandb version 0.10.19 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-15 12:37:25.298588: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-02-15 12:37:25.305171: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+wandb: Tracking run with wandb version 0.10.18
+wandb: Syncing run youthful-sweep-2
+wandb: ⭐️ View project at https://wandb.ai/naddeok/Month%20AutoEncoder
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/Month%20AutoEncoder/sweeps/nmf273zi
+wandb: 🚀 View run at https://wandb.ai/naddeok/Month%20AutoEncoder/runs/g134v35j
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210215_123724-g134v35j
+wandb: Run `wandb offline` to turn off syncing.
+
+/home/naddeok5/its_always_sunny/autoencoder.py:62: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  x = self.output_activation_func(self.decoder_fc3(x))
+Epoch:  1 	 Loss:  0.22517648339271545
+Epoch:  21 	 Loss:  0.2296537160873413
+Epoch:  41 	 Loss:  0.22273360192775726
+Epoch:  61 	 Loss:  0.22079071402549744
+Epoch:  81 	 Loss:  0.22382722795009613
+Epoch:  101 	 Loss:  0.21363785862922668
+Epoch:  121 	 Loss:  0.22288298606872559
+Epoch:  141 	 Loss:  0.22322654724121094
+Epoch:  161 	 Loss:  0.21928851306438446
+Epoch:  181 	 Loss:  0.1277395486831665
+Epoch:  201 	 Loss:  0.08429604768753052
+Epoch:  221 	 Loss:  0.1988602578639984
+Epoch:  241 	 Loss:  0.02845221571624279
+Epoch:  261 	 Loss:  0.1872721165418625
+Epoch:  281 	 Loss:  0.18129268288612366
+Epoch:  301 	 Loss:  0.1787957400083542
+Epoch:  321 	 Loss:  0.005812258459627628
+Epoch:  341 	 Loss:  0.17418253421783447
+Epoch:  361 	 Loss:  0.0036151050589978695
+Epoch:  381 	 Loss:  0.0029669597279280424
+Epoch:  401 	 Loss:  0.17118778824806213
+Epoch:  421 	 Loss:  0.16864240169525146
+Epoch:  441 	 Loss:  0.1711636781692505
+Epoch:  461 	 Loss:  0.0016149012371897697
+Epoch:  481 	 Loss:  0.16755759716033936
+Epoch:  501 	 Loss:  0.16948336362838745
+Epoch:  521 	 Loss:  0.16423487663269043
+Epoch:  541 	 Loss:  0.15888816118240356
+Epoch:  561 	 Loss:  0.1437145173549652
+Epoch:  581 	 Loss:  0.11683490127325058
+Epoch:  601 	 Loss:  0.0012267623096704483
+Epoch:  621 	 Loss:  0.07222096621990204
+Epoch:  641 	 Loss:  0.0015938709257170558
+Epoch:  661 	 Loss:  0.03169407695531845
+Epoch:  681 	 Loss:  0.013845231384038925
+Epoch:  701 	 Loss:  0.016056647524237633
+Epoch:  721 	 Loss:  0.012218202464282513
+Epoch:  741 	 Loss:  0.005691382102668285
+Epoch:  761 	 Loss:  0.004592756740748882
+Epoch:  781 	 Loss:  0.0008215390844270587
+Epoch:  801 	 Loss:  0.0007395402062684298
+Epoch:  821 	 Loss:  0.0027389328461140394
+Epoch:  841 	 Loss:  0.004330894444137812
+Epoch:  861 	 Loss:  0.002096465788781643
+Epoch:  881 	 Loss:  0.0005004761042073369
+Epoch:  901 	 Loss:  0.0004605842404998839
+Epoch:  921 	 Loss:  0.001526792999356985
+Epoch:  941 	 Loss:  0.002615125384181738
+Epoch:  961 	 Loss:  0.002411317080259323
+Epoch:  981 	 Loss:  0.0022353145759552717
+Epoch:  1001 	 Loss:  0.00032262742752209306
+Epoch:  1021 	 Loss:  0.0010107788257300854
+Epoch:  1041 	 Loss:  0.00028748391196131706
+Epoch:  1061 	 Loss:  0.0017165082972496748
+Epoch:  1081 	 Loss:  0.0008296400774270296
+Epoch:  1101 	 Loss:  0.0002444142592139542
+Epoch:  1121 	 Loss:  0.00023228627105709165
+Epoch:  1141 	 Loss:  0.0013814626727253199
+Epoch:  1161 	 Loss:  0.0006591820856556296
+Epoch:  1181 	 Loss:  0.00020234222756698728
+Epoch:  1201 	 Loss:  0.0012006511678919196
+Epoch:  1221 	 Loss:  0.0005685279611498117
+Epoch:  1241 	 Loss:  0.0005422265967354178
+Epoch:  1261 	 Loss:  0.0010588527657091618
+Epoch:  1281 	 Loss:  0.0010188751621171832
+Epoch:  1301 	 Loss:  0.0009805391309782863
+Epoch:  1321 	 Loss:  0.0004582232213579118
+Epoch:  1341 	 Loss:  0.0009119321475736797
+Epoch:  1361 	 Loss:  0.00042378867510706186
+Epoch:  1381 	 Loss:  0.00013935676543042064
+Epoch:  1401 	 Loss:  0.0008242805488407612
+Epoch:  1421 	 Loss:  0.0001308978971792385
+Epoch:  1441 	 Loss:  0.0003677739296108484
+Epoch:  1461 	 Loss:  0.0007513355230912566
+Epoch:  1481 	 Loss:  0.0007294492679648101
+Epoch:  1501 	 Loss:  0.000334033218678087
+Epoch:  1521 	 Loss:  0.00011331132554914802
+Epoch:  1541 	 Loss:  0.00011011896276613697
+Epoch:  1561 	 Loss:  0.0003051427484024316
+Epoch:  1581 	 Loss:  0.00010451446723891422
+Epoch:  1601 	 Loss:  0.0006194377783685923
+Epoch:  1621 	 Loss:  0.0006043196190148592
+Epoch:  1641 	 Loss:  0.0002731317072175443
+Epoch:  1661 	 Loss:  0.0002657600271049887
+Epoch:  1681 	 Loss:  0.0005622125463560224
+Epoch:  1701 	 Loss:  9.05390115804039e-05
+Epoch:  1721 	 Loss:  0.00024635865702293813
+Epoch:  1741 	 Loss:  8.663230983074754e-05
+Epoch:  1761 	 Loss:  0.0005139337154105306
+Epoch:  1781 	 Loss:  0.0005029137246310711
+Epoch:  1801 	 Loss:  8.136785618262365e-05
+Epoch:  1821 	 Loss:  7.969801663421094e-05
+Epoch:  1841 	 Loss:  7.820421160431579e-05
+Epoch:  1861 	 Loss:  7.664259464945644e-05
+Epoch:  1881 	 Loss:  0.00020508133457042277
+Epoch:  1901 	 Loss:  0.00044565260759554803
+Epoch:  1921 	 Loss:  7.24112760508433e-05
+Epoch:  1941 	 Loss:  0.00019298243569210172
+Epoch:  1961 	 Loss:  0.00042160128941759467
+Epoch:  1981 	 Loss:  0.0004137498908676207
+wandb: Waiting for W&B process to finish, PID 17427
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210215_123724-g134v35j/logs/debug.log
+wandb: Find internal logs for this run at: /home/naddeok5/its_always_sunny/wandb/run-20210215_123724-g134v35j/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 1980
+wandb:          MSE 0.00018
+wandb:       CosSim 0.0001
+wandb:         Dice 0.0127
+wandb:     _runtime 1526
+wandb:   _timestamp 1613412170
+wandb:        _step 5943
+wandb: Run history:
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:          MSE ████▄▂▇▆▆▆▆▆▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:       CosSim ████▃▁▆▆▆▆▆▅▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:         Dice ████▅▃▇▇▇▇▇▆▁▃▃▂▁▂▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:     _runtime ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   _timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:        _step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced youthful-sweep-2: https://wandb.ai/naddeok/Month%20AutoEncoder/runs/g134v35j
+wandb: Sweep Agent: Waiting for job.
+wandb: Sweep Agent: Exiting.
+
+...done

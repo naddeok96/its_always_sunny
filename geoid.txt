@@ -1,0 +1,115 @@
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: txkezr7d with config:
+wandb: 	activation_func: relu
+wandb: 	batch_size: 1
+wandb: 	criterion: mse
+wandb: 	embedding_size: 2
+wandb: 	epochs: 1000
+wandb: 	learning_rate: 0.001
+wandb: 	momentum: 0.9
+wandb: 	n_nodes_fc1: 512
+wandb: 	n_nodes_fc2: 256
+wandb: 	optimizer: sgd
+wandb: 	output_activation_func: softmax
+wandb: 	weight_decay: 0.005
+wandb: Currently logged in as: naddeok (use `wandb login --relogin` to force relogin)
+wandb: WARNING Ignored wandb.init() arg project when running a sweep
+wandb: WARNING Ignored wandb.init() arg entity when running a sweep
+Loading Data...
+...done
+
+Loading Academy...
+Create sweep with ID: mhh4vtjc
+Sweep URL: https://wandb.ai/naddeok/GeoID%20AutoEncoder/sweeps/mhh4vtjc
+wandb: wandb version 0.10.19 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+2021-02-15 12:18:08.405229: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-02-15 12:18:08.411914: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+wandb: Tracking run with wandb version 0.10.18
+wandb: Syncing run jumping-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/naddeok/GeoID%20AutoEncoder
+wandb: 🧹 View sweep at https://wandb.ai/naddeok/GeoID%20AutoEncoder/sweeps/mhh4vtjc
+wandb: 🚀 View run at https://wandb.ai/naddeok/GeoID%20AutoEncoder/runs/txkezr7d
+wandb: Run data is saved locally in /home/naddeok5/its_always_sunny/wandb/run-20210215_121807-txkezr7d
+wandb: Run `wandb offline` to turn off syncing.
+/home/naddeok5/its_always_sunny/autoencoder.py:62: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  x = self.output_activation_func(self.decoder_fc3(x))
+Epoch:  1 	 Loss:  0.00031806714832782745
+Epoch:  11 	 Loss:  0.00031806837068870664
+Epoch:  21 	 Loss:  0.00031803030287846923
+Epoch:  31 	 Loss:  0.0003180700587108731
+Epoch:  41 	 Loss:  0.0003180695930495858
+Epoch:  51 	 Loss:  0.00031806487822905183
+Epoch:  61 	 Loss:  0.000318061385769397
+Epoch:  71 	 Loss:  0.00031806385959498584
+Epoch:  81 	 Loss:  0.0003180575149599463
+Epoch:  91 	 Loss:  0.0003180628700647503
+Epoch:  101 	 Loss:  0.00031806607148610055
+Epoch:  111 	 Loss:  0.00031805093749426305
+Epoch:  121 	 Loss:  0.00031806950573809445
+Epoch:  131 	 Loss:  0.0003180502390023321
+Epoch:  141 	 Loss:  0.00031807139748707414
+Epoch:  151 	 Loss:  0.00031807227060198784
+Epoch:  161 	 Loss:  0.0003180414787493646
+Epoch:  171 	 Loss:  0.0003180810308549553
+Epoch:  181 	 Loss:  0.00031808402854949236
+Epoch:  191 	 Loss:  0.00031806042534299195
+Epoch:  201 	 Loss:  0.00031806554761715233
+Epoch:  211 	 Loss:  0.0003180555358994752
+Epoch:  221 	 Loss:  0.00031810501241125166
+Epoch:  231 	 Loss:  0.00031806976767256856
+Epoch:  241 	 Loss:  0.00031804764876142144
+Epoch:  251 	 Loss:  0.0003180928179062903
+Epoch:  261 	 Loss:  0.00031807227060198784
+Epoch:  271 	 Loss:  0.00031804328318685293
+Epoch:  281 	 Loss:  0.00031805806793272495
+Epoch:  291 	 Loss:  0.0003181039064656943
+Epoch:  301 	 Loss:  0.00031804904574528337
+Epoch:  311 	 Loss:  0.000318062084261328
+Epoch:  321 	 Loss:  0.00031804293394088745
+Epoch:  331 	 Loss:  0.0003180681960657239
+Epoch:  341 	 Loss:  0.00031808181665837765
+Epoch:  351 	 Loss:  0.0003180649073328823
+Epoch:  361 	 Loss:  0.000318061065627262
+Epoch:  371 	 Loss:  0.0003180487547069788
+Epoch:  381 	 Loss:  0.0003180656931363046
+Epoch:  391 	 Loss:  0.0003180422354489565
+Epoch:  401 	 Loss:  0.00031804171158000827
+Epoch:  411 	 Loss:  0.00031805355683900416
+Epoch:  421 	 Loss:  0.0003180628118570894
+Epoch:  431 	 Loss:  0.0003180630737915635
+Epoch:  441 	 Loss:  0.00031807940104044974
+Epoch:  451 	 Loss:  0.0003180761996190995
+Epoch:  461 	 Loss:  0.0003180593776050955
+Epoch:  471 	 Loss:  0.0003180654312018305
+Epoch:  481 	 Loss:  0.00031806397601030767
+Epoch:  491 	 Loss:  0.00031805344042368233
+Epoch:  501 	 Loss:  0.00031807756749913096
+Epoch:  511 	 Loss:  0.0003180613275617361
+Epoch:  521 	 Loss:  0.0003180865605827421
+Epoch:  531 	 Loss:  0.00031808356288820505
+Epoch:  541 	 Loss:  0.00031807218329049647
+Epoch:  551 	 Loss:  0.0003180542553309351
+Epoch:  561 	 Loss:  0.0003180656931363046
+Epoch:  571 	 Loss:  0.0003180813218932599
+Epoch:  581 	 Loss:  0.00031806359766051173
+Epoch:  591 	 Loss:  0.00031808490166440606
+Epoch:  601 	 Loss:  0.00031807628693059087
+Epoch:  611 	 Loss:  0.0003180743078701198
+Epoch:  621 	 Loss:  0.0003180709609296173
+Epoch:  631 	 Loss:  0.0003180596686434001
+Epoch:  641 	 Loss:  0.0003180511703249067
+Epoch:  651 	 Loss:  0.0003180531202815473
+Epoch:  661 	 Loss:  0.00031804863829165697
+Epoch:  671 	 Loss:  0.00031805166509002447
+Epoch:  681 	 Loss:  0.00031802113517187536
+Epoch:  691 	 Loss:  0.00031806930201128125
+Epoch:  701 	 Loss:  0.0003180751227773726
+Epoch:  711 	 Loss:  0.00031807570485398173
+Epoch:  721 	 Loss:  0.0003180555650033057
+Epoch:  731 	 Loss:  0.0003180873463861644
+Epoch:  741 	 Loss:  0.00031805186881683767
+Epoch:  751 	 Loss:  0.00031801496515981853
+Epoch:  761 	 Loss:  0.00031807392952032387
+Epoch:  771 	 Loss:  0.00031810058862902224

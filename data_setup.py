@@ -38,7 +38,7 @@ class Data:
 
         # Convert dataset for autoencoder
         if autoencoder_data:
-            categorical_data = self.weather_dataset[:] - min(self.weather_dataset[:]).item()
+            categorical_data = torch.tensor(range(len(self.weather_dataset[:])))
             
             if one_hot_embedding_size is None:
                 one_hot_embedding_size = categorical_data.size(0)

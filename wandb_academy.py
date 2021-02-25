@@ -157,7 +157,7 @@ class WandB_Academy:
 
         # Save Model
         # Define File Names
-        filename  = "net_w_mse_loss_" + str(int(round(self.mse_criterion(outputs, labels).item(), 3))) + ".pt"
+        filename  = self.project_name + "_net_w_dice_loss_" + str(int(round(self.dice_criterion(outputs, labels).item(), 8))) + ".pt"
         torch.save(self.net.state_dict(), filename)
         
 

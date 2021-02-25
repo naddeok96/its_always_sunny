@@ -1,0 +1,15 @@
+Loading Data...
+...done
+
+Loading Academy...
+Create sweep with ID: wh3jki18
+Sweep URL: https://wandb.ai/naddeok/Day%20AutoEncoder/sweeps/wh3jki18
+Epoch:  1 	 Loss:  0.031142447143793106
+Epoch:  51 	 Loss:  0.031272247433662415
+Epoch:  101 	 Loss:  0.03138314560055733
+Epoch:  151 	 Loss:  0.031115395948290825
+Epoch:  201 	 Loss:  0.03110017627477646
+Epoch:  251 	 Loss:  0.03129422664642334
+Epoch:  301 	 Loss:  0.03119513764977455
+Epoch:  351 	 Loss:  0.031089821830391884
+Epoch:  401 	 Loss:  0.031236669048666954
